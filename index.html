@@ -3,6 +3,8 @@
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="wehack.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="navbar.js"></script>
     </head>
 
@@ -12,13 +14,16 @@
             <a href="#home" class="active"><img src="images\Copy of WEHack Gold Logo-30x30.png" alt="WEHack-logo"></a>
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
-                <a href="#About">About</a>
-                <a href="#contact">Contact Us</a>
+                <a href="#about">About</a>
+                <a href="#about">Our Mission</a>
                 <a href="#about">Theme</a>
+                <a href="#services3">Sponsors</a>
+                <a href="#about">FAQ</a>
+                <a href="#about">Meet the Team</a>
             </div>
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars" style="font-weight: normal;"></i>
                 </a>
             </div>
 
@@ -28,7 +33,7 @@
             <!-- <img src="images\bannerheader.jpg" alt="bannerhead"> -->
         </div>
 
-        <div class="about">
+        <div class="about" id="about">
             <h1>At WEHack, we're looking to shape the future of technology</h1>
             <p>UTD's women-driven tech organizations are excited to join forces and present our first all women, non-binary, 24-hour hackathon. Our goal is to create an inclusive environment that highlights and empowers women and non-binary students through technology. We aim to encourage more underrepresented people to harness their skills to create projects of their own</p>
         </div>
@@ -56,6 +61,76 @@
             <iframe width="560" height="349" src="images\WEHack_FINAL (2) (1).mp4" frameborder="0" allowfullscreen></iframe>
         </div>
 
+        <section class="decent-padding" id="services3">
+            <div class = "totalSponsors">
+            <center><h1 style="font-size: 5vw; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"> Sponsors</h1></center>
+            <br>
+            <div class = "sponsor"><center>
+              <img src = "images\sponsors\toyota.png" style="  width: 100%;
+              max-width: 500px;
+              height: auto;
+              padding-right: 5vw;">
+          
+              <img src = "images\sponsors\axxess.png" style="  width: 100%;
+              max-width: 500px;
+              height: auto;
+              padding-left: 5vw;">
+              </center>
+            </div>
+          <br>
+            <div class = "sponsor">
+              <center>
+                <img src = "images\sponsors\celanese.jpg" style="  width: 100%;
+                max-width: 300px;
+                height: auto;
+                padding-right: 5vw;
+                margin-top: 20px;">
+              <img src = "images\sponsors\raytheon.png" style="  width: 100%;
+              max-width: 300px;
+              height: auto;
+              padding-left: 5vw;
+              margin-top: 20px;">
+                <img src = "images\sponsors\match.png" style="  width: 100%;
+                max-width: 300px;
+                height: auto;
+                padding-left: 5vw;">
+              </center>
+            </div>
+            
+            <div class = "sponsor">
+                <center>
+                  <img src = "images\sponsors\wolfram.png" style="  width: 100%;
+                  max-width: 400px;
+                  height: auto;
+                  padding-right: 5vw;">
+                    <img src = "images\sponsors\jpmorgan.png" style="  width: 100%;
+                    max-width: 400px;
+                    padding-left: 3vw;">
+                </center>
+            </div>
 
+            <br>
+            <div class = "sponsor">
+              <center>
+                <img src = "images\sponsors\wtc.png" style="  width: 100%;
+                max-width: 400px;
+                padding-right: 3vw;
+                margin-bottom: 0px;">
+              </center>
+            </div>
+          </div>
+        </section>
+
+
+        <footer>
+          <center>
+            <a href="https://www.facebook.com/WEHackUTD/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/wehackutd" class="fa fa-twitter"></a>
+            <a href="mailto:wehackutd@gmail.com" class="fa fa-google"></a>
+            <a href="https://www.instagram.com/wehackutd/" class="fa fa-instagram"></a>
+            <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" style="color: #ffa508;" target="_blank"><p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size: small;">MLH Code of Conduct</p></a>
+          </center>
+        </footer>    
+        
     </body>
 </html>
