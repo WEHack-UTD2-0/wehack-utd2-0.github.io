@@ -12,7 +12,7 @@
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 15px 15px;
+  padding: 20px 20px;
   text-decoration: none;
   font-size: 17px;
   font-family: monospace;
@@ -24,8 +24,8 @@
   background: #5b2e70;
   display: block;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: -15px;
+  top: -10px;
 }
 
 /* Add a grey background color on mouse-over */
