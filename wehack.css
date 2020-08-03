@@ -157,6 +157,15 @@
   line-height: 1.6;
 }
 
+.whyWEHack {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+}
+
 .flex {
   display:flex;
 }
