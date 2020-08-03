@@ -75,6 +75,21 @@
   transition: all 0.2s ease-out 0s;
 }
 
+.h3 {
+  font-size:1.75rem;
+  text-align: center;
+}
+
+.text-center {
+  text-align:center!important;
+}
+
+.col-lg-12 {
+  -ms-flex:0 0 100%;
+  flex:0 0 100%;
+  max-width:100%;
+}
+
 .gradient {
 	display: block;
   position: absolute;
@@ -218,3 +233,248 @@ footer {
 .team-member p {
   margin-top: 0;
 }
+
+#DIV_0 {
+  width: 80%;
+  float: left;
+}
+
+#DIV_1 {
+  height: 125px;
+}
+
+#DIV_2 {
+  height: 15px;
+}
+
+#DIV_3 {
+  float: left;
+  height: 140px;
+  width: 20%;
+}
+
+/*FAQ*/
+.faqdiv {
+  margin: auto;
+  width: 80%;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  margin-bottom:0px;
+  bottom: 0;
+}
+
+
+.faq .card {
+  border: none;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.faq hr {
+  margin: 1.5rem 0;
+}
+
+.faq .card-title {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+}
+
+.faq .card-price {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.faq .card-price .period {
+  font-size: 0.8rem;
+}
+
+.faq ul li {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.faq .text-muted {
+  opacity: 0.7;
+}
+
+.faq .btn {
+  font-size: 80%;
+  border-radius: 0;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  opacity: 0.7;
+  transition: all 0.2s;
+}
+
+
+.our-team-main
+{
+	width:100%;
+	height:28%;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+}
+
+
+.our-team-main img
+{
+	border-radius:20%;
+	margin-bottom:0px;
+	width: 90px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 0px;
+	text-align:left;
+  background:#fff;
+  margin-bottom:0;
+  bottom:0px;
+}
+
+.team-front
+{
+	width:100%;
+	height:100%;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding-bottom: 0px;
+	bottom:0px;
+  transition: all 0.5s ease;
+  margin-bottom:0;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+  .faq .card:hover {
+    margin-top: -.25rem;
+    margin-bottom: .25rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+  }
+  .faq .card:hover .btn {
+    opacity: 1;
+  }
+}
+
+
+.b-sp {
+  padding-bottom: 50px;
+}
+
+/* from bootstrap*/
+.col-lg-4{
+  -ms-flex:0 0 33.333333%;
+  flex:0 0 33.333333%;
+  max-width:33.333333%;
+}
+
+.row {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:-15px;
+  margin-left:-15px;
+}
+
+.container {
+  width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto;
+} 
+  
+  @media (min-width:576px){
+    .container {
+      max-width:540px;
+    }
+    }
+    
+  @media (min-width:768px){
+    .container {
+      max-width:720px;
+    }
+    }
+    
+  @media (min-width:992px){
+    .container {
+      max-width:960px;
+    }
+    }
+    
+  @media (min-width:1200px){
+    .container {
+      max-width:1140px;
+    }
+    }
+
+    .img-fluid {
+      max-width:100%;
+      height:auto;
+    }
+
+    .padding-clear {
+      clear: both;
+      padding: 0;
+    }
+
+    .mx-auto {
+      margin-right:auto!important;
+    }
+
+    .mx-auto {
+      margin-left:auto!important;
+    }
+
+    .rounded-circle {
+      border-radius:50%!important;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
