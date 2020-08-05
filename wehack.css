@@ -213,7 +213,7 @@
 .headshot {
   position: relative;
   display: inline-block;
-  float: left;
+  /* float: left; */
   padding: 10px;
 }
 
