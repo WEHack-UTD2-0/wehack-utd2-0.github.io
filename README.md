@@ -5,4 +5,3 @@
 * The changes to each section can be made in the index.html file
 * The appropriate stylistic classes can be made in the wehack.css files
 * All images are storied under the 'images' folder.
-
