@@ -299,6 +299,51 @@ footer {
   width: 20%;
 }
 
+
+
+
+.accrdion {
+  background-color: #eee;
+  align-items: center;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accrdion:hover {
+  background-color: #5b2e70;
+  color: white;
+}
+
+.accrdion:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  color: rgb(133, 133, 133);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+  color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:white;
+  width: 77.5%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
 /*FAQ*/
 .faqdiv {
   margin: auto;
