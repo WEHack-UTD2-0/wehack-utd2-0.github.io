@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* p {
+  font-size: 1.15em;
+}
+
+/* Standardize heading styles */
+.heading {
+  font-size: 2.5em;
+  font-weight: 600px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #5b2e70;
@@ -48,6 +67,7 @@
 
 .banner img {
   width: 100%;
+  display: block;
   height: auto;
 }
 
@@ -99,7 +119,7 @@
 }
 
 .banner .text-center {
-  text-align:center!important;
+  text-align:center !important;
 }
 
 .banner .col-lg-12 {
@@ -148,26 +168,27 @@
 	}
 }
 
-.about {
+/* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
+.about .contentBx {
   margin: auto;
   width: 80%;
-  padding: 10px;
+  padding: 40px;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
   line-height: 1.6;
 }
-
-.flex {
-  display:flex;
+.about .orgs{
+  display: flex;
 }
 
-.flex div {
-  flex:1;
-  margin:15px; /* need some space ?*/
+.about .orgs div {
+  flex: 1;
+  margin: 15px; /* need some space ?*/
 }
 
-.flex img {
-  width: 100%;
+.about .orgs img {
+  width: 90%;
 }
 
 .videoWrapper {
@@ -185,6 +206,7 @@
   height: 60%;
 }
 
+/* ~~~~~~~~~~~~~~~WHY WEHACK~~~~~~~~~~~~~~~~~ */
 .whyWEHack {
   margin: auto;
   margin-top: -10%;
@@ -192,16 +214,59 @@
   width: 80%;
   padding: 10px;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
 }
+.whyWEHack .imgBox {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+.whyWeHack img {
+  width: 60%;
+  padding: 60px;
+}
+
+/* ~~~~~~~~~~~~~~~CHALLENGE~~~~~~~~~~~~~~~~~ */
+.challenge{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 40px;
+}
+.challenge h1{
+  padding-bottom: 10px;
+}
+.challenge .intro{
+  width: 80%;
+}
+.challenge .intro h2{
+  opacity: 80%;
+  font-size: 1em;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.challenge .content{
+  /* border: 2px solid grey; */
+  padding: 20px;
+  margin: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  /* margin-top: -.25rem; */
+}
+
+/* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsor{
   display: block;
   margin: auto;
   margin-bottom: 0%;
 }
-
+.sponsors p{
+  padding-bottom: 20px;
+}
 
 .container-headshot {
   display: flex;
@@ -356,6 +421,10 @@ footer {
   bottom: 0;
 }
 
+.faq h1{
+  padding-top: 30px;
+}
+
 
 .faq .card {
   border: none;
@@ -403,6 +472,24 @@ footer {
   transition: all 0.2s;
 }
 
+.team{
+  align-items: center;
+  position: relative;
+  text-align: center;
+  padding: 30px;
+}
+
+.team .row {
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+  padding: 40px;
+}
 
 .our-team-main
 {
@@ -433,7 +520,8 @@ footer {
 
 .our-team-main p
 {
-	margin-bottom:0;
+  margin-bottom:0;
+  font-size: 10px;
 }
 
 .team-back
