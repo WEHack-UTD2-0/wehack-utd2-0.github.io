@@ -192,41 +192,42 @@
 }
 
 .videoWrapper {
-  margin: auto;
-  margin-top: 10%;
+  padding: 40px;
+  /* margin: auto; */
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+  width: 100%;
+  height: auto;
 }
 .videoWrapper video {
-  position: absolute;
-  top: 0;
-  left: 20%;
+  position: relative;
   width: 60%;
-  height: 60%;
+  height: auto;
+  left: 20%;
 }
 
 /* ~~~~~~~~~~~~~~~WHY WEHACK~~~~~~~~~~~~~~~~~ */
 .whyWEHack {
-  margin: auto;
-  margin-top: -10%;
-  margin-bottom: 15%;
-  width: 80%;
-  padding: 10px;
-  text-align: center;
-  line-height: 1.6;
+  position: relative;
+  width: 100%;
+  display: flex;
 }
+
+.whyWEHack .contentBox {
+  text-align: left;
+  padding: 100px;
+  padding-top: 150px;
+  width: 50%;
+}
+
 .whyWEHack .imgBox {
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  width: 50%;
 }
 
 .whyWeHack img {
-  width: 60%;
+  width: 90%;
   padding: 60px;
 }
-
 /* ~~~~~~~~~~~~~~~CHALLENGE~~~~~~~~~~~~~~~~~ */
 .challenge{
   text-align: center;
@@ -259,15 +260,34 @@
 }
 
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
-.sponsor{
+.sponsors {
+  padding: 40px;
+}
+
+.sponsors .heading {
+  padding-bottom: 0;
+}
+
+.sponsor {
   display: block;
   margin: auto;
   margin-bottom: 0%;
 }
-.sponsors p{
-  padding-bottom: 20px;
+
+.sponsors img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding-left: 5vw;
+  margin-top: 20px;
+  height: auto;
 }
 
+.sponsor .smaller {
+  max-width: 400px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .container-headshot {
   display: flex;
   align-items: center;
@@ -657,3 +677,35 @@ footer {
       margin-right: auto;
       width: 50%;
     }
+
+    @media (max-width: 991px) {
+      .heading{
+        font-size: 1.5em;
+      }
+      .whyWEHack {
+        text-emphasis: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .whyWEHack .contentBox,
+      .whyWEHack .imgBox {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+        vertical-align: center;
+      }
+      .whyWEHack img {
+        width: 100%;
+        padding: 0;
+      }
+      .sponsors{
+        padding: 10px 0px;
+      }
+      .sponsor{
+        display: block;
+        margin: 10px 10px;
+        margin-bottom: 0%;
+      }
+    }
+    
