@@ -32,7 +32,12 @@
   - The meet the team section will consist of the board of directors leading WEHack every year. This will change per year.
 
 ## Contributors
-#### Fall 2020 Contributors
+#### Summer 2020 Contributors
 * Medha Aiyah
 * Ankita Bantey
 * Sahana Belatur
+#### Fall 2020 Contributors
+* Ankita Bantey
+* Sahana Belatur
+* Neha Rode
+* Mansha Fatima
