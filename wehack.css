@@ -445,6 +445,11 @@ footer {
   padding-top: 30px;
 }
 
+.faq p{
+  padding: 5;
+  margin:  25;
+}
+
 
 .faq .card {
   border: none;
