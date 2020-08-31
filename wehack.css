@@ -5,12 +5,12 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 * p {
   font-size: 1.15em;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 /* Standardize heading styles */
