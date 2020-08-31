@@ -12,7 +12,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script type="text/javascript" src="navbar.js"></script>
-    <script type="text/javascript" src="faq.js"></script>
+    <script type="text/javascript" src="faq.js"></script>   
 
     <!-- Tab icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -29,6 +29,7 @@
 
   <body>
     <!-- Top Navigation Menu -->
+    <section class="home">
     <div class="topnav">
       <a href="#home" class="active"
         ><img src="images\Copy of WEHack Gold Logo-30x30.png" alt="WEHack-logo"
@@ -49,18 +50,83 @@
       </a>
     </div>
 
+    <!--Banner-->
     <div class="banner">
+
+      <!--Background image-->
       <img
-        src="images\bannerheader.jpg"
-        alt=""
+        src="images\WEHack BG.png"
+        class="background"
       />
-      <a href="https://wehackutd.typeform.com/to/jjEnhePI" target="_blank" class="button instagram"
-        ><span class="gradient"></span>Apply Now</a
-      >
+
+      <!--Logo-->
+      <img src = "images\Copy of WEHack Logo.png" class="logo1">
+
+      <!--Heading2 refers to the text and timer on the right side of the banner-->
+      <div class="Heading2" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        <h3 style="text-align:center; color: white; font-size: 90; "><span style="color:#EA931E">WE</span>Hack 2020</h3>
+        <h3 style="color: white;"><span style="color:#EA931E" >WE</span> can transform our dreams into reality</h3>
+        <br><h3 style="text-align: center; color:#EA931E">OCTOBER 10-11, 2020</h3>
+
+        <!--Countdown Timer-->
+        <div class="countdown">
+          <div id="day"></div>
+          <h1 style="color:white">:</h1>
+          <div id="hour"></div>
+          <h1 style="color:white">:</h1>
+          <div id="minute"></div>
+          <h1 style="color:white">:</h1>
+          <div id="second"></div>
+        </div>
+      
+
+      </div>
+
+      
+      <!--Apply now button-->
+      <div class="zoom" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+      <a href="https://wehackutd.typeform.com/to/jjEnhePI" target="_blank" class="button-instagram"
+        ><span class="gradient"></span>Apply Now</a></div>
+
+      
+
+      
       <!-- <Button variant="contained" color="primary" href="#contained-buttons" class="button">
               Link
             </Button> -->
+            
     </div>
+  </section>
+    <!--javascript for timer-->
+    <script type="text/javascript">
+      var countDate = new Date('Oct 10, 2020 00:00:00').getTime();
+
+      function wehackDay(){
+        var now= new Date().getTime();
+        gap = countDate - now;
+         var second = 1000;
+         var minute = second * 60;
+         var hour = minute * 60;
+         var day = hour * 24;
+
+         var d = Math.floor(gap / (day));
+         var h = Math.floor((gap % (day)) / (hour));
+         var m = Math.floor((gap % (hour)) / (minute));
+         var s = Math.floor((gap % (minute)) / (second));
+
+         document.getElementById('day').innerText = d;
+         document.getElementById('hour').innerText = h;
+         document.getElementById('minute').innerText = m;
+         document.getElementById('second').innerText = s;
+
+      }
+
+      setInterval(function(){
+        wehackDay();
+      }, 1000)
+
+    </script>
+
   
    <!-- ABOUT -->
    <section class="about">
@@ -156,53 +222,30 @@
       <br />
       <div class="sponsor">
         <center>
-          <a href="https://www.toyotaofdallas.com/">
-            <img src="images\sponsors\toyota.png"/>
-          </a>
-          <a href="https://www.axxess.com/">
-            <img src="images\sponsors\axxess.png"/>
-          </a>
+          <img src="images\sponsors\toyota.png"/>
+          <img src="images\sponsors\axxess.png"/>
         </center>
       </div>
       <br />
       <div class="sponsor">
         <center>
-          <a href="https://www.celanese.com/">
-            <img src="images\sponsors\celanese.jpg"/>
-          </a>
-          <a href="https://www.rtx.com/?gclid=Cj0KCQjw-af6BRC5ARIsAALPIlW1aVppYhWPBHWkoCsFwKe1f7TlW0mWp_z88PMuS3VNgj14JKIgZPgaAqagEALw_wcB">
-            <img src="images\sponsors\raytheon.png"/>
-          </a>
-          <a href="https://www.match.com/cpx/en-us/landing/display/84123/?CPV4=g&trackingid=525774&bannerid=845948&CPV2=kwd-16253670&CPV5=ad_417730033903&gclid=Cj0KCQjw-af6BRC5ARIsAALPIlXM6yVQOpU6E1Qzf7g-i4xPXVRbhyuYA0-rf_e7ivyxjQIrqswvuQYaAt6xEALw_wcB">
-            <img src="images\sponsors\match.png"/>
-          </a>
+          <img src="images\sponsors\celanese.jpg"/>
+          <img src="images\sponsors\raytheon.png"/>
+          <img src="images\sponsors\match.png"/>
         </center>
       </div>
 
       <div class="sponsor">
         <center>
-          <a href="https://www.wolframalpha.com/">
-            <img class="smaller" src="images\sponsors\wolfram_crop.jpg"/>
-          </a>
-          <a href="https://www.jpmorgan.com/country/US/en/jpmorgan">
-            <img class="smaller" src="images\sponsors\jpmorgan.png"/>
-          </a>
-          <a href="https://www.qorvo.com/design-hub/ebooks/5g-rf-for-dummies?utm_source=google&utm_medium=cpc&obility_id=97745262180&utm_campaign=Brand&utm_term=qorvo&utm_content=421287378228&utm_adgroup=Brand|Exact&gclid=Cj0KCQjw-af6BRC5ARIsAALPIlWzRy1-4a0iJ5dQguw1CSytv64RULyznI9H71kjTm6zWUEHdOMAuGEaAmdHEALw_wcB">
-            <img class="smaller" src="images\sponsors\Qorvo.png"/>
-          </a>
+          <img class="smaller" src="images\sponsors\wolfram_crop.jpg"/>
+          <img class="smaller" src="images\sponsors\jpmorgan.png"/>
         </center>
       </div>
 
       <br />
       <div class="sponsor">
         <center>
-          <a href="https://www.womenstechco.com/">
-            <img src="images\sponsors\wtc.png"/>
-          </a>
-          <a href="https://www.corelogic.com/about-us/contact-us.aspx">
-            <img src="images\sponsors\CoreLogic.jpg"/>
-          </a>
-          
+          <img src="images\sponsors\wtc.png"/>
         </center>
       </div>
   </section>
