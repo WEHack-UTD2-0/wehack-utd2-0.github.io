@@ -5,12 +5,12 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-* p {
-  font-size: 1.15em;
-}
-
 html{
   scroll-behavior: smooth;
+}
+
+* p {
+  font-size: 1.15em;
 }
 
 /* Standardize heading styles */
@@ -266,98 +266,6 @@ html{
 	}
 }
 
-/* ~~~~~~~~~WEHACK EMPOWER SERIES~~~~~~~~~ */
-.empower .contentBox {
-  margin: auto;
-  width: 90%;
-  padding: 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.6;
-}
-
-table.empower {
-  table-layout: auto;
-  width: 100%;
-}
-
-td, th {
-  /*border: 1px solid #dddddd;*/
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #eee;
-}
-
-/* first column */
-td:nth-child(1) {
-  width: 150px;
-  }
-
-/* second column */
-td:nth-child(2) {
-  width: 150px;
-}
-
-/* third column */
-td:nth-child(3) {
-  width: 275px;
- }
-
- /* fourth column */
-td:nth-child(4) {
-  width: 250px;
- }
-
- /* fifth column */
-td:nth-child(5) {
-  width: 550px;
- }
-
-/*stylizing links #BD3381 #5b2e70*/
-a:link {
-  color: #BD3381;
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #5b2e70;
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-/*.empower .table table {
-  border-collapse: collapse;
-  width: 100%
-}
-
-.empower .theader {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-.empower .tbody {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-.empower tbody:nth-child(even) {
-  background-color: #dddddd;
-}*/
-
-
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about .contentBx {
   margin: auto;
@@ -462,24 +370,15 @@ a:active {
   display: block;
   margin: auto;
   margin-bottom: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .sponsors img {
-  display: inline-block;
   width: 100%;
   max-width: 300px;
   height: auto;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 5vw;
   margin-top: 20px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .sponsor .smaller {
@@ -592,7 +491,7 @@ footer {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 80%;
   border: none;
   text-align: left;
   outline: none;
@@ -629,48 +528,14 @@ footer {
 
 
 /*FAQ*/
-
-.column {
-  display: flex;
-  flex: 49%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 50px 50px;
-  padding: 10px;
-  border: 50px;
-}
-
-.smallColumn {
-  display: flex;
-  flex: 2%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 50px 50px;
-  padding: 10px;
-  border: 50px;
-}
-
-/*.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-
-@media screen and (max-width: 1000px) {
-  .column {
-    flex: 100%;
-  }
-}
-
-.faq div {
+.faqdiv {
   margin: auto;
   width: 80%;
   padding: 0px;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
-  /*margin-bottom:0px;*/
-  margin-top: 0px;
+  margin-bottom:0px;
   bottom: 0;
 }
 
@@ -678,10 +543,6 @@ footer {
   padding-top: 30px;
 }
 
-.faq p{
-  padding: 5;
-  margin:  10;
-}
 
 .faq .card {
   border: none;
@@ -852,7 +713,6 @@ footer {
   flex-wrap:wrap;
   margin-right:-15px;
   margin-left:-15px;
-  overflow-y:visible;
 }
 
 .container {
@@ -1066,7 +926,7 @@ footer {
           background-color: #6b0940;
           font-size: 2em; 
           transition: all ease 0.4s;
-          font-weight: 5000;
+         
       
       } 
 
@@ -1181,7 +1041,7 @@ footer {
         background-color: #6b0940;
         font-size: 2em; 
         transition: all ease 0.4s;
-        font-weight: 5000;
+        
         
       } 
         
@@ -1292,7 +1152,7 @@ footer {
         background-color: #6b0940;
         font-size: 2em; 
         transition: all ease 0.4s;
-        font-weight: 5000;
+        
           
       } 
           
@@ -1403,7 +1263,7 @@ footer {
                 background-color: #6b0940;
                 font-size: 2em; 
                 transition: all ease 0.4s;
-                font-weight: 5000;
+                
             
             } 
             
@@ -1518,7 +1378,7 @@ footer {
                   background-color: #6b0940;
                   font-size: 2em; 
                   transition: all ease 0.4s;
-                  font-weight: 5000;
+                  
               
               } 
               
@@ -1633,7 +1493,7 @@ footer {
                     background-color: #6b0940;
                     font-size: 2em; 
                     transition: all ease 0.4s;
-                    font-weight: 5000;
+                    
                 
                 } 
                 
@@ -1748,7 +1608,7 @@ footer {
                       background-color: #6b0940;
                       font-size: 2em; 
                       transition: all ease 0.4s;
-                      font-weight: 5000;
+                      
                   
                   } 
                   
@@ -1863,7 +1723,7 @@ footer {
                         background-color: #6b0940;
                         font-size: 2em; 
                         transition: all ease 0.4s;
-                        font-weight: 5000;
+                        
                     
                     } 
                     
@@ -1978,7 +1838,7 @@ footer {
                           background-color: #6b0940;
                           font-size: 2em; 
                           transition: all ease 0.4s;
-                          font-weight: 5000;
+                          
                       
                       } 
                       
@@ -2093,7 +1953,7 @@ footer {
                             background-color: #6b0940;
                             font-size: 2em; 
                             transition: all ease 0.4s;
-                            font-weight: 5000;
+                            
                         
                         } 
                         
@@ -2208,7 +2068,7 @@ footer {
                               background-color: #6b0940;
                               font-size: 2em; 
                               transition: all ease 0.4s;
-                              font-weight: 5000;
+                              
                           
                           } 
                           
@@ -2325,7 +2185,7 @@ footer {
                             background-color: #6b0940;
                             font-size: 2em; 
                             transition: all ease 0.4s;
-                            font-weight: 5000;
+                            
                         
                         } 
                         
@@ -2440,7 +2300,7 @@ footer {
                               background-color: #6b0940;
                               font-size: 2em; 
                               transition: all ease 0.4s;
-                              font-weight: 5000;
+                              
                           
                           } 
                           
@@ -2555,7 +2415,7 @@ footer {
                                 background-color: #6b0940;
                                 font-size: 2em; 
                                 transition: all ease 0.4s;
-                                font-weight: 5000;
+                                
                             
                             } 
                             
