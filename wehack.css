@@ -1218,9 +1218,9 @@ footer {
       }
       
       .Heading2 .button-instagram {
-              position: absolute;
-              top: 210%;
-              left: 27%;
+        position: absolute;
+        top: 210%;
+        left: 27%;
               background-color: #555;
               color: white;
               /* font-size: 16px; */
