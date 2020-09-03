@@ -932,301 +932,292 @@ footer {
 
       }
 
-      @media (max-width:1099px) and (min-width: 974px){
-        .banner .logo1{
-          position: absolute;
-          width: 35%;
-          height:45%;
-          top: 100px;
-          left: 100px;
-          z-index: 1;
-        }
+    @media (max-width:1099px) and (min-width: 974px){
+      .banner .logo1{
+        position: absolute;
+        width: 35%;
+        height:45%;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+      }
       
-        .Heading2 {
-          position: absolute;
-          top: 120px;
-          right: 100px;
-          font-size: 20px;
-          font-family: "Times New Roman";
-          font-weight: 10px;
-          
-          
-        }
+      .Heading2 {
+      position: absolute;
+        top: 120px;
+        right: 100px;
+        font-size: 20px;
+        font-family: "Times New Roman";
+        font-weight: 10px;
+  
+      }
 
-        .Heading2 h3.topHeading{
+      .Heading2 h3.topHeading{
 
-          font-size: 70px;
-        }
+        font-size: 70px;
+      }
 
       
-        .countdown{
-          position: absolute;
-          top: 150px;
-          right: 10px;
-          display: flex;
-          margin-top: 50px;
+      .countdown{
+        position: absolute;
+        top: 150px;
+        right: 10px;
+        display: flex;
+        margin-top: 50px;
           
-        }
+      }
         
-        .countdown div{
-          position: relative;
-          width: 80px;
-          height: 80px;
-          line-height: 90px;
-          text-align: center;
-          background: #6E1282;
-          color: #fff;
-          margin : 0 10px;
-          font-size: 2.5em;
-          font-weight: 500;
+      .countdown div{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        line-height: 90px;
+        text-align: center;
+        background: #6E1282;
+        color: #fff;
+        margin : 0 10px;
+        font-size: 2.5em;
+        font-weight: 500;
         
-        }
+      }
         
-        .countdown div:before{
-          content:'';
-          position: absolute;
-          bottom: -30px;
-          right: 0;
-          width: 100%;
-          height: 35px;
-          background: #F59B35;
-          color: #76189E;
-          font-size: 0.30em;
-          line-height: 35px;
-          font-weight: 300;
-        }
+      .countdown div:before{
+        content:'';
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        background: #F59B35;
+        color: #76189E;
+        font-size: 0.30em;
+        line-height: 35px;
+        font-weight: 300;
+      }
   
-        .Heading2 .button-instagram {
-          position: absolute;
-          top: 225%;
-          left: 25%;
-          background-color: #555;
-          color: white;
-          /* font-size: 16px; */
-          padding: 24px 24px;
-          border: none;
-          cursor: pointer;
-          border-radius: 5px;
-          text-align: center;
+      .Heading2 .button-instagram {
+        position: absolute;
+        top: 225%;
+        left: 25%;
+        background-color: #555;
+        color: white;
+        /* font-size: 16px; */
+        padding: 24px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
         
-          display: block;
-          width: 200px;
-          height: 40%;
-          max-width: 100%;
-          margin: 0 auto;
-          margin-bottom: 0;
-          overflow: hidden;
-          /* position: relative; */
-          /* transform: translatez(0); */
-          text-decoration: none;
-          box-sizing: border-box;
-          font-size: 1.5em;
-          font-weight: 100;
-          box-shadow: 0 9px 18px rgba(0,0,0,0.2);
-        }
+        display: block;
+        width: 200px;
+        height: 40%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        /* position: relative; */
+        /* transform: translatez(0); */
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 1.5em;
+        font-weight: 100;
+        box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+      }
   
-        .Heading2 .button-instagram {
-          text-align: center;
-          line-height: 50%;
-          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-          border-radius: 50px;
-          padding: 26px;
-          font-weight: 1000;
-          color: white;
-          background: #BD3381;
-          background: linear-gradient(to bottom right, #BD3381,#cc5094);
+      .Heading2 .button-instagram {
+        text-align: center;
+        line-height: 50%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        padding: 26px;
+        font-weight: 1000;
+        color: white;
+        background: #BD3381;
+        background: linear-gradient(to bottom right, #BD3381,#cc5094);
          
-        }
+      }
         
-        .button-instagram:hover{
-            background-color: #6b0940;
-            font-size: 2em; 
-            transition: all ease 0.4s;
-            font-weight: 5000;
+      .button-instagram:hover{
+        background-color: #6b0940;
+        font-size: 2em; 
+        transition: all ease 0.4s;
+        font-weight: 5000;
         
-        } 
+      } 
         
-        }
+    }
 
-        @media (max-width:973px) and (min-width: 880px){
-          .banner .logo1{
-            position: absolute;
-            width: 35%;
-            height:45%;
-            top: 100px;
-            left: 35px;
-            z-index: 1;
-          }
+    @media (max-width:973px) and (min-width: 880px){
+      .banner .logo1{
+        position: absolute;
+        width: 35%;
+        height:45%;
+        top: 100px;
+        left: 35px;
+        z-index: 1;
+      }
         
-          .Heading2 {
-            position: absolute;
-            top: 120px;
-            right: 100px;
-            font-size: 20px;
-            font-weight: 10px;
-            
-            
-          }
+      .Heading2 {
+        position: absolute;
+        top: 120px;
+        right: 100px;
+        font-size: 20px;
+        font-weight: 10px;
+      }
   
-          .Heading2 h3.topHeading{
-  
-            font-size: 65px;
-          }
-  
-        
-          .countdown{
-            position: absolute;
-            top: 150px;
-            right: 10px;
-            display: flex;
-            margin-top: 50px;
-            
-          }
-          
-          .countdown div{
-            position: relative;
-            width: 80px;
-            height: 80px;
-            line-height: 90px;
-            text-align: center;
-            background: #6E1282;
-            color: #fff;
-            margin : 0 10px;
-            font-size: 2.5em;
-            font-weight: 500;
-          
-          }
-          
-          .countdown div:before{
-            content:'';
-            position: absolute;
-            bottom: -30px;
-            right: 0;
-            width: 100%;
-            height: 35px;
-            background: #F59B35;
-            color: #76189E;
-            font-size: 0.30em;
-            line-height: 35px;
-            font-weight: 300;
-          }
-    
-          .Heading2 .button-instagram {
-            position: absolute;
-            top: 225%;
-            left: 25%;
-            background-color: #555;
-            color: white;
-            /* font-size: 16px; */
-            padding: 24px 24px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-          
-            display: block;
-            width: 200px;
-            height: 40%;
-            max-width: 100%;
-            margin: 0 auto;
-            margin-bottom: 0;
-            overflow: hidden;
-            /* position: relative; */
-            /* transform: translatez(0); */
-            text-decoration: none;
-            box-sizing: border-box;
-            font-size: 1.5em;
-            font-weight: 100;
-            box-shadow: 0 9px 18px rgba(0,0,0,0.2);
-          }
-    
-          .Heading2 .button-instagram {
-            text-align: center;
-            line-height: 50%;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            border-radius: 50px;
-            padding: 26px;
-            font-weight: 1000;
-            color: white;
-            background: #BD3381;
-            background: linear-gradient(to bottom right, #BD3381,#cc5094);
-           
-          }
-          
-          .button-instagram:hover{
-              background-color: #6b0940;
-              font-size: 2em; 
-              transition: all ease 0.4s;
-              font-weight: 5000;
-          
-          } 
-          
-          }
-
-          @media (max-width:879px) and (min-width: 760px){
-            .banner .logo1{
-              position: absolute;
-              width: 40%;
-              height:40%;
-              top: 2%;
-              left: 30%;
-              z-index: 1;
-            }
-          
-            .Heading2 {
-              position: absolute;
-              top: 42%;
-              right: 25%;
-              font-size: 20px;
-              font-weight: 10px;
-              
-              
-            }
-    
-            .Heading2 h3.topHeading{
-    
-              font-size: 45px;
-            }
-    
-          
-            .countdown{
-              position: absolute;
-              top: 70%;
-              right: 5%;
-              display: flex;
-              margin-top: 50px;
-              
-            }
-            
-            .countdown div{
-              position: relative;
-              width: 75px;
-              height: 75px;
-              line-height: 90px;
-              text-align: center;
-              background: #6E1282;
-              color: #fff;
-              margin : 0 10px;
-              font-size: 50px;
-              font-weight: 500;
-            
-            }
-            
-            .countdown div:before{
-              content:'';
-              position: absolute;
-              bottom: -30px;
-              right: 0;
-              width: 100%;
-              height: 35px;
-              background: #F59B35;
-              color: #76189E;
-              font-size: 0.30em;
-              line-height: 35px;
-              font-weight: 300;
-            }
+      .Heading2 h3.topHeading{
+        font-size: 65px;
+      }
       
-            .Heading2 .button-instagram {
+      .countdown{
+        position: absolute;
+        top: 150px;
+        right: 10px;
+        display: flex;
+        margin-top: 50px;
+            
+      }
+          
+      .countdown div{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        line-height: 90px;
+        text-align: center;
+        background: #6E1282;
+        color: #fff;
+        margin : 0 10px;
+        font-size: 2.5em;
+        font-weight: 500;
+        
+      }
+          
+      .countdown div:before{
+        content:'';
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        background: #F59B35;
+        color: #76189E;
+        font-size: 0.30em;
+        line-height: 35px;
+        font-weight: 300;
+      }
+    
+      .Heading2 .button-instagram {
+        position: absolute;
+        top: 225%;
+        left: 25%;
+        background-color: #555;
+        color: white;
+        /* font-size: 16px; */
+        padding: 24px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+          
+        display: block;
+        width: 200px;
+        height: 40%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        /* position: relative; */
+        /* transform: translatez(0); */
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 1.5em;
+        font-weight: 100;
+        box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+      }
+    
+      .Heading2 .button-instagram {
+        text-align: center;
+        line-height: 50%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        padding: 26px;
+        font-weight: 1000;
+        color: white;
+        background: #BD3381;
+        background: linear-gradient(to bottom right, #BD3381,#cc5094);
+           
+      }
+          
+      .button-instagram:hover{
+        background-color: #6b0940;
+        font-size: 2em; 
+        transition: all ease 0.4s;
+        font-weight: 5000;
+          
+      } 
+          
+    }
+
+    @media (max-width:879px) and (min-width: 760px){
+      .banner .logo1{
+        position: absolute;
+        width: 40%;
+        height:40%;
+        top: 2%;
+        left: 30%;
+        z-index: 1;
+      }
+          
+      .Heading2 {
+        position: absolute;
+        top: 42%;
+        right: 25%;
+        font-size: 20px;
+        font-weight: 10px;
+      }
+    
+      .Heading2 h3.topHeading{
+        font-size: 45px;
+      }
+    
+      .countdown{
+        position: absolute;
+        top: 70%;
+        right: 5%;
+        display: flex;
+        margin-top: 50px;
+              
+      }
+            
+      .countdown div{
+        position: relative;
+        width: 75px;
+        height: 75px;
+        line-height: 90px;
+        text-align: center;
+        background: #6E1282;
+        color: #fff;
+        margin : 0 10px;
+        font-size: 50px;
+        font-weight: 500;
+            
+      }
+      
+      .countdown div:before{
+        content:'';
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        background: #F59B35;
+        color: #76189E;
+        font-size: 0.30em;
+        line-height: 35px;
+        font-weight: 300;
+      }
+      
+      .Heading2 .button-instagram {
               position: absolute;
               top: 210%;
               left: 27%;
