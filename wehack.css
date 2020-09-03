@@ -205,7 +205,7 @@ html{
     background-color: #6b0940;
     font-size: 110%; 
     transition: all ease 0.4s;
-    font-weight: 5000;
+    
 
 }
 
@@ -921,14 +921,7 @@ footer {
         background: linear-gradient(to bottom right, #BD3381,#cc5094);
        
       }
-      
-      .button-instagram:hover{
-          background-color: #6b0940;
-          font-size: 2em; 
-          transition: all ease 0.4s;
-         
-      
-      } 
+ 
 
       }
 
@@ -1036,14 +1029,7 @@ footer {
         background: linear-gradient(to bottom right, #BD3381,#cc5094);
          
       }
-        
-      .button-instagram:hover{
-        background-color: #6b0940;
-        font-size: 2em; 
-        transition: all ease 0.4s;
-        
-        
-      } 
+
         
     }
 
@@ -1148,13 +1134,6 @@ footer {
            
       }
           
-      .button-instagram:hover{
-        background-color: #6b0940;
-        font-size: 2em; 
-        transition: all ease 0.4s;
-        
-          
-      } 
           
     }
 
@@ -1259,13 +1238,6 @@ footer {
              
             }
             
-            .button-instagram:hover{
-                background-color: #6b0940;
-                font-size: 2em; 
-                transition: all ease 0.4s;
-                
-            
-            } 
             
             }
 
@@ -1374,13 +1346,7 @@ footer {
                
               }
               
-              .button-instagram:hover{
-                  background-color: #6b0940;
-                  font-size: 2em; 
-                  transition: all ease 0.4s;
-                  
-              
-              } 
+            
               
               }
 
@@ -1489,13 +1455,6 @@ footer {
                  
                 }
                 
-                .button-instagram:hover{
-                    background-color: #6b0940;
-                    font-size: 2em; 
-                    transition: all ease 0.4s;
-                    
-                
-                } 
                 
                 }
 
@@ -1603,14 +1562,7 @@ footer {
                     background: linear-gradient(to bottom right, #BD3381,#cc5094);
                    
                   }
-                  
-                  .button-instagram:hover{
-                      background-color: #6b0940;
-                      font-size: 2em; 
-                      transition: all ease 0.4s;
-                      
-                  
-                  } 
+                
                   
                   }
 
@@ -1719,13 +1671,6 @@ footer {
                      
                     }
                     
-                    .button-instagram:hover{
-                        background-color: #6b0940;
-                        font-size: 2em; 
-                        transition: all ease 0.4s;
-                        
-                    
-                    } 
                     
                     }
 
@@ -1833,14 +1778,7 @@ footer {
                         background: linear-gradient(to bottom right, #BD3381,#cc5094);
                        
                       }
-                      
-                      .button-instagram:hover{
-                          background-color: #6b0940;
-                          font-size: 2em; 
-                          transition: all ease 0.4s;
-                          
-                      
-                      } 
+                    
                       
                       }
 
@@ -1949,14 +1887,7 @@ footer {
                          
                         }
                         
-                        .button-instagram:hover{
-                            background-color: #6b0940;
-                            font-size: 2em; 
-                            transition: all ease 0.4s;
-                            
-                        
-                        } 
-                        
+                       
                         }
 
                        @media (max-width:394px) and (min-width: 355px) and (max-height:600px){
@@ -2064,13 +1995,7 @@ footer {
                            
                           }
                           
-                          .button-instagram:hover{
-                              background-color: #6b0940;
-                              font-size: 2em; 
-                              transition: all ease 0.4s;
-                              
-                          
-                          } 
+                         
                           
                           }
 
@@ -2180,14 +2105,7 @@ footer {
                           background: linear-gradient(to bottom right, #BD3381,#cc5094);
                          
                         }
-                        
-                        .button-instagram:hover{
-                            background-color: #6b0940;
-                            font-size: 2em; 
-                            transition: all ease 0.4s;
-                            
-                        
-                        } 
+                       
                         
                         }
 
@@ -2296,13 +2214,7 @@ footer {
                            
                           }
                           
-                          .button-instagram:hover{
-                              background-color: #6b0940;
-                              font-size: 2em; 
-                              transition: all ease 0.4s;
-                              
                           
-                          } 
                           
                           }
 
@@ -2411,13 +2323,7 @@ footer {
                              
                             }
                             
-                            .button-instagram:hover{
-                                background-color: #6b0940;
-                                font-size: 2em; 
-                                transition: all ease 0.4s;
-                                
                             
-                            } 
                             
                             }
 
@@ -2525,14 +2431,7 @@ footer {
                               background: linear-gradient(to bottom right, #BD3381,#cc5094);
                              
                             }
-                            
-                            .button-instagram:hover{
-                                background-color: #6b0940;
-                                font-size: 2em; 
-                                transition: all ease 0.4s;
-                                
-                            
-                            } 
+                             
                             
                             }
     
