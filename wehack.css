@@ -634,9 +634,15 @@ footer {
   line-height: 1.6;
 }
 
-table.empower {
-  table-layout: auto;
-  width: 100%;
+@media screen and (max-width: 640px) {
+  table.empower {
+      overflow-x: auto;
+      display: block;
+      table-layout: auto;
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
 }
 
 td, th {
@@ -652,7 +658,7 @@ tr:nth-child(even) {
 /* first column */
 td:nth-child(1) {
   width: 150px;
-  }
+}
 
 /* second column */
 td:nth-child(2) {
