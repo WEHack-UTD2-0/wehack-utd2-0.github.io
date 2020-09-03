@@ -5,12 +5,12 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-* p {
-  font-size: 1.15em;
-}
-
 html{
   scroll-behavior: smooth;
+}
+
+* p {
+  font-size: 1.15em;
 }
 
 /* Standardize heading styles */
@@ -80,27 +80,32 @@ html{
 
 .banner .logo1 {
   position: absolute;
-  width: 40%;
-  height:65%;
+  width: 35%;
+  height:62%;
   top: 100px;
-  left: 20px;
+  left: 100px;
   z-index: 1;
 }
 
 .Heading2 {
   position: absolute;
   top: 120px;
-  right: 50px;
-  font-size: 35px;
+  right: 100px;
+  font-size: 30px;
   font-family: "Times New Roman";
   font-weight: 10px;
   
 }
 
+.Heading2 h3.topHeading{
+  font-size: 90px;
+}
+
+
 .countdown{
   position: absolute;
   top: 225px;
-  right: 100px;
+  right: 70px;
   display: flex;
   margin-top: 50px;
   
@@ -154,10 +159,10 @@ html{
   
 }
 
-.banner .button-instagram {
+.Heading2 .button-instagram {
   position: absolute;
-  top: 80%;
-  left: 62%;
+  top: 200%;
+  left: 33%;
   background-color: #555;
   color: white;
   /* font-size: 16px; */
@@ -168,8 +173,8 @@ html{
   text-align: center;
 
 	display: block;
-  width: 200px;
-  height: 8%;
+  width: 230px;
+  height: 28%;
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 0;
@@ -178,12 +183,12 @@ html{
   /* transform: translatez(0); */
   text-decoration: none;
   box-sizing: border-box;
-  font-size: 110%;
+  font-size: 90%;
 	font-weight: 100;
 	box-shadow: 0 9px 18px rgba(0,0,0,0.2);
 }
 
-.banner .button-instagram {
+.Heading2 .button-instagram {
   text-align: center;
   line-height: 50%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -198,9 +203,9 @@ html{
 
 .button-instagram:hover{
     background-color: #6b0940;
-    font-size: 20px; 
+    font-size: 110%; 
     transition: all ease 0.4s;
-    font-weight: 5000;
+    
 
 }
 
@@ -260,98 +265,6 @@ html{
 		background: radial-gradient(90px circle at top center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
 	}
 }
-
-/* ~~~~~~~~~WEHACK EMPOWER SERIES~~~~~~~~~ */
-.empower .contentBox {
-  margin: auto;
-  width: 90%;
-  padding: 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.6;
-}
-
-table.empower {
-  table-layout: auto;
-  width: 100%;
-}
-
-td, th {
-  /*border: 1px solid #dddddd;*/
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #eee;
-}
-
-/* first column */
-td:nth-child(1) {
-  width: 150px;
-  }
-
-/* second column */
-td:nth-child(2) {
-  width: 150px;
-}
-
-/* third column */
-td:nth-child(3) {
-  width: 275px;
- }
-
- /* fourth column */
-td:nth-child(4) {
-  width: 250px;
- }
-
- /* fifth column */
-td:nth-child(5) {
-  width: 550px;
- }
-
-/*stylizing links #BD3381 #5b2e70*/
-a:link {
-  color: #BD3381;
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #5b2e70;
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-/*.empower .table table {
-  border-collapse: collapse;
-  width: 100%
-}
-
-.empower .theader {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-.empower .tbody {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-.empower tbody:nth-child(even) {
-  background-color: #dddddd;
-}*/
-
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about .contentBx {
@@ -457,15 +370,9 @@ a:active {
   display: block;
   margin: auto;
   margin-bottom: 2%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .sponsors img {
-  display: inline-block;
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -473,8 +380,6 @@ a:active {
   padding-right: 2vw;
   margin-top: 20px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .sponsor .smaller {
@@ -645,12 +550,6 @@ footer {
   border: 50px;
 }
 
-/*.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}*/
-
 @media screen and (max-width: 1000px) {
   .column {
     flex: 100%;
@@ -723,6 +622,78 @@ footer {
   opacity: 0.7;
   transition: all 0.2s;
 }
+
+/* ~~~~~~~~~WEHACK EMPOWER SERIES~~~~~~~~~ */
+.empower .contentBox {
+  margin: auto;
+  width: 90%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+table.empower {
+  table-layout: auto;
+  width: 100%;
+}
+
+td, th {
+  /*border: 1px solid #dddddd;*/
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* first column */
+td:nth-child(1) {
+  width: 150px;
+  }
+
+/* second column */
+td:nth-child(2) {
+  width: 150px;
+}
+
+/* third column */
+td:nth-child(3) {
+  width: 275px;
+ }
+
+ /* fourth column */
+td:nth-child(4) {
+  width: 250px;
+ }
+
+ /* fifth column */
+td:nth-child(5) {
+  width: 550px;
+ }
+
+/*stylizing links #BD3381 #5b2e70*/
+a:link {
+  color: #BD3381;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5b2e70;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* ~~~~~~~~~MEET THE TEAM~~~~~~~~~ */
 
 .team{
   align-items: center;
@@ -847,7 +818,6 @@ footer {
   flex-wrap:wrap;
   margin-right:-15px;
   margin-left:-15px;
-  overflow-y:visible;
 }
 
 .container {
@@ -862,24 +832,29 @@ footer {
     .container {
       max-width:540px;
     }
+
     }
     
   @media (min-width:768px){
     .container {
       max-width:720px;
     }
+
     }
     
   @media (min-width:992px){
     .container {
       max-width:960px;
     }
+
     }
     
   @media (min-width:1200px){
     .container {
       max-width:1140px;
     }
+
+    
     }
 
     .img-fluid {
@@ -948,4 +923,1620 @@ footer {
         margin-bottom: 0%;
       }
     }
+    
+    @media (min-width: 1100px) and (max-width:1250px){
+      .banner .logo1{
+        position: absolute;
+        width: 35%;
+        height:50%;
+        top: 100px;
+        left: 85px;
+        z-index: 1;
+      }
+    
+      .Heading2 {
+        position: absolute;
+        top: 120px;
+        right: 90px;
+        font-size: 25px;
+        font-family: "Times New Roman";
+        font-weight: 10px;
+        
+      }
+
+      .Heading2 h3.topHeading{
+        font-size: 80px;
+      }
+    
+      .countdown{
+        position: absolute;
+        top: 150px;
+        right: 75px;
+        display: flex;
+        margin-top: 50px;
+        
+      }
+      
+      .countdown div{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        line-height: 90px;
+        text-align: center;
+        background: #6E1282;
+        color: #fff;
+        margin : 0 10px;
+        font-size: 2.5em;
+        font-weight: 500;
+      
+      }
+      
+      .countdown div:before{
+        content:'';
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        background: #F59B35;
+        color: #76189E;
+        font-size: 0.30em;
+        line-height: 35px;
+        font-weight: 300;
+      }
+
+      .Heading2 .button-instagram {
+        position: absolute;
+        top: 180%;
+        left: 28%;
+        background-color: #555;
+        color: white;
+        /* font-size: 16px; */
+        padding: 24px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+      
+        display: block;
+        width: 200px;
+        height: 9%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        /* position: relative; */
+        /* transform: translatez(0); */
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 1em;
+        font-weight: 100;
+        box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+      }
+
+      .Heading2 .button-instagram {
+        text-align: center;
+        line-height: 20%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        padding: 26px;
+        font-weight: 1000;
+        color: white;
+        background: #BD3381;
+        background: linear-gradient(to bottom right, #BD3381,#cc5094);
+       
+      }
+ 
+
+      }
+
+    @media (max-width:1099px) and (min-width: 974px){
+      .banner .logo1{
+        position: absolute;
+        width: 35%;
+        height:45%;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+      }
+      
+      .Heading2 {
+      position: absolute;
+        top: 120px;
+        right: 100px;
+        font-size: 20px;
+        font-family: "Times New Roman";
+        font-weight: 10px;
+  
+      }
+
+      .Heading2 h3.topHeading{
+
+        font-size: 70px;
+      }
+
+      
+      .countdown{
+        position: absolute;
+        top: 150px;
+        right: 10px;
+        display: flex;
+        margin-top: 50px;
+          
+      }
+        
+      .countdown div{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        line-height: 90px;
+        text-align: center;
+        background: #6E1282;
+        color: #fff;
+        margin : 0 10px;
+        font-size: 2.5em;
+        font-weight: 500;
+        
+      }
+        
+      .countdown div:before{
+        content:'';
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        background: #F59B35;
+        color: #76189E;
+        font-size: 0.30em;
+        line-height: 35px;
+        font-weight: 300;
+      }
+  
+      .Heading2 .button-instagram {
+        position: absolute;
+        top: 225%;
+        left: 25%;
+        background-color: #555;
+        color: white;
+        /* font-size: 16px; */
+        padding: 24px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        
+        display: block;
+        width: 200px;
+        height: 40%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        /* position: relative; */
+        /* transform: translatez(0); */
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 1.5em;
+        font-weight: 100;
+        box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+      }
+  
+      .Heading2 .button-instagram {
+        text-align: center;
+        line-height: 50%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        padding: 26px;
+        font-weight: 1000;
+        color: white;
+        background: #BD3381;
+        background: linear-gradient(to bottom right, #BD3381,#cc5094);
+         
+      }
+
+        
+    }
+
+    @media (max-width:973px) and (min-width: 880px){
+      .banner .logo1{
+        position: absolute;
+        width: 35%;
+        height:45%;
+        top: 100px;
+        left: 35px;
+        z-index: 1;
+      }
+        
+      .Heading2 {
+        position: absolute;
+        top: 120px;
+        right: 100px;
+        font-size: 20px;
+        font-weight: 10px;
+      }
+  
+      .Heading2 h3.topHeading{
+        font-size: 65px;
+      }
+      
+      .countdown{
+        position: absolute;
+        top: 150px;
+        right: 10px;
+        display: flex;
+        margin-top: 50px;
+            
+      }
+          
+      .countdown div{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        line-height: 90px;
+        text-align: center;
+        background: #6E1282;
+        color: #fff;
+        margin : 0 10px;
+        font-size: 2.5em;
+        font-weight: 500;
+        
+      }
+          
+      .countdown div:before{
+        content:'';
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        background: #F59B35;
+        color: #76189E;
+        font-size: 0.30em;
+        line-height: 35px;
+        font-weight: 300;
+      }
+    
+      .Heading2 .button-instagram {
+        position: absolute;
+        top: 225%;
+        left: 25%;
+        background-color: #555;
+        color: white;
+        /* font-size: 16px; */
+        padding: 24px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+          
+        display: block;
+        width: 200px;
+        height: 40%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 0;
+        overflow: hidden;
+        /* position: relative; */
+        /* transform: translatez(0); */
+        text-decoration: none;
+        box-sizing: border-box;
+        font-size: 1.5em;
+        font-weight: 100;
+        box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+      }
+    
+      .Heading2 .button-instagram {
+        text-align: center;
+        line-height: 50%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 50px;
+        padding: 26px;
+        font-weight: 1000;
+        color: white;
+        background: #BD3381;
+        background: linear-gradient(to bottom right, #BD3381,#cc5094);
+           
+      }
+          
+          
+    }
+
+    @media (max-width:879px) and (min-width: 760px){
+      .banner .logo1{
+        position: absolute;
+        width: 40%;
+        height:40%;
+        top: 2%;
+        left: 30%;
+        z-index: 1;
+      }
+          
+      .Heading2 {
+        position: absolute;
+        top: 42%;
+        right: 25%;
+        font-size: 20px;
+        font-weight: 10px;
+      }
+    
+      .Heading2 h3.topHeading{
+        font-size: 45px;
+      }
+    
+      .countdown{
+        position: absolute;
+        top: 70%;
+        right: 5%;
+        display: flex;
+        margin-top: 50px;
+              
+      }
+            
+      .countdown div{
+        position: relative;
+        width: 75px;
+        height: 75px;
+        line-height: 90px;
+        text-align: center;
+        background: #6E1282;
+        color: #fff;
+        margin : 0 10px;
+        font-size: 50px;
+        font-weight: 500;
+            
+      }
+      
+      .countdown div:before{
+        content:'';
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        width: 100%;
+        height: 35px;
+        background: #F59B35;
+        color: #76189E;
+        font-size: 0.30em;
+        line-height: 35px;
+        font-weight: 300;
+      }
+      
+      .Heading2 .button-instagram {
+              position: absolute;
+              top: 210%;
+              left: 27%;
+              background-color: #555;
+              color: white;
+              /* font-size: 16px; */
+              padding: 24px 24px;
+              border: none;
+              cursor: pointer;
+              border-radius: 5px;
+              text-align: center;
+            
+              display: block;
+              width: 200px;
+              height: 40%;
+              max-width: 100%;
+              margin: 0 auto;
+              margin-bottom: 0;
+              overflow: hidden;
+              /* position: relative; */
+              /* transform: translatez(0); */
+              text-decoration: none;
+              box-sizing: border-box;
+              font-size: 20px;
+              font-weight: 100;
+              box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+            }
+      
+            .Heading2 .button-instagram {
+              text-align: center;
+              line-height: 50%;
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              border-radius: 50px;
+              padding: 26px;
+              font-weight: 1000;
+              color: white;
+              background: #BD3381;
+              background: linear-gradient(to bottom right, #BD3381,#cc5094);
+             
+            }
+            
+            
+            }
+
+            @media (max-width:759px) and (min-width: 590px) {
+              .banner .logo1{
+                position: absolute;
+                width: 40%;
+                height:35%;
+                top: 4%;
+                left: 30%;
+                z-index: 1;
+              }
+            
+              .Heading2 {
+                position: absolute;
+                top: 42%;
+                right: 25%;
+                font-size: 15px;
+                font-weight: 10px;
+                
+                
+              }
+      
+              .Heading2 h3.topHeading{
+      
+                font-size: 35px;
+              }
+      
+            
+              .countdown{
+                position: absolute;
+                top: 70%;
+                right: 5%;
+                display: flex;
+                margin-top: 50px;
+                
+              }
+              
+              .countdown div{
+                position: relative;
+                width: 60px;
+                height: 60px;
+                line-height: 70px;
+                text-align: center;
+                background: #6E1282;
+                color: #fff;
+                margin : 0 5px;
+                font-size: 45px;
+                font-weight: 500;
+              
+              }
+              
+              .countdown div:before{
+                content:'';
+                position: absolute;
+                bottom: -30px;
+                right: 0;
+                width: 100%;
+                height: 30px;
+                background: #F59B35;
+                color: #76189E;
+                font-size: 0.30em;
+                line-height: 35px;
+                font-weight: 300;
+              }
+        
+              .Heading2 .button-instagram {
+                position: absolute;
+                top: 250%;
+                left: 20%;
+                background-color: #555;
+                color: white;
+                /* font-size: 16px; */
+                padding: 24px 24px;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+                text-align: center;
+              
+                display: block;
+                width: 200px;
+                height: 40%;
+                max-width: 100%;
+                margin: 0 auto;
+                margin-bottom: 0;
+                overflow: hidden;
+                /* position: relative; */
+                /* transform: translatez(0); */
+                text-decoration: none;
+                box-sizing: border-box;
+                font-size: 20px;
+                font-weight: 100;
+                box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+              }
+        
+              .Heading2 .button-instagram {
+                text-align: center;
+                line-height: 50%;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border-radius: 50px;
+                padding: 26px;
+                font-weight: 1000;
+                color: white;
+                background: #BD3381;
+                background: linear-gradient(to bottom right, #BD3381,#cc5094);
+               
+              }
+              
+            
+              
+              }
+
+              @media (max-width:589px) and (min-width: 520px) {
+                .banner .logo1{
+                  position: absolute;
+                  width: 50%;
+                  height:35%;
+                  top: 4%;
+                  left: 25%;
+                  z-index: 1;
+                }
+              
+                .Heading2 {
+                  position: absolute;
+                  top: 42%;
+                  right: 20%;
+                  font-size: 15px;
+                  font-weight: 10px;
+                  
+                  
+                }
+        
+                .Heading2 h3.topHeading{
+        
+                  font-size: 35px;
+                }
+        
+              
+                .countdown{
+                  position: absolute;
+                  top: 70%;
+                  right: 5%;
+                  display: flex;
+                  margin-top: 50px;
+                  
+                }
+                
+                .countdown div{
+                  position: relative;
+                  width: 60px;
+                  height: 60px;
+                  line-height: 70px;
+                  text-align: center;
+                  background: #6E1282;
+                  color: #fff;
+                  margin : 0 5px;
+                  font-size: 45px;
+                  font-weight: 500;
+                
+                }
+                
+                .countdown div:before{
+                  content:'';
+                  position: absolute;
+                  bottom: -30px;
+                  right: 0;
+                  width: 100%;
+                  height: 30px;
+                  background: #F59B35;
+                  color: #76189E;
+                  font-size: 0.30em;
+                  line-height: 35px;
+                  font-weight: 300;
+                }
+          
+                .Heading2 .button-instagram {
+                  position: absolute;
+                  top: 250%;
+                  left: 20%;
+                  background-color: #555;
+                  color: white;
+                  /* font-size: 16px; */
+                  padding: 24px 24px;
+                  border: none;
+                  cursor: pointer;
+                  border-radius: 5px;
+                  text-align: center;
+                
+                  display: block;
+                  width: 200px;
+                  height: 40%;
+                  max-width: 100%;
+                  margin: 0 auto;
+                  margin-bottom: 0;
+                  overflow: hidden;
+                  /* position: relative; */
+                  /* transform: translatez(0); */
+                  text-decoration: none;
+                  box-sizing: border-box;
+                  font-size: 20px;
+                  font-weight: 100;
+                  box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                }
+          
+                .Heading2 .button-instagram {
+                  text-align: center;
+                  line-height: 50%;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                  border-radius: 50px;
+                  padding: 26px;
+                  font-weight: 1000;
+                  color: white;
+                  background: #BD3381;
+                  background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                 
+                }
+                
+                
+                }
+
+                @media (max-width:519px) and (min-width: 472px){
+                  .banner .logo1{
+                    position: absolute;
+                    width: 50%;
+                    height:35%;
+                    top: 4%;
+                    left: 25%;
+                    z-index: 1;
+                  }
+                
+                  .Heading2 {
+                    position: absolute;
+                    top: 42%;
+                    right: 17%;
+                    font-size: 15px;
+                    font-weight: 10px;
+                    
+                    
+                  }
+          
+                  .Heading2 h3.topHeading{
+          
+                    font-size: 35px;
+                  }
+          
+                
+                  .countdown{
+                    position: absolute;
+                    top: 70%;
+                    right: 5%;
+                    display: flex;
+                    margin-top: 50px;
+                    
+                  }
+                  
+                  .countdown div{
+                    position: relative;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 70px;
+                    text-align: center;
+                    background: #6E1282;
+                    color: #fff;
+                    margin : 0 5px;
+                    font-size: 45px;
+                    font-weight: 500;
+                  
+                  }
+                  
+                  .countdown div:before{
+                    content:'';
+                    position: absolute;
+                    bottom: -30px;
+                    right: 0;
+                    width: 100%;
+                    height: 30px;
+                    background: #F59B35;
+                    color: #76189E;
+                    font-size: 0.30em;
+                    line-height: 35px;
+                    font-weight: 300;
+                  }
+            
+                  .Heading2 .button-instagram {
+                    position: absolute;
+                    top: 250%;
+                    left: 20%;
+                    background-color: #555;
+                    color: white;
+                    /* font-size: 16px; */
+                    padding: 24px 24px;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    text-align: center;
+                  
+                    display: block;
+                    width: 200px;
+                    height: 40%;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 0;
+                    overflow: hidden;
+                    /* position: relative; */
+                    /* transform: translatez(0); */
+                    text-decoration: none;
+                    box-sizing: border-box;
+                    font-size: 20px;
+                    font-weight: 100;
+                    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                  }
+            
+                  .Heading2 .button-instagram {
+                    text-align: center;
+                    line-height: 50%;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    border-radius: 50px;
+                    padding: 26px;
+                    font-weight: 1000;
+                    color: white;
+                    background: #BD3381;
+                    background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                   
+                  }
+                
+                  
+                  }
+
+                  @media (max-width:471px) and (min-width:395px){
+                    .banner .logo1{
+                      position: absolute;
+                      width: 60%;
+                      height:35%;
+                      top: 4%;
+                      left: 20%;
+                      z-index: 1;
+                    }
+                  
+                    .Heading2 {
+                      position: absolute;
+                      top: 42%;
+                      right: 10%;
+                      font-size: 15px;
+                      font-weight: 10px;
+                      
+                      
+                    }
+            
+                    .Heading2 h3.topHeading{
+            
+                      font-size: 35px;
+                    }
+            
+                  
+                    .countdown{
+                      position: absolute;
+                      top: 70%;
+                      right: 5%;
+                      display: flex;
+                      margin-top: 50px;
+                      
+                    }
+                    
+                    .countdown div{
+                      position: relative;
+                      width: 60px;
+                      height: 60px;
+                      line-height: 70px;
+                      text-align: center;
+                      background: #6E1282;
+                      color: #fff;
+                      margin : 0 5px;
+                      font-size: 45px;
+                      font-weight: 500;
+                    
+                    }
+                    
+                    .countdown div:before{
+                      content:'';
+                      position: absolute;
+                      bottom: -30px;
+                      right: 0;
+                      width: 100%;
+                      height: 30px;
+                      background: #F59B35;
+                      color: #76189E;
+                      font-size: 0.30em;
+                      line-height: 35px;
+                      font-weight: 300;
+                    }
+              
+                    .Heading2 .button-instagram {
+                      position: absolute;
+                      top: 250%;
+                      left: 20%;
+                      background-color: #555;
+                      color: white;
+                      /* font-size: 16px; */
+                      padding: 24px 24px;
+                      border: none;
+                      cursor: pointer;
+                      border-radius: 5px;
+                      text-align: center;
+                    
+                      display: block;
+                      width: 200px;
+                      height: 40%;
+                      max-width: 100%;
+                      margin: 0 auto;
+                      margin-bottom: 0;
+                      overflow: hidden;
+                      /* position: relative; */
+                      /* transform: translatez(0); */
+                      text-decoration: none;
+                      box-sizing: border-box;
+                      font-size: 20px;
+                      font-weight: 100;
+                      box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                    }
+              
+                    .Heading2 .button-instagram {
+                      text-align: center;
+                      line-height: 50%;
+                      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                      border-radius: 50px;
+                      padding: 26px;
+                      font-weight: 1000;
+                      color: white;
+                      background: #BD3381;
+                      background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                     
+                    }
+                    
+                    
+                    }
+
+                    @media (max-width:394px) and (min-width: 355px){
+                      .banner .logo1{
+                        position: absolute;
+                        width: 60%;
+                        height:35%;
+                        top: 4%;
+                        left: 20%;
+                        z-index: 1;
+                      }
+                    
+                      .Heading2 {
+                        position: absolute;
+                        top: 42%;
+                        right: 13%;
+                        font-size: 12px;
+                        font-weight: 10px;
+                        
+                        
+                      }
+              
+                      .Heading2 h3.topHeading{
+              
+                        font-size: 35px;
+                      }
+              
+                    
+                      .countdown{
+                        position: absolute;
+                        top: 70%;
+                        right: -5%;
+                        display: flex;
+                        margin-top: 50px;
+                        
+                      }
+                      
+                      .countdown div{
+                        position: relative;
+                        width: 60px;
+                        height: 60px;
+                        line-height: 70px;
+                        text-align: center;
+                        background: #6E1282;
+                        color: #fff;
+                        margin : 0 5px;
+                        font-size: 45px;
+                        font-weight: 500;
+                      
+                      }
+                      
+                      .countdown div:before{
+                        content:'';
+                        position: absolute;
+                        bottom: -30px;
+                        right: 0;
+                        width: 100%;
+                        height: 30px;
+                        background: #F59B35;
+                        color: #76189E;
+                        font-size: 0.30em;
+                        line-height: 35px;
+                        font-weight: 300;
+                      }
+                
+                      .Heading2 .button-instagram {
+                        position: absolute;
+                        top: 250%;
+                        left: 21%;
+                        background-color: #555;
+                        color: white;
+                        /* font-size: 16px; */
+                        padding: 24px 24px;
+                        border: none;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        text-align: center;
+                      
+                        display: block;
+                        width: 150px;
+                        height: 40%;
+                        max-width: 100%;
+                        margin: 0 auto;
+                        margin-bottom: 0;
+                        overflow: hidden;
+                        /* position: relative; */
+                        /* transform: translatez(0); */
+                        text-decoration: none;
+                        box-sizing: border-box;
+                        font-size: 17px;
+                        font-weight: 100;
+                        box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                      }
+                
+                      .Heading2 .button-instagram {
+                        text-align: center;
+                        line-height: 50%;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        border-radius: 50px;
+                        padding: 26px;
+                        font-weight: 1000;
+                        color: white;
+                        background: #BD3381;
+                        background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                       
+                      }
+                    
+                      
+                      }
+
+                      @media (max-width:394px) and (min-width: 355px), (max-width:394px) and (min-width: 355px) and (min-height:636px){
+                        .banner .logo1{
+                          position: absolute;
+                          width: 60%;
+                          height:30%;
+                          top: 4%;
+                          left: 20%;
+                          z-index: 1;
+                        }
+                      
+                        .Heading2 {
+                          position: absolute;
+                          top: 35%;
+                          right: 13%;
+                          font-size: 12px;
+                          font-weight: 10px;
+                          
+                          
+                        }
+                
+                        .Heading2 h3.topHeading{
+                
+                          font-size: 35px;
+                        }
+                
+                      
+                        .countdown{
+                          position: absolute;
+                          top: 70%;
+                          right: -5%;
+                          display: flex;
+                          margin-top: 50px;
+                          
+                        }
+                        
+                        .countdown div{
+                          position: relative;
+                          width: 60px;
+                          height: 60px;
+                          line-height: 70px;
+                          text-align: center;
+                          background: #6E1282;
+                          color: #fff;
+                          margin : 0 5px;
+                          font-size: 45px;
+                          font-weight: 500;
+                        
+                        }
+                        
+                        .countdown div:before{
+                          content:'';
+                          position: absolute;
+                          bottom: -30px;
+                          right: 0;
+                          width: 100%;
+                          height: 30px;
+                          background: #F59B35;
+                          color: #76189E;
+                          font-size: 0.30em;
+                          line-height: 35px;
+                          font-weight: 300;
+                        }
+                  
+                        .Heading2 .button-instagram {
+                          position: absolute;
+                          top: 250%;
+                          left: 21%;
+                          background-color: #555;
+                          color: white;
+                          /* font-size: 16px; */
+                          padding: 24px 24px;
+                          border: none;
+                          cursor: pointer;
+                          border-radius: 5px;
+                          text-align: center;
+                        
+                          display: block;
+                          width: 150px;
+                          height: 40%;
+                          max-width: 100%;
+                          margin: 0 auto;
+                          margin-bottom: 0;
+                          overflow: hidden;
+                          /* position: relative; */
+                          /* transform: translatez(0); */
+                          text-decoration: none;
+                          box-sizing: border-box;
+                          font-size: 17px;
+                          font-weight: 100;
+                          box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                        }
+                  
+                        .Heading2 .button-instagram {
+                          text-align: center;
+                          line-height: 50%;
+                          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                          border-radius: 50px;
+                          padding: 26px;
+                          font-weight: 1000;
+                          color: white;
+                          background: #BD3381;
+                          background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                         
+                        }
+                        
+                       
+                        }
+
+                       @media (max-width:394px) and (min-width: 355px) and (max-height:600px){
+                          .banner .logo1{
+                            position: absolute;
+                            width: 50%;
+                            height:20%;
+                            top: 4%;
+                            left: 25%;
+                            z-index: 1;
+                          }
+                        
+                          .Heading2 {
+                            position: absolute;
+                            top: 25%;
+                            right: 12%;
+                            font-size: 12px;
+                            font-weight: 10px;
+                            
+                            
+                          }
+                  
+                          .Heading2 h3.topHeading{
+                  
+                            font-size: 30px;
+                          }
+                  
+                        
+                          .countdown{
+                            position: absolute;
+                            top: 50%;
+                            right: 4%;
+                            display: flex;
+                            margin-top: 50px;
+                            
+                          }
+                          
+                          .countdown div{
+                            position: relative;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            background: #6E1282;
+                            color: #fff;
+                            margin : 0 5px;
+                            font-size: 35px;
+                            font-weight: 500;
+                          
+                          }
+                          
+                          .countdown div:before{
+                            content:'';
+                            position: absolute;
+                            bottom: -20px;
+                            right: 0;
+                            width: 100%;
+                            height: 20px;
+                            background: #F59B35;
+                            color: #76189E;
+                            font-size: 0.30em;
+                            line-height: 20px;
+                            font-weight: 300;
+                          }
+                    
+                          .Heading2 .button-instagram {
+                            position: absolute;
+                            top: 220%;
+                            left: 27%;
+                            background-color: #555;
+                            color: white;
+                            /* font-size: 16px; */
+                            padding: 24px 24px;
+                            border: none;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            text-align: center;
+                          
+                            display: block;
+                            width: 120px;
+                            height: 40%;
+                            max-width: 100%;
+                            margin: 0 auto;
+                            margin-bottom: 0;
+                            overflow: hidden;
+                            /* position: relative; */
+                            /* transform: translatez(0);*/ 
+                            text-decoration: none;
+                            box-sizing: border-box;
+                            font-size: 17px;
+                            font-weight: 100;
+                            box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                          }
+                    
+                          .Heading2 .button-instagram {
+                            text-align: center;
+                            line-height: 50%;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            border-radius: 50px;
+                            padding: 20px;
+                            font-weight: 1000;
+                            color: white;
+                            background: #BD3381;
+                            background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                           
+                          }
+                          
+                         
+                          
+                          }
+
+                        
+
+                      @media (max-width:354px), (max-width:354px) and (max-height: 636px){
+                        .banner .logo1{
+                          position: absolute;
+                          width: 57%;
+                          height:25%;
+                          top: 5%;
+                          left: 22%;
+                          z-index: 1;
+                        }
+                      
+                        .Heading2 {
+                          position: absolute;
+                          top: 40%;
+                          right: 8%;
+                          font-size: 12px;
+                          font-weight: 7px;
+                          
+                          
+                        }
+                
+                        .Heading2 h3.topHeading{
+                
+                          font-size: 28px;
+                        }
+                
+                      
+                        .countdown{
+                          position: absolute;
+                          top: 55%;
+                          right: -5%;
+                          display: flex;
+                          margin-top: 50px;
+                          
+                        }
+                        
+                        .countdown div{
+                          position: relative;
+                          width: 50px;
+                          height: 50px;
+                          line-height: 60px;
+                          text-align: center;
+                          background: #6E1282;
+                          color: #fff;
+                          margin : 0 10px;
+                          font-size: 30px;
+                          font-weight: 500;
+                        
+                        }
+                        
+                        .countdown div:before{
+                          content:'';
+                          position: absolute;
+                          bottom: -20px;
+                          right: 0;
+                          width: 100%;
+                          height: 20px;
+                          background: #F59B35;
+                          color: #76189E;
+                          font-size: 0.30em;
+                          line-height: 20px;
+                          font-weight: 300;
+                        }
+                  
+                        .Heading2 .button-instagram {
+                          position: absolute;
+                          top: 250%;
+                          left: 100%;
+                          background-color: #555;
+                          color: white;
+                          /* font-size: 16px; */
+                          padding: 24px 24px;
+                          border: none;
+                          cursor: pointer;
+                          border-radius: 5px;
+                          text-align: center;
+                        
+                          display: block;
+                          width: 150px;
+                          height: 40%;
+                          max-width: 100%;
+                          margin: 0 auto;
+                          margin-bottom: 0;
+                          overflow: hidden;
+                          /* position: relative; */
+                          /* transform: translatez(0); */
+                          text-decoration: none;
+                          box-sizing: border-box;
+                          font-size: 17px;
+                          font-weight: 100;
+                          box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                        }
+                  
+                        .Heading2 .button-instagram {
+                          text-align: center;
+                          line-height: 30%;
+                          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                          border-radius: 50px;
+                          padding: 26px;
+                          font-weight: 1000;
+                          color: white;
+                          background: #BD3381;
+                          background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                         
+                        }
+                       
+                        
+                        }
+
+                        @media (max-width:354px), (max-width:354px) and (min-height: 636px){
+                          .banner .logo1{
+                            position: absolute;
+                            width: 57%;
+                            height:25%;
+                            top: 4%;
+                            left: 22%;
+                            z-index: 1;
+                          }
+                        
+                          .Heading2 {
+                            position: absolute;
+                            top: 30%;
+                            right: 8%;
+                            font-size: 12px;
+                            font-weight: 7px;
+                            
+                            
+                          }
+                  
+                          .Heading2 h3.topHeading{
+                  
+                            font-size: 28px;
+                          }
+                  
+                        
+                          .countdown{
+                            position: absolute;
+                            top: 55%;
+                            right: -5%;
+                            display: flex;
+                            margin-top: 50px;
+                            
+                          }
+                          
+                          .countdown div{
+                            position: relative;
+                            width: 50px;
+                            height: 50px;
+                            line-height: 60px;
+                            text-align: center;
+                            background: #6E1282;
+                            color: #fff;
+                            margin : 0 10px;
+                            font-size: 30px;
+                            font-weight: 500;
+                          
+                          }
+                          
+                          .countdown div:before{
+                            content:'';
+                            position: absolute;
+                            bottom: -20px;
+                            right: 0;
+                            width: 100%;
+                            height: 20px;
+                            background: #F59B35;
+                            color: #76189E;
+                            font-size: 0.30em;
+                            line-height: 20px;
+                            font-weight: 300;
+                          }
+                    
+                          .Heading2 .button-instagram {
+                            position: absolute;
+                            top: 230%;
+                            left: 21%;
+                            background-color: #555;
+                            color: white;
+                            /* font-size: 16px; */
+                            padding: 24px 24px;
+                            border: none;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            text-align: center;
+                          
+                            display: block;
+                            width: 140px;
+                            height: 20%;
+                            max-width: 100%;
+                            margin: 0 auto;
+                            margin-bottom: 0;
+                            overflow: hidden;
+                            /* position: relative; */
+                            /* transform: translatez(0); */
+                            text-decoration: none;
+                            box-sizing: border-box;
+                            font-size: 17px;
+                            font-weight: 100;
+                            box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                          }
+                    
+                          .Heading2 .button-instagram {
+                            text-align: center;
+                            line-height: 30%;
+                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            border-radius: 50px;
+                            padding: 26px;
+                            font-weight: 1000;
+                            color: white;
+                            background: #BD3381;
+                            background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                           
+                          }
+                          
+                          
+                          
+                          }
+
+                          @media (max-width:354px), (max-width:354px) and (max-height: 474px){
+                            .banner .logo1{
+                              position: absolute;
+                              width: 55%;
+                              height:20%;
+                              top: 2%;
+                              left: 22%;
+                              z-index: 1;
+                            }
+                          
+                            .Heading2 {
+                              position: absolute;
+                              top: 22%;
+                              right: 8%;
+                              font-size: 12px;
+                              font-weight: 7px;
+                              
+                              
+                            }
+                    
+                            .Heading2 h3.topHeading{
+                    
+                              font-size: 20px;
+                            }
+                    
+                          
+                            .countdown{
+                              position: absolute;
+                              top: 55%;
+                              right: -5%;
+                              display: flex;
+                              margin-top: 50px;
+                              
+                            }
+                            
+                            .countdown div{
+                              position: relative;
+                              width: 50px;
+                              height: 50px;
+                              line-height: 60px;
+                              text-align: center;
+                              background: #6E1282;
+                              color: #fff;
+                              margin : 0 10px;
+                              font-size: 30px;
+                              font-weight: 500;
+                            
+                            }
+                            
+                            .countdown div:before{
+                              content:'';
+                              position: absolute;
+                              bottom: -20px;
+                              right: 0;
+                              width: 100%;
+                              height: 20px;
+                              background: #F59B35;
+                              color: #76189E;
+                              font-size: 0.30em;
+                              line-height: 20px;
+                              font-weight: 300;
+                            }
+                      
+                            .Heading2 .button-instagram {
+                              position: absolute;
+                              top: 255%;
+                              left: 21%;
+                              background-color: #555;
+                              color: white;
+                              /* font-size: 16px; */
+                              padding: 24px 24px;
+                              border: none;
+                              cursor: pointer;
+                              border-radius: 5px;
+                              text-align: center;
+                            
+                              display: block;
+                              width: 140px;
+                              height: 20%;
+                              max-width: 100%;
+                              margin: 0 auto;
+                              margin-bottom: 0;
+                              overflow: hidden;
+                              /* position: relative; */
+                              /* transform: translatez(0); */
+                              text-decoration: none;
+                              box-sizing: border-box;
+                              font-size: 17px;
+                              font-weight: 100;
+                              box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                            }
+                      
+                            .Heading2 .button-instagram {
+                              text-align: center;
+                              line-height: 30%;
+                              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                              border-radius: 50px;
+                              padding: 20px;
+                              font-weight: 1000;
+                              color: white;
+                              background: #BD3381;
+                              background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                             
+                            }
+                            
+                            
+                            
+                            }
+
+                          @media (max-width:315px), (max-width:315px) and (min-height: 636px){
+                            .banner .logo1{
+                              position: absolute;
+                              width: 57%;
+                              height:25%;
+                              top: 4%;
+                              left: 22%;
+                              z-index: 1;
+                            }
+                          
+                            .Heading2 {
+                              position: absolute;
+                              top: 30%;
+                              right: 22%;
+                              font-size: 7px;
+                              font-weight: 7px;
+                              
+                              
+                            }
+                    
+                            .Heading2 h3.topHeading{
+                    
+                              font-size: 20px;
+                            }
+                    
+                          
+                            .countdown{
+                              position: absolute;
+                              top: 45%;
+                              right: -17%;
+                              display: flex;
+                              margin-top: 50px;
+                              
+                            }
+                            
+                            .countdown div{
+                              position: relative;
+                              width: 30px;
+                              height: 30px;
+                              line-height: 30px;
+                              text-align: center;
+                              background: #6E1282;
+                              color: #fff;
+                              margin : 0 10px;
+                              font-size: 15px;
+                              font-weight: 500;
+                            
+                            }
+                            
+                            .countdown div:before{
+                              content:'';
+                              position: absolute;
+                              bottom: -10px;
+                              right: 0;
+                              width: 100%;
+                              height: 10px;
+                              background: #F59B35;
+                              color: #76189E;
+                              font-size: 0.30em;
+                              line-height: 10px;
+                              font-weight: 300;
+                            }
+                      
+                            .Heading2 .button-instagram {
+                              position: absolute;
+                              top: 230%;
+                              left: 21%;
+                              background-color: #555;
+                              color: white;
+                              /* font-size: 16px; */
+                              padding: 5px 5px;
+                              border: none;
+                              cursor: pointer;
+                              border-radius: 5px;
+                              text-align: center;
+                            
+                              display: block;
+                              width: 100px;
+                              height: -1%;
+                              max-width: 100%;
+                              margin: 0 auto;
+                              margin-bottom: 0;
+                              overflow: hidden;
+                              /* position: relative; */
+                              /* transform: translatez(0); */
+                              text-decoration: none;
+                              box-sizing: border-box;
+                              font-size: 10px;
+                              font-weight: 100;
+                              box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                            }
+                      
+                            .Heading2 .button-instagram {
+                              text-align: center;
+                              line-height: 10%;
+                              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                              border-radius: 30px;
+                              padding: 15px;
+                              font-weight: 1000;
+                              color: white;
+                              background: #BD3381;
+                              background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                             
+                            }
+                             
+                            
+                            }
     
