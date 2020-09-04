@@ -387,6 +387,38 @@ html{
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
+.partners {
+  padding: 40px;
+}
+
+.partners .heading {
+  padding-bottom: 0;
+}
+
+.partners {
+  display: block;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.partners img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 20px;
+  height: auto;
+}
+
+.partners .smaller {
+  max-width: 400px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .container-headshot {
   display: flex;
   align-items: center;
