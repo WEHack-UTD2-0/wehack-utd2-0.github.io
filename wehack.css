@@ -972,7 +972,9 @@ a:active {
         margin-top: 0px;
       }
       .whyWEHack img {
-        width: 80%;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
       }
       .sponsors .intro{
         padding: 10px 0px;
