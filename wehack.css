@@ -961,14 +961,18 @@ a:active {
       .whyWEHack .contentBox,
       .whyWEHack .imgBox {
         width: 100%;
-        padding: 50px;
-        min-height: 400px;
+        padding: 25px;
         text-align: center;
         vertical-align: center;
       }
+      .whyWEHack .contentBox{
+        padding-bottom: 0px;
+      }
+      .whyWEHack .imgBox{
+        margin-top: 0px;
+      }
       .whyWEHack img {
-        width: 100%;
-        padding: 0;
+        width: 80%;
       }
       .sponsors .intro{
         padding: 10px 0px;
