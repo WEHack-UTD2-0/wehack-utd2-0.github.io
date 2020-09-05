@@ -43,6 +43,9 @@ html{
   font-family: monospace;
   display: block;
 }
+.topnav a::after{
+  display: none;
+}
 
 /* Style the hamburger menu */
 .topnav a.icon {
@@ -84,7 +87,7 @@ html{
 .banner .logo1 {
   position: absolute;
   width: 35%;
-  height: 62%;
+  height: auto;
   top: 100px;
   left: 100px;
   z-index: 1;
