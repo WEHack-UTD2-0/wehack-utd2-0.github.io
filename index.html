@@ -31,34 +31,24 @@
 
   <body>
     <!-- Top Navigation Menu -->
-    <section class="home">
-    <div class="topnav">
-      <a href="#home" class="active" id="homeLink"><img src="images\Copy of WEHack Gold Logo-30x30.png" alt="WEHack-logo"/></a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-        <a href="#about">About</a>
-        <a href="#mission">Our Mission</a>
-        <a href="#theme">Theme</a>
-        <a href="#sponsors">Sponsors</a>
-        <a href="#faq">FAQ</a>
-        <a href="#meettheteam">Meet the Team</a>
-        <a href="#footer">Contact Us</a>
+    <section class="home" id="home">
+      <div class="topnav" id='myTopNav'>
+        <a href="#home" id="homeLink"><img src="images\Copy of WEHack Gold Logo-30x30.png" alt="WEHack-logo"/></a>
+        <!-- Navigation links (hidden by default) -->
+        <div class="links" id="myLinks">
+          <a href="#about">About</a>
+          <a href="#theme">Theme</a>
+          <a href="#sponsors">Sponsors</a>
+          <a href="#faq">FAQ</a>
+          <a href="#meettheteam">Contact Us</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars" style="font-weight: normal;"></i>
+          </a>
+        </div>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars" style="font-weight: normal;"></i>
-      </a>
-    </div>
 
     <!--Banner-->
     <div class="banner">
-
-      <!--Background image-->
-      <img
-        src="images\WEHack BG.png"
-        class="background"
-      />
-
       <!--Logo-->
       <img src = "images\Copy of WEHack Logo.png" class="logo1">
 
@@ -344,7 +334,7 @@
         
         <button class="accrdion">Will hardware be available?</button>
         <div class="panel">
-          <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">We will be providing hardware for you! For hardware projects, please come to ECS West to pick up and drop off supplies.</p>
+          <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">WEHack will not be providing hardware in person, but we encourage you to use online hardware simulators.</p>
         </div>
         
         <button class="accrdion">Is WEHack 2020 virtual?</button>
@@ -562,7 +552,7 @@
       </div>
     </footer>
     
-    <a
+    <!-- <a
       id="mlh-trust-badge"
       style="
         display: block;
@@ -580,6 +570,6 @@
         src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg"
         alt="Major League Hacking 2021 Hackathon Season"
         style="width: 100%;"
-    /></a>
+    /></a> -->
   </body>
 </html>

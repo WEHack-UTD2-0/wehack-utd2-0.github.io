@@ -25,72 +25,61 @@ html{
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
-  background-color: #5b2e70;
-  position: relative;
+  background-color: rgba(69,19,114,1);
+  display: flex;
+  position: absolute;
+  z-index: 4;
 }
-
-/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #homeLink{
+  padding: 20px;
+  padding-right: 0px;
+  position: fixed;
+}
 .topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
+  justify-content: flex-start;
+  display: flex;
   color: white;
-  padding: 20px 20px;
+  text-align: center;
+  padding: 12px 60px;
   text-decoration: none;
   font-size: 17px;
-  font-family: monospace;
-  display: block;
+  z-index: 4;
+}
+.topnav a{
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  color: #ffa508;
+  text-decoration: none;
 }
 .topnav a::after{
   display: none;
 }
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: #5b2e70;
-  display: block;
-  position: absolute;
-  right: -15px;
-  top: -10px;
+.topnav a.active {
+  color: #ffa508;
 }
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #5b2e70;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #5b2e70;
-  color: white;
+.topnav .icon{
+  display: none;
 }
 
 /* ~~~~~~~~~~~~~~~BANNER~~~~~~~~~~~~~~~~~ */
 .banner {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  
-}
-
-.banner .background {
-  width: 100%;
-  display: block;
-  height: 750;
-  z-index: 2;
-  
+  max-width: 100%;  
 }
 
 .banner .logo1 {
   position: absolute;
   width: 35%;
   height: auto;
-  top: 100px;
+  top: 20%;
   left: 100px;
-  z-index: 1;
+  z-index: 4;
   transition: transform 500ms ease-in-out;
 }
 
@@ -105,13 +94,11 @@ html{
   font-size: 30px;
   font-family: "Times New Roman";
   font-weight: 10px;
-  
 }
 
 .Heading2 h3.topHeading{
   font-size: 90px;
 }
-
 
 .countdown{
   position: absolute;
@@ -119,7 +106,6 @@ html{
   right: 70px;
   display: flex;
   margin-top: 50px;
-  
 }
 
 .countdown div{
@@ -133,7 +119,6 @@ html{
   margin : 0 15px;
   font-size: 2em;
   font-weight: 500;
-
 }
 
 .countdown div:before{
@@ -216,8 +201,6 @@ html{
     background-color: #6b0940;
     font-size: 110%; 
     transition: all ease 0.4s;
-    
-
 }
 
 .banner .h3 {
@@ -229,10 +212,16 @@ html{
   text-align:center !important;
 }
 
-.banner .col-lg-12 {
-  -ms-flex:0 0 100%;
-  flex:0 0 100%;
-  max-width:100%;
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: rgb(69,19,114);
+  background: linear-gradient(180deg, rgba(69,19,114,1) 26%, rgba(83,22,115,1) 45%, rgba(94,24,115,1) 58%, rgba(100,25,115,1) 71%, rgba(114,27,116,1) 91%, rgba(124,29,116,1) 99%);
 }
 
 .banner .gradient {
@@ -250,7 +239,6 @@ html{
 	transform: translatex(-140px);
 	animation: 18s linear 0s infinite move;
 }
-
 
 
 @keyframes move {
@@ -689,12 +677,62 @@ footer .text:hover{
 
 @media screen and (max-width: 640px) {
   table.empower {
-      overflow-x: auto;
-      display: block;
-      table-layout: auto;
-      width: 100%;
-      border-collapse: collapse;
-      border-spacing: 0;
+    overflow-x: auto;
+    display: block;
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .topnav{
+    width: 100%;
+    justify-content: flex-end;
+    z-index: 1000;
+  }
+  .topnav #homeLink{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .topnav #myLinks.links{
+    justify-content: flex-end;
+    padding-right: 8px;
+    padding-top: 8px;
+  }
+  .topnav .links a{
+    display: none;
+    width: 100%;
+    padding: 0px;
+  }
+  .topnav .links a.icon {
+    display: flex;
+    justify-self: flex-end;
+  }
+  .banner .logo1 {
+    margin-top: 50px;
+  }
+  .banner .Heading2 {
+    margin-top: 50px;
+  }
+  .topnav #myLinks.links.responsive {
+    display: block;
+    float: none;
+    justify-content: start;
+    width: 100%;
+    z-index: 10000;
+  }
+  .topnav #myLinks.links.responsive a {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav #myLinks.links.responsive a.icon{
+    position: aboslute;
+    width: auto;
+  }
+  .topnav #myLinks.links.responsive i{
+    padding-left: 0px;
   }
 }
 
@@ -996,7 +1034,6 @@ a:active {
         height:50%;
         top: 100px;
         left: 85px;
-        z-index: 1;
         transition: transform 500ms ease-in-out;
       }
       .banner .logo1:focus{
@@ -1106,7 +1143,6 @@ a:active {
         height:45%;
         top: 100px;
         left: 100px;
-        z-index: 1;
         transition: transform 500ms ease-in-out;
       }
       .banner .logo1:focus{
@@ -1218,7 +1254,6 @@ a:active {
         height:45%;
         top: 100px;
         left: 35px;
-        z-index: 1;
         transition: transform 500ms ease-in-out;
       }
       .banner .logo1:focus{
@@ -1326,7 +1361,6 @@ a:active {
         height:40%;
         top: 2%;
         left: 30%;
-        z-index: 1;
         transition: transform 500ms ease-in-out;
       }
       .banner .logo1:focus{
@@ -1429,12 +1463,12 @@ a:active {
 
             @media (max-width:759px) and (min-width: 590px) {
               .banner .logo1{
+                margin-top: 20px;
                 position: absolute;
                 width: 40%;
                 height:35%;
                 top: 4%;
                 left: 30%;
-                z-index: 1;
                 transition: transform 500ms ease-in-out;
               }
               .banner .logo1:focus{
@@ -1547,7 +1581,6 @@ a:active {
                   height:35%;
                   top: 4%;
                   left: 25%;
-                  z-index: 1;
                   transition: transform 500ms ease-in-out;
                 }
                 .banner .logo1:focus{
@@ -1659,7 +1692,6 @@ a:active {
                     height:35%;
                     top: 4%;
                     left: 25%;
-                    z-index: 1;
                     transition: transform 500ms ease-in-out;
                   }
                   .banner .logo1:focus{
@@ -1771,7 +1803,6 @@ a:active {
                       height:35%;
                       top: 4%;
                       left: 20%;
-                      z-index: 1;
                       transition: transform 500ms ease-in-out;
                     }
                     .banner .logo1:focus{
@@ -1883,7 +1914,6 @@ a:active {
                         height:35%;
                         top: 4%;
                         left: 20%;
-                        z-index: 1;
                         transition: transform 500ms ease-in-out;
                       }
                       .banner .logo1:focus{
@@ -1995,7 +2025,6 @@ a:active {
                           height:30%;
                           top: 4%;
                           left: 20%;
-                          z-index: 1;
                           transition: transform 500ms ease-in-out;
                         }
                         .banner .logo1:focus{
@@ -2107,7 +2136,6 @@ a:active {
                             height:20%;
                             top: 4%;
                             left: 25%;
-                            z-index: 1;
                             transition: transform 500ms ease-in-out;
                           }
                           .banner .logo1:focus{
@@ -2222,7 +2250,6 @@ a:active {
                           height:25%;
                           top: 5%;
                           left: 22%;
-                          z-index: 1;
                           transition: transform 500ms ease-in-out;
                         }
                         .banner .logo1:focus{
@@ -2334,7 +2361,6 @@ a:active {
                             height:25%;
                             top: 4%;
                             left: 22%;
-                            z-index: 1;
                             transition: transform 500ms ease-in-out;
                           }
                           .banner .logo1:focus{
@@ -2447,7 +2473,6 @@ a:active {
                               height:20%;
                               top: 2%;
                               left: 22%;
-                              z-index: 1;
                               transition: transform 500ms ease-in-out;
                             }
                             .banner .logo1:focus{
@@ -2560,7 +2585,6 @@ a:active {
                               height:25%;
                               top: 4%;
                               left: 22%;
-                              z-index: 1;
                               transition: transform 500ms ease-in-out;
                             }
                             .banner .logo1:focus{

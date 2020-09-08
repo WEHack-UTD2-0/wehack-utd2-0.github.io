@@ -1,8 +1,8 @@
 function myFunction() {
     var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    if (x.className === "links") {
+      x.className += " responsive";
     } else {
-      x.style.display = "block";
+      x.className = "links";
     }
   }
