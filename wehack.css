@@ -665,9 +665,72 @@ footer .text:hover{
 }
 
 /* ~~~~~~~~~WEHACK EMPOWER SERIES~~~~~~~~~ */
+
+.empower div {
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  /*margin-bottom:0px;*/
+  margin-top: 0px;
+  bottom: 0;
+}
+
+.empower .row {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:-15px;
+  margin-left:-15px;
+}
+
+.empower .accrdion {
+  background-color: #eee;
+  align-items: center;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accrdion:hover {
+  background-color: #5b2e70;
+  color: white;
+}
+
+.accrdion:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  color: rgb(133, 133, 133);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+  color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:white;
+  width: 77.5%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
 .empower .contentBox {
   margin: auto;
-  width: 90%;
+  width: 85%;
   padding: 40px;
   text-align: center;
   display: flex;
@@ -773,7 +836,7 @@ td:nth-child(5) {
 
 /*stylizing links #BD3381 #5b2e70*/
 a:link {
-  color: #BD3381;
+  color: #cc5094;
   text-decoration: none;
 }
 
@@ -782,7 +845,7 @@ a:visited {
 }
 
 a:hover {
-  color: #5b2e70;
+  color: #F59B35;
   text-decoration: underline;
 }
 
