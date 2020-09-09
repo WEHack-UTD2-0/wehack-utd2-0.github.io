@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -22,69 +21,70 @@ html{
   padding-bottom: 10px;
 }
 
-/* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
-  background-color: rgba(69,19,114,1);
-  display: flex;
-  position: absolute;
-  z-index: 4;
+  background-color: #5b2e70;
+  position: relative;
 }
-.topnav #homeLink{
-  padding: 20px;
-  padding-right: 0px;
-  position: fixed;
-}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-  justify-content: flex-start;
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 12px 60px;
-  text-decoration: none;
-  font-size: 17px;
-  z-index: 4;
-}
-.topnav a{
-  color: whitesmoke;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnav a:hover {
-  color: #ffa508;
-  text-decoration: none;
-}
-.topnav a::after{
-  display: none;
-}
-.topnav a.active {
-  color: #ffa508;
-}
-.topnav .icon{
   display: none;
 }
 
-/* ~~~~~~~~~~~~~~~BANNER~~~~~~~~~~~~~~~~~ */
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: monospace;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #5b2e70;
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: -10px;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #5b2e70;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #5b2e70;
+  color: white;
+}
+
 .banner {
   position: relative;
   width: 100%;
-  max-width: 100%;  
+  max-width: 100%;
+  
+}
+
+.banner .background {
+  width: 100%;
+  display: block;
+  height: 750;
+  z-index: 2;
+  
 }
 
 .banner .logo1 {
   position: absolute;
   width: 35%;
-  height: auto;
-  top: 20%;
+  height:62%;
+  top: 100px;
   left: 100px;
-  z-index: 4;
-  transition: transform 500ms ease-in-out;
-}
-
-.banner .logo1:hover{
-  transform: rotate(360deg);
+  z-index: 1;
 }
 
 .Heading2 {
@@ -94,11 +94,13 @@ html{
   font-size: 30px;
   font-family: "Times New Roman";
   font-weight: 10px;
+  
 }
 
 .Heading2 h3.topHeading{
   font-size: 90px;
 }
+
 
 .countdown{
   position: absolute;
@@ -106,6 +108,7 @@ html{
   right: 70px;
   display: flex;
   margin-top: 50px;
+  
 }
 
 .countdown div{
@@ -119,6 +122,7 @@ html{
   margin : 0 15px;
   font-size: 2em;
   font-weight: 500;
+
 }
 
 .countdown div:before{
@@ -201,6 +205,8 @@ html{
     background-color: #6b0940;
     font-size: 110%; 
     transition: all ease 0.4s;
+    
+
 }
 
 .banner .h3 {
@@ -212,16 +218,10 @@ html{
   text-align:center !important;
 }
 
-
-.banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  background: rgb(69,19,114);
-  background: linear-gradient(180deg, rgba(69,19,114,1) 26%, rgba(83,22,115,1) 45%, rgba(94,24,115,1) 58%, rgba(100,25,115,1) 71%, rgba(114,27,116,1) 91%, rgba(124,29,116,1) 99%);
+.banner .col-lg-12 {
+  -ms-flex:0 0 100%;
+  flex:0 0 100%;
+  max-width:100%;
 }
 
 .banner .gradient {
@@ -239,6 +239,7 @@ html{
 	transform: translatex(-140px);
 	animation: 18s linear 0s infinite move;
 }
+
 
 
 @keyframes move {
@@ -375,8 +376,7 @@ html{
   width: 100%;
   max-width: 300px;
   height: auto;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 5vw;
   margin-top: 20px;
   height: auto;
 }
@@ -386,38 +386,6 @@ html{
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-/* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
-.partners {
-  padding: 40px;
-}
-
-.partners .heading {
-  padding-bottom: 0;
-}
-
-.partners {
-  display: block;
-  margin: auto;
-  margin-bottom: 2%;
-}
-
-.partners img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  margin-top: 20px;
-  height: auto;
-}
-
-.partners .smaller {
-  max-width: 400px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 .container-headshot {
   display: flex;
   align-items: center;
@@ -432,57 +400,47 @@ html{
   padding: 10px;
 }
 
-/* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
 footer {
-  padding: 25px 30px;
+  padding: 30px 30px;
   background: #5b2e70;
   color: #ffa508;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
 }
 
-footer .text{
-  color: #ffa508;
-}
-footer .text:hover{
-  color: white;
-}
 .fa {
   padding: 20px;
-  font-size: 20px;
+  font-size: 50px;
+  width: 20px;
   text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
   border-radius: 40%;
   margin: 10 px;
-  color: white;
 }
-.fa::before{
-  color: white;
-}
+
 .fa:hover {
-  opacity: 0.7;
-  background: #ffa508;
-  text-decoration: none;
+    opacity: 0.7;
+    /* background: #ffa508; */
 }
 
 .fa-facebook {
   background: #3B5998;
+  color: white;
 }
 
 .fa-twitter {
   background: #55ACEE;
+  color: white;
 }
 
 .fa-google {
   background: #dd4b39;
+  color: white;
 }
 
 .fa-instagram {
   background: #125688;
+  color: white;
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 
 .team-member {
   margin-bottom: 50px;
@@ -533,7 +491,7 @@ footer .text:hover{
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 80%;
   border: none;
   text-align: left;
   outline: none;
@@ -570,42 +528,14 @@ footer .text:hover{
 
 
 /*FAQ*/
-
-.column {
-  display: flex;
-  flex: 49%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 50px 50px;
-  padding: 10px;
-  border: 50px;
-}
-
-.smallColumn {
-  display: flex;
-  flex: 2%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 50px 50px;
-  padding: 10px;
-  border: 50px;
-}
-
-@media screen and (max-width: 1000px) {
-  .column {
-    flex: 100%;
-  }
-}
-
-.faq div {
+.faqdiv {
   margin: auto;
   width: 80%;
   padding: 0px;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
-  /*margin-bottom:0px;*/
-  margin-top: 0px;
+  margin-bottom:0px;
   bottom: 0;
 }
 
@@ -613,10 +543,6 @@ footer .text:hover{
   padding-top: 30px;
 }
 
-.faq p{
-  padding: 5;
-  margin:  10;
-}
 
 .faq .card {
   border: none;
@@ -663,197 +589,6 @@ footer .text:hover{
   opacity: 0.7;
   transition: all 0.2s;
 }
-
-/* ~~~~~~~~~WEHACK EMPOWER SERIES~~~~~~~~~ */
-
-.empower div {
-  margin: auto;
-  width: 100%;
-  padding: 0px;
-  text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.6;
-  /*margin-bottom:0px;*/
-  margin-top: 0px;
-  bottom: 0;
-}
-
-.empower .row {
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-wrap:wrap;
-  flex-wrap:wrap;
-  margin-right:-15px;
-  margin-left:-15px;
-}
-
-.empower .accrdion {
-  background-color: #eee;
-  align-items: center;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accrdion:hover {
-  background-color: #5b2e70;
-  color: white;
-}
-
-.accrdion:after {
-  content: '\002B'; /* Unicode character for "plus" sign (+) */
-  color: rgb(133, 133, 133);
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212"; /* Unicode character for "minus" sign (-) */
-  color: white;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color:white;
-  width: 77.5%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-.empower .contentBox {
-  margin: auto;
-  width: 85%;
-  padding: 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  line-height: 1.6;
-}
-
-@media screen and (max-width: 640px) {
-  table.empower {
-    overflow-x: auto;
-    display: block;
-    table-layout: auto;
-    width: 100%;
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  .topnav{
-    width: 100%;
-    justify-content: flex-end;
-    z-index: 1000;
-  }
-  .topnav #homeLink{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-  .topnav #myLinks.links{
-    justify-content: flex-end;
-    padding-right: 8px;
-    padding-top: 8px;
-  }
-  .topnav .links a{
-    display: none;
-    width: 100%;
-    padding: 0px;
-  }
-  .topnav .links a.icon {
-    display: flex;
-    justify-self: flex-end;
-  }
-  .banner .logo1 {
-    margin-top: 50px;
-  }
-  .banner .Heading2 {
-    margin-top: 50px;
-  }
-  .topnav #myLinks.links.responsive {
-    display: block;
-    float: none;
-    justify-content: start;
-    width: 100%;
-    z-index: 10000;
-  }
-  .topnav #myLinks.links.responsive a {
-    display: block;
-    padding: 8px;
-    width: 100%;
-    text-align: left;
-  }
-  .topnav #myLinks.links.responsive a.icon{
-    position: aboslute;
-    width: auto;
-  }
-  .topnav #myLinks.links.responsive i{
-    padding-left: 0px;
-  }
-}
-
-td, th {
-  /*border: 1px solid #dddddd;*/
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #eee;
-}
-
-/* first column */
-td:nth-child(1) {
-  width: 150px;
-}
-
-/* second column */
-td:nth-child(2) {
-  width: 150px;
-}
-
-/* third column */
-td:nth-child(3) {
-  width: 275px;
- }
-
- /* fourth column */
-td:nth-child(4) {
-  width: 250px;
- }
-
- /* fifth column */
-td:nth-child(5) {
-  width: 550px;
- }
-
-/*stylizing links #BD3381 #5b2e70*/
-a:link {
-  color: #cc5094;
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  color: #F59B35;
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-/* ~~~~~~~~~MEET THE TEAM~~~~~~~~~ */
 
 .team{
   align-items: center;
@@ -1065,20 +800,14 @@ a:active {
       .whyWEHack .contentBox,
       .whyWEHack .imgBox {
         width: 100%;
-        padding: 25px;
+        padding: 50px;
+        min-height: 400px;
         text-align: center;
         vertical-align: center;
       }
-      .whyWEHack .contentBox{
-        padding-bottom: 0px;
-      }
-      .whyWEHack .imgBox{
-        margin-top: 0px;
-      }
       .whyWEHack img {
-        padding: 0px;
-        margin: 0px;
         width: 100%;
+        padding: 0;
       }
       .sponsors .intro{
         padding: 10px 0px;
@@ -1097,10 +826,7 @@ a:active {
         height:50%;
         top: 100px;
         left: 85px;
-        transition: transform 500ms ease-in-out;
-      }
-      .banner .logo1:focus{
-        transform: rotate(360deg);
+        z-index: 1;
       }
     
       .Heading2 {
@@ -1206,10 +932,7 @@ a:active {
         height:45%;
         top: 100px;
         left: 100px;
-        transition: transform 500ms ease-in-out;
-      }
-      .banner .logo1:focus{
-        transform: rotate(360deg);
+        z-index: 1;
       }
       
       .Heading2 {
@@ -1317,10 +1040,7 @@ a:active {
         height:45%;
         top: 100px;
         left: 35px;
-        transition: transform 500ms ease-in-out;
-      }
-      .banner .logo1:focus{
-        transform: rotate(360deg);
+        z-index: 1;
       }
         
       .Heading2 {
@@ -1424,10 +1144,7 @@ a:active {
         height:40%;
         top: 2%;
         left: 30%;
-        transition: transform 500ms ease-in-out;
-      }
-      .banner .logo1:focus{
-        transform: rotate(360deg);
+        z-index: 1;
       }
           
       .Heading2 {
@@ -1526,16 +1243,12 @@ a:active {
 
             @media (max-width:759px) and (min-width: 590px) {
               .banner .logo1{
-                margin-top: 20px;
                 position: absolute;
                 width: 40%;
                 height:35%;
                 top: 4%;
                 left: 30%;
-                transition: transform 500ms ease-in-out;
-              }
-              .banner .logo1:focus{
-                transform: rotate(360deg);
+                z-index: 1;
               }
             
               .Heading2 {
@@ -1644,10 +1357,7 @@ a:active {
                   height:35%;
                   top: 4%;
                   left: 25%;
-                  transition: transform 500ms ease-in-out;
-                }
-                .banner .logo1:focus{
-                  transform: rotate(360deg);
+                  z-index: 1;
                 }
               
                 .Heading2 {
@@ -1755,10 +1465,7 @@ a:active {
                     height:35%;
                     top: 4%;
                     left: 25%;
-                    transition: transform 500ms ease-in-out;
-                  }
-                  .banner .logo1:focus{
-                    transform: rotate(360deg);
+                    z-index: 1;
                   }
                 
                   .Heading2 {
@@ -1866,10 +1573,7 @@ a:active {
                       height:35%;
                       top: 4%;
                       left: 20%;
-                      transition: transform 500ms ease-in-out;
-                    }
-                    .banner .logo1:focus{
-                      transform: rotate(360deg);
+                      z-index: 1;
                     }
                   
                     .Heading2 {
@@ -1977,10 +1681,7 @@ a:active {
                         height:35%;
                         top: 4%;
                         left: 20%;
-                        transition: transform 500ms ease-in-out;
-                      }
-                      .banner .logo1:focus{
-                        transform: rotate(360deg);
+                        z-index: 1;
                       }
                     
                       .Heading2 {
@@ -2088,10 +1789,7 @@ a:active {
                           height:30%;
                           top: 4%;
                           left: 20%;
-                          transition: transform 500ms ease-in-out;
-                        }
-                        .banner .logo1:focus{
-                          transform: rotate(360deg);
+                          z-index: 1;
                         }
                       
                         .Heading2 {
@@ -2199,10 +1897,7 @@ a:active {
                             height:20%;
                             top: 4%;
                             left: 25%;
-                            transition: transform 500ms ease-in-out;
-                          }
-                          .banner .logo1:focus{
-                            transform: rotate(360deg);
+                            z-index: 1;
                           }
                         
                           .Heading2 {
@@ -2313,10 +2008,7 @@ a:active {
                           height:25%;
                           top: 5%;
                           left: 22%;
-                          transition: transform 500ms ease-in-out;
-                        }
-                        .banner .logo1:focus{
-                          transform: rotate(360deg);
+                          z-index: 1;
                         }
                       
                         .Heading2 {
@@ -2424,10 +2116,7 @@ a:active {
                             height:25%;
                             top: 4%;
                             left: 22%;
-                            transition: transform 500ms ease-in-out;
-                          }
-                          .banner .logo1:focus{
-                            transform: rotate(360deg);
+                            z-index: 1;
                           }
                         
                           .Heading2 {
@@ -2536,10 +2225,7 @@ a:active {
                               height:20%;
                               top: 2%;
                               left: 22%;
-                              transition: transform 500ms ease-in-out;
-                            }
-                            .banner .logo1:focus{
-                              transform: rotate(360deg);
+                              z-index: 1;
                             }
                           
                             .Heading2 {
@@ -2648,10 +2334,7 @@ a:active {
                               height:25%;
                               top: 4%;
                               left: 22%;
-                              transition: transform 500ms ease-in-out;
-                            }
-                            .banner .logo1:focus{
-                              transform: rotate(360deg);
+                              z-index: 1;
                             }
                           
                             .Heading2 {
@@ -2751,8 +2434,8 @@ a:active {
                              
                             
                             }
-
-			@media (min-width:1450px){
+                          
+                            @media (min-width:1450px){
                               .banner .logo1{
                                 position: absolute;
                                 width: 50%;
