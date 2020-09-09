@@ -678,7 +678,7 @@ footer .text:hover{
   bottom: 0;
 }
 
-.empower .row {
+.empower .row2 {
   display:-ms-flexbox;
   display:flex;
   -ms-flex-wrap:wrap;
@@ -687,7 +687,7 @@ footer .text:hover{
   margin-left:-15px;
 }
 
-.empower .accrdion {
+.empower .accrdion2 {
   background-color: #eee;
   align-items: center;
   color: #444;
@@ -701,12 +701,12 @@ footer .text:hover{
   transition: 0.4s;
 }
 
-.active, .accrdion:hover {
+.active, .accrdion2:hover {
   background-color: #5b2e70;
   color: white;
 }
 
-.accrdion:after {
+.accrdion2:after {
   content: '\002B'; /* Unicode character for "plus" sign (+) */
   color: rgb(133, 133, 133);
   font-weight: bold;
@@ -719,7 +719,7 @@ footer .text:hover{
   color: white;
 }
 
-.panel {
+.panel2 {
   padding: 0 18px;
   background-color:white;
   width: 77.5%;
@@ -730,7 +730,7 @@ footer .text:hover{
 
 .empower .contentBox {
   margin: auto;
-  width: 85%;
+  width: 90%;
   padding: 40px;
   text-align: center;
   display: flex;
