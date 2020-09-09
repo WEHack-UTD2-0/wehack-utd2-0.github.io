@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -21,70 +22,69 @@ html{
   padding-bottom: 10px;
 }
 
+/* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
-  background-color: #5b2e70;
-  position: relative;
+  background-color: rgba(69,19,114,1);
+  display: flex;
+  position: absolute;
+  z-index: 4;
 }
-
-/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #homeLink{
+  padding: 20px;
+  padding-right: 0px;
+  position: fixed;
+}
 .topnav #myLinks {
+  justify-content: flex-start;
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 12px 60px;
+  text-decoration: none;
+  font-size: 17px;
+  z-index: 4;
+}
+.topnav a{
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  color: #ffa508;
+  text-decoration: none;
+}
+.topnav a::after{
+  display: none;
+}
+.topnav a.active {
+  color: #ffa508;
+}
+.topnav .icon{
   display: none;
 }
 
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-size: 17px;
-  font-family: monospace;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: #5b2e70;
-  display: block;
-  position: absolute;
-  right: -15px;
-  top: -10px;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #5b2e70;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #5b2e70;
-  color: white;
-}
-
+/* ~~~~~~~~~~~~~~~BANNER~~~~~~~~~~~~~~~~~ */
 .banner {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  
-}
-
-.banner .background {
-  width: 100%;
-  display: block;
-  height: 750;
-  z-index: 2;
-  
+  max-width: 100%;  
 }
 
 .banner .logo1 {
   position: absolute;
   width: 35%;
-  height:62%;
-  top: 100px;
+  height: auto;
+  top: 20%;
   left: 100px;
-  z-index: 1;
+  z-index: 4;
+  transition: transform 500ms ease-in-out;
+}
+
+.banner .logo1:hover{
+  transform: rotate(360deg);
 }
 
 .Heading2 {
@@ -94,13 +94,11 @@ html{
   font-size: 30px;
   font-family: "Times New Roman";
   font-weight: 10px;
-  
 }
 
 .Heading2 h3.topHeading{
   font-size: 90px;
 }
-
 
 .countdown{
   position: absolute;
@@ -108,7 +106,6 @@ html{
   right: 70px;
   display: flex;
   margin-top: 50px;
-  
 }
 
 .countdown div{
@@ -122,7 +119,6 @@ html{
   margin : 0 15px;
   font-size: 2em;
   font-weight: 500;
-
 }
 
 .countdown div:before{
@@ -205,8 +201,6 @@ html{
     background-color: #6b0940;
     font-size: 110%; 
     transition: all ease 0.4s;
-    font-weight: 5000;
-
 }
 
 .banner .h3 {
@@ -218,10 +212,16 @@ html{
   text-align:center !important;
 }
 
-.banner .col-lg-12 {
-  -ms-flex:0 0 100%;
-  flex:0 0 100%;
-  max-width:100%;
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: rgb(69,19,114);
+  background: linear-gradient(180deg, rgba(69,19,114,1) 26%, rgba(83,22,115,1) 45%, rgba(94,24,115,1) 58%, rgba(100,25,115,1) 71%, rgba(114,27,116,1) 91%, rgba(124,29,116,1) 99%);
 }
 
 .banner .gradient {
@@ -239,7 +239,6 @@ html{
 	transform: translatex(-140px);
 	animation: 18s linear 0s infinite move;
 }
-
 
 
 @keyframes move {
@@ -376,7 +375,8 @@ html{
   width: 100%;
   max-width: 300px;
   height: auto;
-  padding-left: 5vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   margin-top: 20px;
   height: auto;
 }
@@ -386,6 +386,38 @@ html{
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
+.partners {
+  padding: 40px;
+}
+
+.partners .heading {
+  padding-bottom: 0;
+}
+
+.partners {
+  display: block;
+  margin: auto;
+  margin-bottom: 2%;
+}
+
+.partners img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 20px;
+  height: auto;
+}
+
+.partners .smaller {
+  max-width: 400px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 .container-headshot {
   display: flex;
   align-items: center;
@@ -400,47 +432,57 @@ html{
   padding: 10px;
 }
 
+/* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
 footer {
-  padding: 30px 30px;
+  padding: 25px 30px;
   background: #5b2e70;
   color: #ffa508;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
+footer .text{
+  color: #ffa508;
+}
+footer .text:hover{
+  color: white;
+}
 .fa {
   padding: 20px;
-  font-size: 50px;
-  width: 20px;
+  font-size: 20px;
   text-align: center;
-  text-decoration: none;
-  margin: 2px 2px;
   border-radius: 40%;
   margin: 10 px;
+  color: white;
 }
-
+.fa::before{
+  color: white;
+}
 .fa:hover {
-    opacity: 0.7;
-    /* background: #ffa508; */
+  opacity: 0.7;
+  background: #ffa508;
+  text-decoration: none;
 }
 
 .fa-facebook {
   background: #3B5998;
-  color: white;
 }
 
 .fa-twitter {
   background: #55ACEE;
-  color: white;
 }
 
 .fa-google {
   background: #dd4b39;
-  color: white;
 }
 
 .fa-instagram {
   background: #125688;
-  color: white;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 
 .team-member {
   margin-bottom: 50px;
@@ -491,7 +533,7 @@ footer {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 80%;
+  width: 100%;
   border: none;
   text-align: left;
   outline: none;
@@ -528,14 +570,42 @@ footer {
 
 
 /*FAQ*/
-.faqdiv {
+
+.column {
+  display: flex;
+  flex: 49%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 50px 50px;
+  padding: 10px;
+  border: 50px;
+}
+
+.smallColumn {
+  display: flex;
+  flex: 2%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 50px 50px;
+  padding: 10px;
+  border: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+.faq div {
   margin: auto;
   width: 80%;
   padding: 0px;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
-  margin-bottom:0px;
+  /*margin-bottom:0px;*/
+  margin-top: 0px;
   bottom: 0;
 }
 
@@ -543,6 +613,10 @@ footer {
   padding-top: 30px;
 }
 
+.faq p{
+  padding: 5;
+  margin:  10;
+}
 
 .faq .card {
   border: none;
@@ -589,6 +663,197 @@ footer {
   opacity: 0.7;
   transition: all 0.2s;
 }
+
+/* ~~~~~~~~~WEHACK EMPOWER SERIES~~~~~~~~~ */
+
+.empower div {
+  margin: auto;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.6;
+  /*margin-bottom:0px;*/
+  margin-top: 0px;
+  bottom: 0;
+}
+
+.empower .row {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:-15px;
+  margin-left:-15px;
+}
+
+.empower .accrdion {
+  background-color: #eee;
+  align-items: center;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accrdion:hover {
+  background-color: #5b2e70;
+  color: white;
+}
+
+.accrdion:after {
+  content: '\002B'; /* Unicode character for "plus" sign (+) */
+  color: rgb(133, 133, 133);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212"; /* Unicode character for "minus" sign (-) */
+  color: white;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color:white;
+  width: 77.5%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.empower .contentBox {
+  margin: auto;
+  width: 85%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 640px) {
+  table.empower {
+    overflow-x: auto;
+    display: block;
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .topnav{
+    width: 100%;
+    justify-content: flex-end;
+    z-index: 1000;
+  }
+  .topnav #homeLink{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .topnav #myLinks.links{
+    justify-content: flex-end;
+    padding-right: 8px;
+    padding-top: 8px;
+  }
+  .topnav .links a{
+    display: none;
+    width: 100%;
+    padding: 0px;
+  }
+  .topnav .links a.icon {
+    display: flex;
+    justify-self: flex-end;
+  }
+  .banner .logo1 {
+    margin-top: 50px;
+  }
+  .banner .Heading2 {
+    margin-top: 50px;
+  }
+  .topnav #myLinks.links.responsive {
+    display: block;
+    float: none;
+    justify-content: start;
+    width: 100%;
+    z-index: 10000;
+  }
+  .topnav #myLinks.links.responsive a {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+  }
+  .topnav #myLinks.links.responsive a.icon{
+    position: aboslute;
+    width: auto;
+  }
+  .topnav #myLinks.links.responsive i{
+    padding-left: 0px;
+  }
+}
+
+td, th {
+  /*border: 1px solid #dddddd;*/
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+/* first column */
+td:nth-child(1) {
+  width: 150px;
+}
+
+/* second column */
+td:nth-child(2) {
+  width: 150px;
+}
+
+/* third column */
+td:nth-child(3) {
+  width: 275px;
+ }
+
+ /* fourth column */
+td:nth-child(4) {
+  width: 250px;
+ }
+
+ /* fifth column */
+td:nth-child(5) {
+  width: 550px;
+ }
+
+/*stylizing links #BD3381 #5b2e70*/
+a:link {
+  color: #cc5094;
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F59B35;
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+/* ~~~~~~~~~MEET THE TEAM~~~~~~~~~ */
 
 .team{
   align-items: center;
@@ -800,14 +1065,20 @@ footer {
       .whyWEHack .contentBox,
       .whyWEHack .imgBox {
         width: 100%;
-        padding: 50px;
-        min-height: 400px;
+        padding: 25px;
         text-align: center;
         vertical-align: center;
       }
+      .whyWEHack .contentBox{
+        padding-bottom: 0px;
+      }
+      .whyWEHack .imgBox{
+        margin-top: 0px;
+      }
       .whyWEHack img {
+        padding: 0px;
+        margin: 0px;
         width: 100%;
-        padding: 0;
       }
       .sponsors .intro{
         padding: 10px 0px;
@@ -826,7 +1097,10 @@ footer {
         height:50%;
         top: 100px;
         left: 85px;
-        z-index: 1;
+        transition: transform 500ms ease-in-out;
+      }
+      .banner .logo1:focus{
+        transform: rotate(360deg);
       }
     
       .Heading2 {
@@ -921,14 +1195,7 @@ footer {
         background: linear-gradient(to bottom right, #BD3381,#cc5094);
        
       }
-      
-      .button-instagram:hover{
-          background-color: #6b0940;
-          font-size: 2em; 
-          transition: all ease 0.4s;
-          font-weight: 5000;
-      
-      } 
+ 
 
       }
 
@@ -939,7 +1206,10 @@ footer {
         height:45%;
         top: 100px;
         left: 100px;
-        z-index: 1;
+        transition: transform 500ms ease-in-out;
+      }
+      .banner .logo1:focus{
+        transform: rotate(360deg);
       }
       
       .Heading2 {
@@ -1036,14 +1306,7 @@ footer {
         background: linear-gradient(to bottom right, #BD3381,#cc5094);
          
       }
-        
-      .button-instagram:hover{
-        background-color: #6b0940;
-        font-size: 2em; 
-        transition: all ease 0.4s;
-        font-weight: 5000;
-        
-      } 
+
         
     }
 
@@ -1054,7 +1317,10 @@ footer {
         height:45%;
         top: 100px;
         left: 35px;
-        z-index: 1;
+        transition: transform 500ms ease-in-out;
+      }
+      .banner .logo1:focus{
+        transform: rotate(360deg);
       }
         
       .Heading2 {
@@ -1148,13 +1414,6 @@ footer {
            
       }
           
-      .button-instagram:hover{
-        background-color: #6b0940;
-        font-size: 2em; 
-        transition: all ease 0.4s;
-        font-weight: 5000;
-          
-      } 
           
     }
 
@@ -1165,7 +1424,10 @@ footer {
         height:40%;
         top: 2%;
         left: 30%;
-        z-index: 1;
+        transition: transform 500ms ease-in-out;
+      }
+      .banner .logo1:focus{
+        transform: rotate(360deg);
       }
           
       .Heading2 {
@@ -1259,24 +1521,21 @@ footer {
              
             }
             
-            .button-instagram:hover{
-                background-color: #6b0940;
-                font-size: 2em; 
-                transition: all ease 0.4s;
-                font-weight: 5000;
-            
-            } 
             
             }
 
             @media (max-width:759px) and (min-width: 590px) {
               .banner .logo1{
+                margin-top: 20px;
                 position: absolute;
                 width: 40%;
                 height:35%;
                 top: 4%;
                 left: 30%;
-                z-index: 1;
+                transition: transform 500ms ease-in-out;
+              }
+              .banner .logo1:focus{
+                transform: rotate(360deg);
               }
             
               .Heading2 {
@@ -1374,13 +1633,7 @@ footer {
                
               }
               
-              .button-instagram:hover{
-                  background-color: #6b0940;
-                  font-size: 2em; 
-                  transition: all ease 0.4s;
-                  font-weight: 5000;
-              
-              } 
+            
               
               }
 
@@ -1391,7 +1644,10 @@ footer {
                   height:35%;
                   top: 4%;
                   left: 25%;
-                  z-index: 1;
+                  transition: transform 500ms ease-in-out;
+                }
+                .banner .logo1:focus{
+                  transform: rotate(360deg);
                 }
               
                 .Heading2 {
@@ -1489,13 +1745,6 @@ footer {
                  
                 }
                 
-                .button-instagram:hover{
-                    background-color: #6b0940;
-                    font-size: 2em; 
-                    transition: all ease 0.4s;
-                    font-weight: 5000;
-                
-                } 
                 
                 }
 
@@ -1506,7 +1755,10 @@ footer {
                     height:35%;
                     top: 4%;
                     left: 25%;
-                    z-index: 1;
+                    transition: transform 500ms ease-in-out;
+                  }
+                  .banner .logo1:focus{
+                    transform: rotate(360deg);
                   }
                 
                   .Heading2 {
@@ -1603,14 +1855,7 @@ footer {
                     background: linear-gradient(to bottom right, #BD3381,#cc5094);
                    
                   }
-                  
-                  .button-instagram:hover{
-                      background-color: #6b0940;
-                      font-size: 2em; 
-                      transition: all ease 0.4s;
-                      font-weight: 5000;
-                  
-                  } 
+                
                   
                   }
 
@@ -1621,7 +1866,10 @@ footer {
                       height:35%;
                       top: 4%;
                       left: 20%;
-                      z-index: 1;
+                      transition: transform 500ms ease-in-out;
+                    }
+                    .banner .logo1:focus{
+                      transform: rotate(360deg);
                     }
                   
                     .Heading2 {
@@ -1719,13 +1967,6 @@ footer {
                      
                     }
                     
-                    .button-instagram:hover{
-                        background-color: #6b0940;
-                        font-size: 2em; 
-                        transition: all ease 0.4s;
-                        font-weight: 5000;
-                    
-                    } 
                     
                     }
 
@@ -1736,7 +1977,10 @@ footer {
                         height:35%;
                         top: 4%;
                         left: 20%;
-                        z-index: 1;
+                        transition: transform 500ms ease-in-out;
+                      }
+                      .banner .logo1:focus{
+                        transform: rotate(360deg);
                       }
                     
                       .Heading2 {
@@ -1833,14 +2077,7 @@ footer {
                         background: linear-gradient(to bottom right, #BD3381,#cc5094);
                        
                       }
-                      
-                      .button-instagram:hover{
-                          background-color: #6b0940;
-                          font-size: 2em; 
-                          transition: all ease 0.4s;
-                          font-weight: 5000;
-                      
-                      } 
+                    
                       
                       }
 
@@ -1851,7 +2088,10 @@ footer {
                           height:30%;
                           top: 4%;
                           left: 20%;
-                          z-index: 1;
+                          transition: transform 500ms ease-in-out;
+                        }
+                        .banner .logo1:focus{
+                          transform: rotate(360deg);
                         }
                       
                         .Heading2 {
@@ -1949,14 +2189,7 @@ footer {
                          
                         }
                         
-                        .button-instagram:hover{
-                            background-color: #6b0940;
-                            font-size: 2em; 
-                            transition: all ease 0.4s;
-                            font-weight: 5000;
-                        
-                        } 
-                        
+                       
                         }
 
                        @media (max-width:394px) and (min-width: 355px) and (max-height:600px){
@@ -1966,7 +2199,10 @@ footer {
                             height:20%;
                             top: 4%;
                             left: 25%;
-                            z-index: 1;
+                            transition: transform 500ms ease-in-out;
+                          }
+                          .banner .logo1:focus{
+                            transform: rotate(360deg);
                           }
                         
                           .Heading2 {
@@ -2064,13 +2300,7 @@ footer {
                            
                           }
                           
-                          .button-instagram:hover{
-                              background-color: #6b0940;
-                              font-size: 2em; 
-                              transition: all ease 0.4s;
-                              font-weight: 5000;
-                          
-                          } 
+                         
                           
                           }
 
@@ -2083,7 +2313,10 @@ footer {
                           height:25%;
                           top: 5%;
                           left: 22%;
-                          z-index: 1;
+                          transition: transform 500ms ease-in-out;
+                        }
+                        .banner .logo1:focus{
+                          transform: rotate(360deg);
                         }
                       
                         .Heading2 {
@@ -2180,14 +2413,7 @@ footer {
                           background: linear-gradient(to bottom right, #BD3381,#cc5094);
                          
                         }
-                        
-                        .button-instagram:hover{
-                            background-color: #6b0940;
-                            font-size: 2em; 
-                            transition: all ease 0.4s;
-                            font-weight: 5000;
-                        
-                        } 
+                       
                         
                         }
 
@@ -2198,7 +2424,10 @@ footer {
                             height:25%;
                             top: 4%;
                             left: 22%;
-                            z-index: 1;
+                            transition: transform 500ms ease-in-out;
+                          }
+                          .banner .logo1:focus{
+                            transform: rotate(360deg);
                           }
                         
                           .Heading2 {
@@ -2296,13 +2525,7 @@ footer {
                            
                           }
                           
-                          .button-instagram:hover{
-                              background-color: #6b0940;
-                              font-size: 2em; 
-                              transition: all ease 0.4s;
-                              font-weight: 5000;
                           
-                          } 
                           
                           }
 
@@ -2313,7 +2536,10 @@ footer {
                               height:20%;
                               top: 2%;
                               left: 22%;
-                              z-index: 1;
+                              transition: transform 500ms ease-in-out;
+                            }
+                            .banner .logo1:focus{
+                              transform: rotate(360deg);
                             }
                           
                             .Heading2 {
@@ -2411,13 +2637,7 @@ footer {
                              
                             }
                             
-                            .button-instagram:hover{
-                                background-color: #6b0940;
-                                font-size: 2em; 
-                                transition: all ease 0.4s;
-                                font-weight: 5000;
                             
-                            } 
                             
                             }
 
@@ -2428,7 +2648,10 @@ footer {
                               height:25%;
                               top: 4%;
                               left: 22%;
-                              z-index: 1;
+                              transition: transform 500ms ease-in-out;
+                            }
+                            .banner .logo1:focus{
+                              transform: rotate(360deg);
                             }
                           
                             .Heading2 {
@@ -2525,14 +2748,113 @@ footer {
                               background: linear-gradient(to bottom right, #BD3381,#cc5094);
                              
                             }
-                            
-                            .button-instagram:hover{
-                                background-color: #6b0940;
-                                font-size: 2em; 
-                                transition: all ease 0.4s;
-                                
-                            
-                            } 
+                             
                             
                             }
+
+			@media (min-width:1450px){
+                              .banner .logo1{
+                                position: absolute;
+                                width: 50%;
+                                height:80%;
+                                top: 50px;
+                                left: 85px;
+                                z-index: 1;
+                              }
+                            
+                              .Heading2 {
+                                position: absolute;
+                                top: 120px;
+                                right: 90px;
+                                font-size: 33px;
+                                font-family: "Times New Roman";
+                                font-weight: 10px;
+                                
+                              }
+                        
+                              .Heading2 h3.topHeading{
+                                font-size: 100px;
+                              }
+                            
+                              .countdown{
+                                position: absolute;
+                                top: 250px;
+                                right: 75px;
+                                display: flex;
+                                margin-top: 50px;
+                                
+                              }
+                              
+                              .countdown div{
+                                position: relative;
+                                width: 100px;
+                                height: 100px;
+                                line-height: 90px;
+                                text-align: center;
+                                background: #6E1282;
+                                color: #fff;
+                                margin : 0 10px;
+                                font-size: 2.5em;
+                                font-weight: 500;
+                              
+                              }
+                              
+                              .countdown div:before{
+                                content:'';
+                                position: absolute;
+                                bottom: -30px;
+                                right: 0;
+                                width: 100%;
+                                height: 40px;
+                                background: #F59B35;
+                                color: #76189E;
+                                font-size: 0.30em;
+                                line-height: 35px;
+                                font-weight: 300;
+                              }
+                        
+                              .Heading2 .button-instagram {
+                                position: absolute;
+                                top: 200%;
+                                left: 35%;
+                                background-color: #555;
+                                color: white;
+                                /* font-size: 16px; */
+                                padding: 24px 24px;
+                                border: none;
+                                cursor: pointer;
+                                border-radius: 5px;
+                                text-align: center;
+                              
+                                display: block;
+                                width: 200px;
+                                height: 25%;
+                                max-width: 100%;
+                                margin: 0 auto;
+                                margin-bottom: 0;
+                                overflow: hidden;
+                                /* position: relative; */
+                                /* transform: translatez(0); */
+                                text-decoration: none;
+                                box-sizing: border-box;
+                                font-size: 1em;
+                                font-weight: 100;
+                                box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+                              }
+                        
+                              .Heading2 .button-instagram {
+                                text-align: center;
+                                line-height: 20%;
+                                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                                border-radius: 50px;
+                                padding: 26px;
+                                font-weight: 1000;
+                                color: white;
+                                background: #BD3381;
+                                background: linear-gradient(to bottom right, #BD3381,#cc5094);
+                               
+                              }
+                               
+                              
+                              }
     
