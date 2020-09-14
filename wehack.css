@@ -94,6 +94,9 @@ html{
   font-size: 30px;
   font-family: "Times New Roman";
   font-weight: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .Heading2 h3.topHeading{
@@ -161,7 +164,6 @@ html{
   left: 33%;
   background-color: #555;
   color: white;
-  /* font-size: 16px; */
   padding: 12px 24px;
   border: none;
   cursor: pointer;
@@ -175,8 +177,6 @@ html{
   margin: 0 auto;
   margin-bottom: 0;
   overflow: hidden;
-  /* position: relative; */
-  /* transform: translatez(0); */
   text-decoration: none;
   box-sizing: border-box;
   font-size: 90%;
@@ -194,13 +194,26 @@ html{
   color: white;
   background: #BD3381;
   background: linear-gradient(to bottom right, #BD3381,#cc5094);
- 
 }
 
 .button-instagram:hover{
     background-color: #6b0940;
     font-size: 110%; 
     transition: all ease 0.4s;
+}
+
+.Heading2 .mentor-link{
+  position: absolute;
+  top: 236%;
+  left: 39%;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+}
+.Heading2 .mentor-link:hover{
+  color: #ffa508;
 }
 
 .banner .h3 {
@@ -776,7 +789,7 @@ footer .text:hover{
   }
   .banner .Heading2 {
     margin-top: 50px;
-  }
+  } 
   .topnav #myLinks.links.responsive {
     display: block;
     float: none;
@@ -1195,8 +1208,10 @@ a:active {
         background: linear-gradient(to bottom right, #BD3381,#cc5094);
        
       }
- 
-
+      .Heading2 .mentor-link{
+        top: 212%;
+        left: 33%;
+      }  
       }
 
     @media (max-width:1099px) and (min-width: 974px){
@@ -1306,7 +1321,10 @@ a:active {
         background: linear-gradient(to bottom right, #BD3381,#cc5094);
          
       }
-
+      .Heading2 .mentor-link{
+        padding-top: 14%;
+        left: 30%;
+      }  
         
     }
 
@@ -1413,7 +1431,10 @@ a:active {
         background: linear-gradient(to bottom right, #BD3381,#cc5094);
            
       }
-          
+      .Heading2 .mentor-link{
+        top: 267%;
+        left: 30%;
+      }  
           
     }
 
@@ -1521,6 +1542,10 @@ a:active {
              
             }
             
+            .Heading2 .mentor-link{
+              top: 248%;
+              left: 32%;
+            }              
             
             }
 
@@ -1632,6 +1657,10 @@ a:active {
                 background: linear-gradient(to bottom right, #BD3381,#cc5094);
                
               }
+              .Heading2 .mentor-link{
+                top: 295%;
+                left: 24%;
+              }  
               
             
               
@@ -1744,7 +1773,10 @@ a:active {
                   background: linear-gradient(to bottom right, #BD3381,#cc5094);
                  
                 }
-                
+                .Heading2 .mentor-link{
+                  top: 295%;
+                  left: 24%;
+                }  
                 
                 }
 
@@ -1855,6 +1887,11 @@ a:active {
                     background: linear-gradient(to bottom right, #BD3381,#cc5094);
                    
                   }
+                  .Heading2 .mentor-link{
+                    top: 295%;
+                    left: 24%;
+                  }  
+
                 
                   
                   }
@@ -1966,6 +2003,10 @@ a:active {
                       background: linear-gradient(to bottom right, #BD3381,#cc5094);
                      
                     }
+                    .Heading2 .mentor-link{
+                      top: 295%;
+                      left: 24%;
+                    }  
                     
                     
                     }
@@ -2077,7 +2118,10 @@ a:active {
                         background: linear-gradient(to bottom right, #BD3381,#cc5094);
                        
                       }
-                    
+                      .Heading2 .mentor-link{
+                        top: 295%;
+                        left: 25%;
+                      }  
                       
                       }
 
@@ -2188,6 +2232,10 @@ a:active {
                           background: linear-gradient(to bottom right, #BD3381,#cc5094);
                          
                         }
+                        .Heading2 .mentor-link{
+                          top: 295%;
+                          left: 25%;
+                        }  
                         
                        
                         }
@@ -2299,7 +2347,10 @@ a:active {
                             background: linear-gradient(to bottom right, #BD3381,#cc5094);
                            
                           }
-                          
+                          .Heading2 .mentor-link{
+                            top: 260%;
+                            left: 32%;
+                          }  
                          
                           
                           }
@@ -2413,7 +2464,10 @@ a:active {
                           background: linear-gradient(to bottom right, #BD3381,#cc5094);
                          
                         }
-                       
+                        .Heading2 .mentor-link{
+                          top: 295%;
+                          left: 118%;
+                        }  
                         
                         }
 
@@ -2524,7 +2578,10 @@ a:active {
                             background: linear-gradient(to bottom right, #BD3381,#cc5094);
                            
                           }
-                          
+                          .Heading2 .mentor-link{
+                            top: 271%;
+                            left: 25%;
+                          }  
                           
                           
                           }
@@ -2636,7 +2693,10 @@ a:active {
                               background: linear-gradient(to bottom right, #BD3381,#cc5094);
                              
                             }
-                            
+                            .Heading2 .mentor-link{
+                              top: 301%;
+                              left: 25%;
+                            }  
                             
                             
                             }
@@ -2748,7 +2808,10 @@ a:active {
                               background: linear-gradient(to bottom right, #BD3381,#cc5094);
                              
                             }
-                             
+                            .Heading2 .mentor-link{
+                              top: 271%;
+                              left: 25%;
+                            }  
                             
                             }
 
@@ -2854,6 +2917,10 @@ a:active {
                                 background: linear-gradient(to bottom right, #BD3381,#cc5094);
                                
                               }
+                              .Heading2 .mentor-link{
+                                top: 236%;
+                                left: 278%;
+                              }  
                                
                               
                               }
