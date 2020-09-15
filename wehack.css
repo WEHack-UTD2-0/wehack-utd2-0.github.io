@@ -1017,7 +1017,7 @@ a:active {
   width: 50%;
 }
 /* desktop responsiveness*/
-@media (min-width: 1024px){
+@media (min-width: 1920px){
   .banner .Heading2{
     font-size: 3.5em;
   }
