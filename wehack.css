@@ -1016,41 +1016,8 @@ a:active {
   margin-right: auto;
   width: 50%;
 }
-/* desktop responsiveness*/
-@media (min-width: 1920px){
-  .banner .Heading2{
-    font-size: 3.5em;
-  }
-  .banner .Heading2 h3.topHeading{
-    font-size: 2.5em;
-  }
-  .banner .countdown{
-    margin: 25px;
-    margin-bottom: 100px;
-  }
-  .banner .countdown div{
-    width: 180px;
-    height: 180px;
-    line-height: 150px;
-    font-size: 2em;
-  }
-  .banner .countdown div:before{
-    height: 60px;
-    line-height: 60px;
-    font-size: 40px;
-  }
-  .banner .button-instagram{
-    padding: 32px;
-    width: 520px;
-    font-size: 1.25em;
-    margin: 15 auto;
-  }
-  .banner .mentor-link{
-    font-size: 0.7em;
-  }
-}
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
   .heading{
     font-size: 1.5em;
   }
@@ -1082,7 +1049,7 @@ a:active {
   }
   .banner .countdown{
     margin: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .banner .countdown div{
     width: 70px;
@@ -1095,6 +1062,11 @@ a:active {
   }
   .Heading2 h3.topHeading{
     font-size: 50px;
+  }
+  .banner .button-instagram{
+    padding: 20px;
+    width: 190px;
+    font-size: 22px;
   }
   .whyWEHack {
     text-emphasis: center;
@@ -1162,3 +1134,36 @@ a:active {
   }
 }
     
+/* desktop responsiveness*/
+@media (min-width: 1920px){
+  .banner .Heading2{
+    font-size: 3em;
+  }
+  .banner .Heading2 h3.topHeading{
+    font-size: 2em;
+  }
+  .banner .countdown{
+    margin: 20px;
+    margin-bottom: 80px;
+  }
+  .banner .countdown div{
+    width: 150px;
+    height: 150px;
+    line-height: 130px;
+    font-size: 1.5em;
+  }
+  .banner .countdown div:before{
+    height: 50px;
+    line-height: 50px;
+    font-size: 35px;
+  }
+  .banner .button-instagram{
+    padding: 30px;
+    width: 500px;
+    font-size: 1em;
+    margin: 5 auto;
+  }
+  .banner .mentor-link{
+    font-size: 0.5em;
+  }
+}
