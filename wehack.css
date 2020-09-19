@@ -382,6 +382,15 @@ html{
   max-width: 400px;
 }
 
+.partners .shrink {
+  width: 100%;
+  height: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-top: 20px;
+  max-width: 250px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 .container-headshot {
