@@ -277,8 +277,8 @@ html{
 }
 
 .schedule img {
-  width: 100%;
-  max-width: 650px;
+  width: 60%;
+  max-width: 550px;
   height: auto;
   padding-left: 2vw;
   padding-right: 2vw;
@@ -287,12 +287,12 @@ html{
 }
 
 .schedule .shrink {
-  width: 100%;
+  width: 60%;
   height: auto;
   padding-left: 2vw;
   padding-right: 2vw;
   margin-top: 20px; 
-  max-width: 500px;
+  max-width: 400px;
 }
 
 /* ~~~~~~~~~~~~~~~WHY WEHACK~~~~~~~~~~~~~~~~~ */
