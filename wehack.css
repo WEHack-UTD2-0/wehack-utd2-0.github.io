@@ -351,11 +351,13 @@ html{
 
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
+  color: white;
   background: rgb(27, 73, 101);
   padding: 40px;
 }
 
 .sponsors .heading { 
+  color: white;
   padding-bottom: 0;
 }
 
