@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: #1B4965;
   box-sizing: border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -16,6 +17,10 @@ html{
 
 /* Standardize heading styles */
 .heading {
+  margin-left: 135px;
+  text-align: left;
+  color: #FFFFFF;
+  background-color: #1B4965;
   font-size: 2.5em;
   font-weight: 600px;
   margin-bottom: 10px;
@@ -529,27 +534,27 @@ footer .text:hover{
 
 
 .accrdion {
-  background-color: #eee;
+  background-color:#1B4965;
   align-items: center;
-  color: #444;
+  color:#FFFFFF;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 16px;
   transition: 0.4s;
 }
 
 .active, .accrdion:hover {
-  background-color: #5b2e70;
-  color: white;
+ /* background-color: #5b2e70; 
+  color: white; */
 }
 
 .accrdion:after {
   content: '\002B'; /* Unicode character for "plus" sign (+) */
-  color: rgb(133, 133, 133);
+  color:#FFFFFF;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -557,12 +562,13 @@ footer .text:hover{
 
 .active:after {
   content: "\2212"; /* Unicode character for "minus" sign (-) */
-  color: white;
+  color: #FFFFFF;
 }
 
 .panel {
   padding: 0 18px;
-  background-color:white;
+  background-color: #1B4965;
+  color:#FFFFFF;
   width: 77.5%;
   max-height: 0;
   overflow: hidden;
@@ -577,9 +583,9 @@ footer .text:hover{
   flex: 49%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 50px 50px;
+  margin: 50px 50px; 
   padding: 10px;
-  border: 50px;
+  border: 50px; 
 }
 
 .smallColumn {
@@ -602,11 +608,12 @@ footer .text:hover{
   margin: auto;
   width: 80%;
   padding: 0px;
-  text-align: center;
+  text-align: left;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.6;
   /*margin-bottom:0px;*/
   margin-top: 0px;
+  font-size: 14;
   bottom: 0;
 }
 
@@ -703,8 +710,8 @@ footer .text:hover{
 }
 
 .active, .accrdion2:hover {
-  background-color: #5b2e70;
-  color: white;
+ /* background-color: #5b2e70;
+  color: white; */
 }
 
 .accrdion2:after {
