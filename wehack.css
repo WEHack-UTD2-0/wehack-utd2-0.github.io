@@ -22,6 +22,34 @@ html{
   padding-bottom: 10px;
 }
 
+.heading-2 {
+  font-size: 2.0em;
+  font-weight: 500px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.heading-3 {
+  font-size: 1.6em;
+  font-weight: 400px;
+  /*margin-bottom: 8px;
+  padding-bottom: 8px;*/
+}
+
+.heading-4 {
+  font-size: 1.2em;
+  font-weight: 400px;
+  /*margin-bottom: 8px;
+  padding-bottom: 8px;*/
+}
+
+.heading-5 {
+  font-size: 1.0em;
+  font-weight: 400px;
+  /*margin-bottom: 8px;
+  padding-bottom: 8px;*/
+}
+
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
@@ -347,6 +375,71 @@ html{
   border-radius: 12px;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
   /* margin-top: -.25rem; */
+}
+
+/* RESOURCES (new)*/
+.resources {
+  background: #1b4965;
+  color: white;
+  padding: 40px;
+}
+
+.resources .heading {
+  padding-bottom: 0;
+}
+
+.resources .img-tile1 {
+  width: 225px;
+  height: 225px;
+  margin: 20px;
+  position: relative;
+  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #1b4965 , 10px 10px 1px 1px #cae9ff;
+}
+
+.resources .img-tile2 {
+  width: 130px;
+  height: 130px;
+  margin: 10px;
+  position: relative;
+  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #1b4965 , 10px 10px 1px 1px #cae9ff;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  /*background-color: DodgerBlue;*/
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*flex-wrap: wrap;*/
+  align-items: center;
+  /*background-color: DodgerBlue;*/
+}
+
+.resources .resource-content {
+  padding: 50px 50px 10px 50px;
+}
+
+.resource-line-1 {
+  /*word-wrap: break-word;*/
+  /*width: min(400px, 100%);*/
+  width: min(500px, 50vw);
+  padding-bottom: 10px;
+}
+
+.resource-line-2 {
+  /*word-wrap: break-word;*/
+  /*width: min(400px, 100%);*/
+  font-size: 15px;
+  width: min(250px, 25vw);
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
