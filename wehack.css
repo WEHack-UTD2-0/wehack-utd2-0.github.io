@@ -886,7 +886,8 @@ a:active {
   align-items: center;
   position: relative;
   text-align: center;
-  /*background: black;*/
+  background: #1b4965;
+  color: white;
   padding: 30px;
 }
 
@@ -989,18 +990,19 @@ a:active {
 .tiles .tile {
   display: inline-block;
   margin: 30px;
-  width: 245px;
-  height: 245px;
+  width: 225px;
+  height: 225px;
   text-align: left;
+  color: black;
   opacity: 0.99;
   overflow: hidden;
   position: relative;
   border-radius: 0.5px;
-  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ white , 12px 12px 0px 1px blue;
+  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #1b4965 , 12px 12px 0px 1px #cae9ff;
 }
 .tiles .tile:before {
   content: "";
-  background: rgba(255, 255, 255, 1);
+  background: #cae9ff;
   width: 100%;
   height: 50%;
   position: absolute;
