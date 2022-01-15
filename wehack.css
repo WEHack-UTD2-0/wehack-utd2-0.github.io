@@ -233,11 +233,31 @@ html{
 }
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
+.about {
+  background-color: #1b4965;
+  color: white;
+}
+
+/*@media (max-width: 1024px) {
+  .about-heading{
+    font-size: 1.8em;
+  }
+}*/
+
+.about p {
+  padding-bottom: 20px;
+}
+
+.about-heading{
+  font-size: 1.8em;
+}
+
 .about .contentBx {
   margin: auto;
   width: 80%;
   padding: 40px;
-  text-align: center;
+  /*text-align: center;*/
+  font-size: 1em;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
