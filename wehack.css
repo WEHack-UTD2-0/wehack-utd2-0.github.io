@@ -1,235 +1,156 @@
 
-* {
+/* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Montserrat', serif;
+  background-color: #1B4965;
 }
 
-html{
-  scroll-behavior: smooth;
+.font-title-1 {
+  font-family: 'Montserrat', serif;
+  font-size: 72px;
+  line-height: 80px;
 }
 
-* p {
-  font-size: 1.15em;
+.font-title-2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 42px;
 }
 
-/* Standardize heading styles */
-.heading {
-  font-size: 2.5em;
-  font-weight: 600px;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
+.font-title-3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
 }
 
-/* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
-.topnav {
-  overflow: hidden;
-  background-color: rgba(69,19,114,1);
-  display: flex;
-  position: absolute;
-  z-index: 4;
-}
-.topnav #homeLink{
-  padding: 20px;
-  padding-right: 0px;
-  position: fixed;
-}
-.topnav #myLinks {
-  justify-content: flex-start;
-  display: flex;
-  color: white;
-  text-align: center;
-  padding: 12px 60px;
-  text-decoration: none;
-  font-size: 17px;
-  z-index: 4;
-}
-.topnav a{
-  color: whitesmoke;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.topnav a:hover {
-  color: #ffa508;
-  text-decoration: none;
-}
-.topnav a::after{
-  display: none;
-}
-.topnav a.active {
-  color: #ffa508;
-}
-.topnav .icon{
-  display: none;
+.font-paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-/* ~~~~~~~~~~~~~~~BANNER~~~~~~~~~~~~~~~~~ */
-.banner {
-  display: flex;
-  position: relative;
-  width: 100%;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  background: rgb(69,19,114);
-  background: linear-gradient(180deg, rgba(69,19,114,1) 26%, rgba(83,22,115,1) 45%, rgba(94,24,115,1) 58%, rgba(100,25,115,1) 71%, rgba(114,27,116,1) 91%, rgba(124,29,116,1) 99%);
-}
-.banner .imgBox{
-  padding-left: 50px;
-  width: 40%
-}
-.banner .logo1 {
-  width: 100%;
-  z-index: 4;
-  transition: transform 500ms ease-in-out;
-}
-
-.banner .logo1:hover{
-  transform: rotate(360deg);
-}
-
-.Heading2 {
-  width: 60%;
-  font-size: 30px;
-  font-family: "Times New Roman";
-  font-weight: 10px;
-  text-align: center;
-  padding-right: 50px;
-}
-
-.Heading2 h3.topHeading{
-  font-size: 90px;
-}
-
-.Heading2 .countdown{
-  justify-content: center;
-  display: flex;
-  margin: 50px;
-}
-
-.countdown div{
-  position: relative;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  background: #6E1282;
-  color: #fff;
-  margin : 0 15px;
-  font-size: 2em;
-  font-weight: 500;
-}
-.countdown div:before{
-  content:'';
-  position: absolute;
-  bottom: -30px;
-  right: 0;
-  width: 100%;
-  height: 35px;
-  background: #F59B35;
-  color: #76189E;
-  font-size: 0.30em;
-  line-height: 35px;
+.font-caption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
   font-weight: 300;
-}
-.countdown #day:before{
-  content:'Days';
-}
-.countdown #hour:before{
-  content:'Hours';
-}
-.countdown #minute:before{
-  content:'Minutes';  
-}
-.countdown #second:before{
-  content:'Seconds';  
+  line-height: 16px;
 }
 
-.Heading2 .button-instagram {
-  color: white;
-  cursor: pointer;
-	display: block;
-  width: 230px;
-  margin: 5 auto;
-  text-decoration: none;
-  font-size: 90%;
-  text-align: center;
-  line-height: 50%;
-	border-radius: 50px;
-  padding: 26px;
-  background: #BD3381;
-  background: linear-gradient(to bottom right, #BD3381,#cc5094);
-	box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+/* ~~~~~~~~~~~~JUMBOTRON STYLING~~~~~~~~~~ */
+.jumbotron{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.button-instagram:hover{
-  background-color: #6b0940;
-  font-size: 110%; 
-  transition: all ease 0.4s;
+.jumbotron .container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
 }
 
-.Heading2 .mentor-link{
-  color: white;
-  font-size: 16px;
-  text-decoration: none;
-}
-.Heading2 .mentor-link:hover{
-  color: #ffa508;
+.jumbotron .placeholder{
+  margin: 0px 50px;
+  width: 40%;
+  background-color: white;
+  opacity: 0.2;
+  height: 70vh;
+  border: 10px solid #333333;
+
 }
 
-.banner .h3 {
-  font-size:1.75rem;
-  text-align: center;
-}
-
-.banner .text-center {
-  text-align:center !important;
-}
-
-.banner .gradient {
-	display: block;
+.jumbotron .right{
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: 90%;
-  bottom: auto;
-  margin: auto;
-  z-index: -1;
-  background: radial-gradient(90px circle at top center, rgba(238,88,63,.8) 30%, rgba(255,255,255,0));
-  transition: all 0s ease-out 0s;
-	transform: translatex(-140px);
-	animation: 18s linear 0s infinite move;
+  top: 50%;
+  left: 67%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center; 
 }
 
+.jumbotron h1{
+  width: min-intrinsic;
+  display: -ms-grid;
+  -ms-grid-columns: min-content;
+  margin-bottom: 20px;
+}
 
-@keyframes move {
-	0% {
-		transform: translatex(-140px);
-	}
-	25% {
-		transform: translatex(140px);
-		opacity: 0.3;
-	}
-	50% {
-		transform: translatex(140px);
-		opacity: 1;
-		background: radial-gradient(90px circle at bottom center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
-	}
-	75% {
-		transform: translatex(-140px);
-		opacity: 0.3;
-	}
-	100% {
-		opacity: 1;
-		transform: translatex(-140px);
-		background: radial-gradient(90px circle at top center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
-	}
+.jumbotron .font-title-1{
+  font-size: 90px;
+  color: white;
+  text-shadow: 2px 2px 8px #E5B3FD;
+  font-weight: bold;
+}
+
+.jumbotron .font-title-4{
+  font-size: 70px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.jumbotron button{
+  display: flex;
+  background-color: transparent;
+  border: 2px solid white;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  padding: 8px 12px;
+  width: 80%;
+}
+
+.jumbotron .font-paragraph{
+  font-size: 20px;
+}
+
+.jumbotron .apply-now{
+  border: none;
+  flex: 1;
+  margin-bottom: 8px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 24px;
+  font-weight: 800;
+  width: 100%;
+  background-color: #C0F4B7;
+  color: #000000;
+}
+
+.jumbotron .flex-grid{
+  display: flex;
+}
+
+#left-button{
+  margin-right: 6px;
+  margin-top: 6px;
+}
+#right-button{
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
+.jumbotron .message{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 6px 12px;
+  font-style: italic;
+  font-weight: 700;
+  background-color: #5FA8D3;
 }
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
