@@ -1,121 +1,31 @@
 <html>
   <head>
-    <title>wehack</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="First women centric hackathon at UTD">
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="wehack.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script type="text/javascript" src="navbar.js"></script>
-    <script type="text/javascript" src="faq.js"></script>   
-
-    <!-- Tab icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  </head>
+    <title>WEHack</title>
+    <link rel="stylesheet" href="wehack.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+</head>
 
   <body>
-    <!-- Top Navigation Menu -->
-    <section class="home" id="home">
-      <div class="topnav" id='myTopNav'>
-        <a href="#home" id="homeLink"><img src="images\Copy of WEHack Gold Logo-30x30.png" alt="wehack"/></a>
-        <!-- Navigation links (hidden by default) -->
-        <div class="links" id="myLinks">
-          <a href="#wehack">About</a>
-          <a href="#theme">Theme</a>
-          <a href="#sponsors">Sponsors</a>
-          <a href="#faq">FAQ</a>
-          <a href="#meettheteam">Meet The Team</a>
-          <a href="#contact">Contact Us</a>
-          <a href="#schedule">Schedule</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars" style="font-weight: normal;"></i>
-          </a>
+    <!-- JUMBOTRON -->
+    <div class="component jumbotron">
+        <div class="container">
+            <div class="placeholder font-title-4"><br>&nbsp;the<br>&nbsp;time<br>&nbsp;is<br>&nbsp;now.</div>
+            <div class="right">
+                <h1 class="font-title-1">WEHack 2022</h1>
+                    <button class="apply-now font-paragraph">APPLY NOW</button>
+                <div class="flex-grid">
+                    <button class="font-paragraph" id="left-button">SPONSOR</button>
+                    <button class="font-paragraph" id="right-button">MENTOR</button>
+                </div>
+            </div>
         </div>
-      </div>
-
-    <!--Banner-->
-    <div class="banner">
-      <!--Logo-->
-      <div class="imgBox"><img src = "images\Copy of WEHack Logo.png" class="logo1" alt="wehack"></div>
-
-      <!--Heading2 refers to the text and timer on the right side of the banner-->
-      <div class="Heading2" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
-        <h3 style="text-align:center; color: white" class="topHeading"><span style="color:#EA931E">WE</span>Hack 20<span style="color:#EA931E">20</span></h3>
-        <h6 style="text-align:center; color: white">Powered by Axxess and Toyota</h1>
-        <h3 style="color: white;"><span style="color:#EA931E" >WE</span> can transform our dreams into reality</h3>
-        <br><h3 style="text-align: center; color:#EA931E">OCTOBER 10-11, 2020</h3>
-
-        <!--Countdown Timer-->
-        <div class="countdown">
-          <div id="day"></div>
-          <h1 style="color:white">:</h1>
-          <div id="hour"></div>
-          <h1 style="color:white">:</h1>
-          <div id="minute"></div>
-          <h1 style="color:white">:</h1>
-          <div id="second"></div>
-        </div>
-
-        <!--Apply now button-->
-        <a href="https://wehackutd.typeform.com/to/jjEnhePI" target="_blank" class="button-instagram" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
-        alt="wehack registration"><span class="gradient"></span>Register</a>
-        <a href="https://wehackutd.typeform.com/to/PoEvotcq" target="_blank" class="mentor-link">Apply to be a mentor!</a>
-      </div>
-            
+        <div class="font-paragraph message">"Computing is too important to be left to men." - Karen Spärck Jones, a British Computer Scientist (1935 - 2007)</div>
     </div>
-
-  </section>
-    <!--javascript for timer-->
-    <script type="text/javascript">
-      var countDate = new Date('Oct 10, 2020 00:00:00').getTime();
-
-      function wehackDay(){
-        var now= new Date().getTime();
-        // gap = countDate - now;
-        gap = 0;
-         var second = 1000;
-         var minute = second * 60;
-         var hour = minute * 60;
-         var day = hour * 24;
-
-         var d = Math.floor(gap / (day));
-         var h = Math.floor((gap % (day)) / (hour));
-         var m = Math.floor((gap % (hour)) / (minute));
-         var s = Math.floor((gap % (minute)) / (second));
-
-         document.getElementById('day').innerText = d;
-         document.getElementById('hour').innerText = h;
-         document.getElementById('minute').innerText = m;
-         document.getElementById('second').innerText = s;
-
-      }
-
-      setInterval(function(){
-        wehackDay();
-      }, 1000)
-
-    </script>
 
    <section class="about">
     <div class="contentBx" id="wehack">
-      <h1 class="heading">At WEHack, we're looking to shape the future of technology</h1>
+      <h1 class="about-heading"><center>Dallas’ largest inclusive hackathon</center></h1>
       <p>
         UTD's women-driven tech organizations are excited to join forces and
         present our first all women, non-binary, 24-hour hackathon. Our goal is
@@ -124,7 +34,14 @@
         underrepresented people to harness their skills to create projects of
         their own.
       </p>
+      <h1 class="about-heading"><center> Get ready for WEHack 2022!</center></h1>
+      <p>
+        SPECIFIFCS FOR THIS WEHACK 2021Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna.<br/><br/>
+        Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. 
+      </p>
     </div>
+    <!-- commenting out orgs
     <div class="orgs">
       <div></div>
       <div>
@@ -141,6 +58,7 @@
       </div>
       <div></div>
     </div>
+    -->
     <!-- <div class="videoWrapper">
       <video controls name="media">
           <source src="images\WEHack_FINAL (2) (1).mp4" type = "video/mp4"/>
@@ -148,6 +66,7 @@
     </div> -->
   </section>
 
+<!-- Commenting out WEHack 2020 video, schedule, why wehack and mession
   <iframe 
     width="560" height="315" src="https://www.youtube.com/embed/Js2vTsSFICM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
     style="display: block; margin: 0 auto; margin-top: 60px"  allowfullscreen>
@@ -165,32 +84,29 @@
       <br />
     </section>
 
+<!-- New THEME Section -->
     <section class="whyWEHack" id="mission">
       <div class="contentBox">
-        <h1 class="heading">Why WEHack</h1>
+
+        <h1 class="heading">The Future is <b>NOW</b></h1>
         <p>
-          There is a huge disparity in the number of women and non-binary students
-          participating in hackathons. In fact only
-          <font color="#ef466e"
-            ><strong>24% of participants are women</strong></font
-          >
-          and
-          <font color="#ffa508"
-            ><strong>
-              3% of participants identify as non-binary/other.</strong
-            ></font
-          >
-          So, it is not surprising that this lack of diversity ultimately affects
-          the gender parity in the tech industry at large. By participating, we
-          want students to gain valuable experience through networking, and
-          learning from distinguished speakers, inspiring mentors, and peers.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-      <div class="imgBox">
-        <img src="images\pieChart.png"/>
+      
+      <div class="inline-block">
+        <!--place holder for image-->
+        <h6 >placeholder for image</h6>
       </div>
-    </section>
 
+      <div class="inline-block">
+        <!--place holder for image-->
+        <h6>placeholder for image</h6>
+      </div>
+<!-- end -->
+     
+    </section>
+  -->
     <section class="challenge" id="theme">
       <div class="intro">
         <h2 class="text-muted">CHALLENGE</h1>
@@ -207,6 +123,62 @@
           />
     </section>
 
+    <!--Resources section (new)-->
+    <section class="resources" id="resources">
+      <center class="intro">
+        <h1 class="heading">Resources</h1>
+      </center>
+
+      <div class="flex-container">
+        <img class="img-tile1">
+        <div class="resource-content">
+          <h1 class="heading-2">Hacking the Hackathon</h1>
+          <p class="resource-line-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna. Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. </p>
+          <h1 class="heading-3"><a>Learn more D</a></h1>
+        </div>
+      </div>
+
+      <div class="flex-container2">
+        <div class="flex-container">
+          <img class="img-tile2">
+          <div class="resource-content">
+            <h1 class="heading-4">Hacking the Hackathon2</h1>
+            <p class="resource-line-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna. Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. </p>
+            <h1 class="heading-5"><a>Learn more D</a></h1>
+          </div>
+        </div>
+        <div class="flex-container">
+          <img class="img-tile2">
+          <div class="resource-content">
+            <h1 class="heading-4">Hacking the Hackathon3</h1>
+            <p class="resource-line-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna. Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. </p>
+            <h1 class="heading-5"><a>Learn more D</a></h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container2">
+        <div class="flex-container">
+          <img class="img-tile2">
+          <div class="resource-content">
+            <h1 class="heading-4">Hacking the Hackathon4</h1>
+            <p class="resource-line-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna. Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. </p>
+            <h1 class="heading-5"><a>Learn more D</a></h1>
+          </div>
+        </div>
+        <div class="flex-container">
+          <img class="img-tile2">
+          <div class="resource-content">
+            <h1 class="heading-4">Hacking the Hackathon5</h1>
+            <p class="resource-line-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna. Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. </p>
+            <h1 class="heading-5"><a>Learn more D</a></h1>
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+    
     <section class="sponsors" id="sponsors">
       <center cass="intro">
         <h1 class="heading">Sponsors</h1>
