@@ -29,6 +29,13 @@
   line-height: 32px;
 }
 
+.heading {
+  font-size: 2.5em;
+  font-weight: 500px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
 .heading-2 {
   font-size: 2.0em;
   font-weight: 500px;
