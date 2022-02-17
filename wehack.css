@@ -599,7 +599,7 @@ footer .text:hover{
   }
 }
 
-.heading-3 {
+.resource-heading-3 {
   /*width: 60%;*/
   font-size: 18px;
   font-family: "Times New Roman";
@@ -607,6 +607,33 @@ footer .text:hover{
   text-align: center;
   padding-right: 50px;
 }
+
+.resource-link{
+  color: white;
+}
+
+.resource-link:hover{
+  color: #cae9ff;
+}
+
+
+
+/*a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}*/
+
 
 .team-member {
   margin-bottom: 50px;
