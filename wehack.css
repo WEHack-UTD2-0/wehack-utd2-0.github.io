@@ -719,10 +719,10 @@
 /* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
 footer {
   padding: 25px 30px;
-  background: #5b2e70;
-  color: #ffa508;
+  /*background: #5b2e70;
+  color: #ffa508;*/
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
