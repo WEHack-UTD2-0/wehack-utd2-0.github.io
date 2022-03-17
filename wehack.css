@@ -472,14 +472,18 @@
 
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
+  color: white;
+  background: rgb(27, 73, 101);
   padding: 40px;
 }
 
-.sponsors .heading {
+.sponsors .heading { 
+  color: white;
   padding-bottom: 0;
 }
 
 .sponsor {
+  color: rgb(27, 73, 101);
   display: block;
   margin: auto;
   margin-bottom: 2%;
