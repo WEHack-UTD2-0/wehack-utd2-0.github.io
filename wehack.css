@@ -44,7 +44,7 @@
 }
 
 .heading-3 {
-  font-size: 1.6em;
+  font-size: 1.0em;
   font-weight: 400px;
   /*margin-bottom: 8px;
   padding-bottom: 8px;*/
@@ -489,7 +489,7 @@
   margin-bottom: 2%;
 }
 
-.sponsors img {
+.sponsors .sponsor-img {
   width: 100%;
   max-width: 300px;
   height: auto;
@@ -497,7 +497,7 @@
   padding-right: 2vw;
   margin-top: 20px;
   height: auto;
-}
+  }
 
 .sponsor .smaller {
   max-width: 400px;
@@ -611,11 +611,11 @@ footer .text:hover{
 
 .heading-2 {
   /*width: 42%;*/
-  font-size: 30px;
-  font-family: "Times New Roman";
+  font-size: 25px;
+  /*font-family: "Times New Roman";*/
   font-weight: 10px;
   text-align: center;
-  padding-right: 50px;
+  /*padding-right: 50px;*/
 }
 
 @media screen and (max-width: 300px) {
