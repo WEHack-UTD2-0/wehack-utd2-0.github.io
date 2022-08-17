@@ -63,6 +63,14 @@
   padding-bottom: 8px;*/
 }
 
+.heading-6 {
+  font-size: 2.5em;
+  font-weight: 500px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  margin-left: 160px;
+}
+
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
@@ -659,6 +667,18 @@
 .sponsor .smaller {
   max-width: 400px;
 }
+
+/* rank for sponsors
+.sponsor .sponsor-rank {
+  position: absolute;
+  margin-left: 200px;
+  float: left;
+  height: auto;
+  margin-top: 30px;
+  font-size: 22px;  
+  font-weight: 100px;
+}
+*/
 
 
 /* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
