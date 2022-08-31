@@ -63,13 +63,6 @@
   padding-bottom: 8px;*/
 }
 
-.heading-6 {
-  font-size: 2.5em;
-  font-weight: 500px;
-  margin-bottom: 8px;
-  padding-bottom: 8px;
-  margin-left: 160px;
-}
 
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
@@ -662,23 +655,48 @@
   padding-right: 2vw;
   margin-top: 20px;
   height: auto;
-  }
-
-.sponsor .smaller {
-  max-width: 400px;
 }
 
-/* rank for sponsors
-.sponsor .sponsor-rank {
-  position: absolute;
-  margin-left: 200px;
-  float: left;
-  height: auto;
-  margin-top: 30px;
-  font-size: 22px;  
-  font-weight: 100px;
+hr.gold-width {
+  width: 15%;
+  border-color: #CCA43D;
+  margin: 0 auto;
 }
-*/
+
+hr.silver-width {
+  width: 33%;
+  border-color: #C4CACE;
+  margin: 0 auto;
+}
+
+hr.bronze-width {
+  width: 65%;
+  border-color: #A97142;
+  margin: 0 auto;
+}
+
+.sponsors .label-gold {
+  padding-bottom: 10px;
+  color: #CCA43D;
+  padding-bottom: 0;
+  font-size: 18px;
+}
+
+.sponsors .label-silver {
+  padding-bottom: 8px;
+  color: #C4CACE;
+  padding-bottom: 0;
+  font-size: 18px;
+}
+
+.sponsors .label-bronze {
+  padding-bottom: 10px;
+  color: #A97142;
+  padding-bottom: 0;
+  font-size: 18px;
+}
+
+
 
 
 /* ~~~~~~~~~~~~~~~PARTNERS~~~~~~~~~~~~~~~~~ */
