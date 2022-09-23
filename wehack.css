@@ -628,37 +628,58 @@
 }
 
 /* ~~~~~~~~~~~Past Statistics~~~~~~~~~~~~~~ */
-
+.past_Info {
+    /*padding: 25px 30px;
+    /*background: #5b2e70;
+    color: #ffa508;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.statistics {
+  display: flex;
+}
 .statistics .box1 {
+  flex: 50%;
   position: relative;
-  width: 500px;
-  height: 370px;
+  width: 600px;
+  height: 470px;
   float: left;
-  margin: 10px;
+  margin: 20px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 10px 2px black;
+  box-shadow: 0px 0px 20px 10px purple;
+  overflow: hidden;
+  border-radius: 10px;
+  
+  background-image: url(/images/stat20201.jpg);
+  background-size: 600px 470px;
+  font-size: 30px;
+  text-align: center;
+  text-shadow:3px 1px purple;
+
+  
+}
+.statistics .box2 {
+  flex: 50%;
+  position: relative;
+  width: 600px;
+  height: 470px;
+  float: left;
+  margin: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 10px black;
   overflow: hidden;
   border-radius: 10px;
 
   background-image: url(/images/stat2022.jpg);
-  background-size: 500px 370px;
+  background-size: 600px 470px;
+  font-size: 30px;
+  text-align: center;
+  text-shadow:3px 1px black;
  
 }
-.statistics .box2 {
-  position: relative;
-  width: 500px;
-  height: 370px;
-  background: #000;
-  float: left;
-  margin: 10px;
-  box-sizing: border-box;
-  box-shadow: 0px 0px 10px 2px purple;
-  overflow: hidden;
-  border-radius: 10px;
 
-  background-image: url(/images/stat2020.jpg);
-  background-size: 500px 370px;
-}
 
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
@@ -750,7 +771,7 @@
 
 /* ~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~ */
 footer {
-  padding: 25px 30px;
+  /*padding: 25px 30px;
   /*background: #5b2e70;
   color: #ffa508;*/
   display: flex;
@@ -760,7 +781,7 @@ footer {
 }
 
 .bottom {
-  padding: 5px 10px;
+  /*padding: 5px 10px;*/
   background: #000000;
   color: #FFFFFF;
   display: flex;
