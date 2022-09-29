@@ -2,10 +2,9 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: #1B4965;
   box-sizing: border-box;
   font-family: 'Montserrat', serif;
-  background-color: #1B4965;
+  background-color: #c5c9e4;
 }
 
 .font-title-1 {
@@ -15,14 +14,14 @@
 }
 
 .font-title-2 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
 }
 
 .font-title-3 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -108,7 +107,7 @@
 }
 
 .font-caption {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
@@ -169,8 +168,8 @@
 
 .jumbotron .font-title-1{
   font-size: 90px;
-  color: white;
-  text-shadow: 2px 2px 8px #E5B3FD;
+  color: #1e1920;
+  text-shadow: 2px 2px 8px #1e1920;
   font-weight: bold;
 }
 
@@ -183,9 +182,9 @@
 .jumbotron button{
   display: flex;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid rgb(175, 121, 121);
   text-decoration: none;
-  color: white;
+  color: rgb(179, 105, 105);
   vertical-align: middle;
   text-align: center;
   display: table-cell;
@@ -195,6 +194,7 @@
 
 .jumbotron .font-paragraph{
   font-size: 20px;
+  color: #d24a32
 }
 
 .jumbotron .apply-now{
@@ -206,8 +206,8 @@
   font-size: 28px;
   font-weight: 800;
   width: 100%;
-  background-color: #C0F4B7;
-  color: #000000;
+  background-color: #e38f61;
+  color: #fff2ce;
 }
 
 .jumbotron .flex-grid{
@@ -232,13 +232,13 @@
   padding: 6px 12px;
   font-style: italic;
   font-weight: 700;
-  background-color: #5FA8D3;
+  background-color: #fff2ce;
 }
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about {
-  background-color: #1b4965;
-  color: white;
+  background-color: #c5c9e4;
+  color: #1e1920;
 }
 
 /*@media (max-width: 1024px) {
@@ -249,6 +249,7 @@
 
 .about p {
   padding-bottom: 20px;
+  color:#1e1920;
 }
 
 .about-heading{
@@ -326,7 +327,7 @@
   position: relative;
   width: 100%;
   display: flex;
-  background: #1B4965;
+  background: #c5c9e4;
 }
 
 .featuring .heading, p{
@@ -492,7 +493,7 @@
   padding-right: 50px;
   padding-left: 150px;
   width: 50%;
-  color:#FFFFFF;
+  color:#1e1920;
 }
 
 .whyWEHack .img-placeholder{
@@ -523,10 +524,14 @@
 
 .whyWeHack .heading {
   font-size: 2.5em;
-  color:#FFFFFF;
+  color:#1e1920;
   font-weight: normal;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+
+.whyWEHack p {
+  color: #1e1920
 }
 
 /* ~~~~~~~~~~~~~~~CHALLENGE~~~~~~~~~~~~~~~~~ */
@@ -562,8 +567,8 @@
 
 /* RESOURCES (new)*/
 .resources {
-  background: #1b4965;
-  color: white;
+  background: #c5c9e4;
+  color: #1e1920;
   padding: 40px;
 }
 
@@ -573,12 +578,16 @@
   padding-bottom: 0;
 }
 
+.resources p {
+  color: #1e1920;
+}
+
 .resources .img-tile1 {
   width: 225px;
   height: 225px;
   margin: 20px;
   position: relative;
-  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #1b4965 , 10px 10px 1px 1px #cae9ff;
+  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #c5c9e4 , 10px 10px 1px 1px #fff2ce;
 }
 
 .resources .img-tile2 {
@@ -586,7 +595,7 @@
   height: 130px;
   margin: 10px;
   position: relative;
-  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #1b4965 , 10px 10px 1px 1px #cae9ff;
+  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #c5c9e4 , 10px 10px 1px 1px #fff2ce;
 }
 
 .flex-container {
@@ -627,20 +636,105 @@
   padding-top: 10px;
 }
 
+/* ~~~~~~~~~~~~~~~SPEAKERS -- NEW~~~~~~~~~~~~~~~~~ */
+
+.image{
+  position: relative;
+  width: 360px;
+}
+
+.image__img{
+  display: block;
+  width: 75%;
+  height: 350%;
+  object-fit: cover;
+  min-height: 180px;
+  max-width: 100%;
+  backface-visibility: hidden;
+  margin:auto;
+}
+
+.image__overlay{
+  position: absolute;
+  top: 0;
+  left: 7;
+  right: 9;
+  width: 75%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #ffffff;
+  font-family: 'Monsterrat', sans-serif;
+  display: flex;
+  margin:auto;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: center;
+  opacity:0;
+  transition: opacity 0.4s
+
+}
+
+/* .image__overlay--blur{
+  backdrop-filter: blur(5px);
+} */
+
+.image__overlay > *{
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+
+.image__overlay:hover{
+  opacity: 1;
+  margin:auto;
+}
+
+.image__overlay:hover > *{
+  transform: translateY(0);
+  margin:auto;
+}
+
+.image__title{
+  font-size: 2em;
+  font-weight: bold;
+  background-color: transparent;
+  position: absolute;
+  top: 130;
+  left: 7;
+  right: 4;
+}
+
+.image__description{
+  
+  font-size: 1.25em;
+  margin-top: 9.25em;
+  color: #ffffff;
+  background-color: transparent;
+  top: 10;
+  left: 7;
+  right: 4;
+}
+
+
+/* ~~~~~~~~~~~~~~~SPEAKERS END ~~~~~~~~~~~~~~~~~ */
+
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
-  color: white;
-  background: rgb(27, 73, 101);
+  color: #1e1920;
+  background: #c5c9e4;
   padding: 40px;
 }
 
 .sponsors .heading { 
-  color: white;
+  color: #1e1920;
   padding-bottom: 0;
 }
 
+.sponsors p { 
+  color: #1e1920;
+}
+
 .sponsor {
-  color: rgb(27, 73, 101);
+  color: #c5c9e4;
   display: block;
   margin: auto;
   margin-bottom: 2%;
@@ -783,11 +877,11 @@ footer .text:hover{
 }
 
 .resource-link{
-  color: white;
+  color: #1e1920;
 }
 
 .resource-link:hover{
-  color: #cae9ff;
+  color: #d24a32;
 }
 
 
@@ -853,9 +947,9 @@ a:active {
 
 
 .accrdion {
-  background-color: #1B4965;
+  background-color: #c5c9e4;
   align-items: center;
-  color: #FFFFFF;
+  color: #1e1920;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -873,21 +967,21 @@ a:active {
 
 .accrdion:after {
   content: '\002B'; /* Unicode character for "plus" sign (+) */
-  color: #ffffff;
+  color: #1e1920;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212"; /* Unicode character for "minus" sign (-) */
-  color: #ffffff;
+  content: '\2212'; /* Unicode character for "minus" sign (-) */
+  color: #1e1920;
 }
 
 .panel {
   padding: 0 18px;
-  background-color:#1B4965;
-  color: #ffffff;
+  background-color:#c5c9e4;
+  color: #1e1920;
   width: 77.5%;
   max-height: 0;
   overflow: hidden;
@@ -1035,20 +1129,20 @@ a:active {
 
 .accrdion2:after {
   content: '\002B'; /* Unicode character for "plus" sign (+) */
-  color: rgb(133, 133, 133);
+  color: #1e1920;
   font-weight: bold;
   float: right;
   margin-left: 5px;
 }
 
 .active:after {
-  content: "\2212"; /* Unicode character for "minus" sign (-) */
-  color: white;
+  content: '\2212'; /* Unicode character for "minus" sign (-) */
+  color: #1e1920;
 }
 
 .panel2 {
   padding: 0 18px;
-  background-color:white;
+  background-color:#1e1920;
   width: 77.5%;
   max-height: 0;
   overflow: hidden;
@@ -1163,7 +1257,7 @@ td:nth-child(5) {
 
 /*stylizing links #BD3381 #5b2e70*/
 a:link {
-  color: #cc5094;
+  color: #1e1920;
   text-decoration: none;
 }
 
@@ -1172,7 +1266,7 @@ a:visited {
 }
 
 a:hover {
-  color: #F59B35;
+  color: #e38f61;
   text-decoration: underline;
 }
 
@@ -1182,12 +1276,12 @@ a:active {
 
 /* ~~~~~~~~~MEET THE TEAM~~~~~~~~~ */
 
-.team{
+.team {
   align-items: center;
   position: relative;
   text-align: center;
-  background: #1b4965;
-  color: white;
+  background: #c5c9e4;
+  color: #1e1920;
   padding: 30px;
 }
 
@@ -1207,7 +1301,7 @@ a:active {
 {
 	width:100%;
 	height:97%;
-	border-bottom:5px #323233 solid;
+	border-bottom:5px #6b6bad solid;
 	background:#fff;
   /*background: black;*/
 	text-align:center;
@@ -1298,11 +1392,11 @@ a:active {
   overflow: hidden;
   position: relative;
   border-radius: 0.5px;
-  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #1b4965 , 12px 12px 0px 1px #cae9ff;
+  box-shadow: 10px 10px /*var(--wehack-darkBlue)*/ #c5c9e4 , 12px 12px 0px 1px #fff2ce;
 }
 .tiles .tile:before {
   content: "";
-  background: #cae9ff;
+  background: #fff2ce;
   width: 100%;
   height: 50%;
   position: absolute;
@@ -1324,6 +1418,7 @@ a:active {
   padding: 25px 13px;
   color: var(--wehack-black);
   background: rgba(255, 255, 255, 0);
+  color: #d24a32;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1344,6 +1439,13 @@ a:active {
   font-weight: 600;
   font-size: 14px;
 }
+
+/* .tiles .tile .details .description {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 14px;
+} */
+
 .tiles .tile .details .info {
   line-height: 1.2;
   margin-top: 5px;
