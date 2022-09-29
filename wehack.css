@@ -703,10 +703,11 @@
   right: 4;
 }
 
-.image_description{
+.image__description{
   
   font-size: 1.25em;
   margin-top: 9.25em;
+  color: #ffffff;
   background-color: transparent;
   top: 10;
   left: 7;
