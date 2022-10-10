@@ -637,15 +637,7 @@
 }
 
 /* ~~~~~~~~~~~Past Statistics~~~~~~~~~~~~~~ */
-.past_Info {
-    /*padding: 25px 30px;
-    /*background: #5b2e70;
-    color: #ffa508;*/
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
+
 .statistics {
   display: flex;
 }
@@ -661,9 +653,9 @@
   overflow: hidden;
   border-radius: 10px;
   
-  background-image: url(/images/stat20201.jpg);
+  background-image: url(/images/stat2020.jpg);
   background-size: 600px 470px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   text-shadow:3px 1px purple;
 
@@ -683,9 +675,9 @@
 
   background-image: url(/images/stat2022.jpg);
   background-size: 600px 470px;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  text-shadow:3px 1px black;
+  text-shadow:5px 1px rgb(35, 73, 93);
  
 }
 
