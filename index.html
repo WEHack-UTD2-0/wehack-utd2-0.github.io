@@ -170,12 +170,8 @@
         </div>
       -->
     <section class="whyWEHack" id="mission">
-      <div class="contentBox">
-
-        <h1 class="heading">The Future is <b>NOW</b></h1>
-        <p>
-          More information TBA.
-        </p>
+      <div class="contentBox">  
+        <h1 class="heading">The Future is <b>NOW</b><h1>
       </div>
       
       <!--<div class="inline-block">
@@ -185,6 +181,7 @@
 <!-- end -->
      
     </section>
+
 <!-- old "Challenges" section
     <section class="challenge" id="theme">
       <div class="intro">
@@ -257,51 +254,52 @@
       </div>
     -->
 
-     </section>
-    
-    <section class="sponsors" id="sponsors">
-      <center cass="intro">
-        <h1 class="heading">Sponsors</h1>
-        <p class="subtitle">WEHack would not be possible without the help of our amazing sponsors.</p>
-      </center>
-      <br />
-      <div class="sponsor">
-        <center>
-          <a href="">
-            <img src="/images/sponsors/toyota.png" alt="Toyota logo" style="border-radius: 17px" class="sponsor-img"/>
-          </a>
-        </center>
-      </div>
-      <br /> 
-      <div class="sponsor">
-        <center>
-          <a href="">
-            <img src="/images/sponsors/stateFarm.png" alt="State Farm logo" style="border-radius: 17px" class="sponsor-img"/>
-          </a>
-          <a href="">
-            <img src="/images/sponsors/cbre.png" alt="CBRE logo" style="border-radius: 17px" class="sponsor-img"/>
-          </a>  
-        </center>
-      </div>
-      <br /> 
-      <div class="sponsor">
-        <center>
-          <a href="">
-            <img src="/images/sponsors/match.png" alt="Match logo" style="border-radius: 17px" class="sponsor-img"/>
-          </a>
-          <a href="">
-            <img src="/images/sponsors/texas_instruments.png" alt="Texas Instruments logo" style="border-radius: 17px" class="sponsor-img"/>
-          </a>  
-          <a href="">
-            <img src="/images/sponsors/AT&T.jpg" alt="AT&T logo" style="border-radius: 17px" class="sponsor-img"/>
-          </a> 
-          <a href="">
-            <img src="/images/sponsors/jpmc.jpg" alt="JPMorgan logo" style="border-radius: 17px" class="sponsor-img"/>
-          </a> 
-        </center>
-      </div>
-    
 
+
+
+<!-- SPONSORS -->
+
+
+</section>
+<section class="slider-wrapper">
+  <center class="intro">
+    <h1 class="heading">Sponsors</h1>
+  </center>
+  <button class="slide-arrow" id="slide-arrow-prev">
+    &#8249;
+  </button>
+  <button class="slide-arrow" id="slide-arrow-next">
+    &#8250;
+  </button>
+  <ul class="slides-container" id="slides-container">
+    <li class="slide">
+    </li>
+    <li class="slide">
+    </li>
+    <li class="slide">
+    </li>
+    <li class="slide">
+
+    </li>
+  </ul>
+</section>
+
+<script>
+  const slidesContainer = document.getElementById("slides-container");
+  const slide = document.querySelector(".slide");
+  const prevButton = document.getElementById("slide-arrow-prev");
+  const nextButton = document.getElementById("slide-arrow-next");
+
+  nextButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft += slideWidth;
+  });
+
+  prevButton.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer.scrollLeft -= slideWidth;
+  });
+</script>
 
 <!-- commenting out partners section
   <section class="partners" id="partners">
@@ -631,5 +629,6 @@
     /></a>
     -->
     
+
   </body>
 </html>
