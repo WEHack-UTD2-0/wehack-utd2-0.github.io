@@ -644,6 +644,67 @@
   padding-top: 10px;
 }
 
+/* ~~~~~~~~~~~~~~~TESTIMONIALS~~~~~~~~~~~~~~~~~ */
+.testimonials {
+  background: #fff2ce;
+  color: #1e1920;
+  padding: 40px;
+}
+
+.test-container {
+  border: 3px solid #fff2ce;
+  background-color: #fff2ce;
+  border-radius: 2px;
+  padding: 16px;
+  margin: 16px 150px 16px 150px;
+  color:#000000;
+}
+
+.test-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.test-container img {
+  float: left;
+  margin-right: 20px;
+    border-radius: 50%;
+  width: 150px;
+  background-color: #fff2ce;
+}
+
+.test-container span {
+  font-size: 21px;
+  margin-right: 20px;
+  margin-left: 15px;
+  background-color: #fff2ce;
+  font-weight: bold;
+}
+
+.testimonial-font {
+  color: #000000;
+  background-color: #fff2ce;
+}
+
+.testimonial-quote {
+  margin-left: 185px;
+  color: #000000;
+  background-color: #fff2ce;
+}
+
+@media (max-width: 500px) {
+  .test-container {
+    text-align: center;
+  }
+
+  .test-container img  {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
   color: white;
