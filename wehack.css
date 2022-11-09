@@ -703,7 +703,7 @@
 
 .test-container {
   border: 1px solid #ccc;
-  background-color: #fff2ce;
+  background-color: rgba(255, 242, 206);
   border-radius: 5px;
   padding: 10px;
   margin: 10px 60px 10px 60px;
