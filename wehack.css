@@ -94,14 +94,17 @@
   z-index: 4;
 }
 .topnav a{
-  color: whitesmoke;
+  color: #d24a32;
+  text-shadow: 2px 2px 2px #fff2ce;
   text-align: center;
-  padding: 14px 16px;
+  padding: 30px 93px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
+  font-weight: bold;
 }
 .topnav a:hover {
-  color: #ffa508;
+  color:#d24a32;
+  background: #fff2ce;
   text-decoration: none;
 }
 .topnav a::after{
@@ -177,8 +180,8 @@
 
 .jumbotron .font-title-1{
   font-size: 90px;
-  color: #D24A32;
-  text-shadow: 2px 2px 2px #1E1920;
+  color: #1e1920;
+  text-shadow: 5px 5px 5px #e0a269;
   font-weight: bold;
 }
 
@@ -1118,6 +1121,7 @@ a:active {
 }
 
 .faq p{
+  color: #1e1920;
   padding: 5;
   margin:  10;
 }
