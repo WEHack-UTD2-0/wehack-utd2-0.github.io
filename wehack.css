@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', serif;
-  background-color: #c5c9e4;
+  
 }
 
 .font-title-1 {
@@ -129,6 +129,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background-color: #c5c9e4;
 }
 
 .jumbotron .container{
@@ -492,6 +493,7 @@
   position: relative;
   width: 100%;
   display: flex;
+  background-color: #c5c9e4;
 }
 
 .whyWEHack .contentBox {
@@ -648,49 +650,42 @@
 
 /* ~~~~~~~~~~~Past Statistics~~~~~~~~~~~~~~ */
 
-.statistics {
-  display: flex;
-}
 .statistics .box1 {
-  flex: 50%;
   position: relative;
-  width: 600px;
-  height: 470px;
+  width: 500px;
+  height: 370px;
   float: left;
   margin: 20px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 10px purple;
-  overflow: hidden;
   border-radius: 10px;
   
   background-image: url(/images/stat2020.jpg);
-  background-size: 600px 470px;
-  font-size: 40px;
+  background-size: 500px 370px;
+  font-size: 35px;
   text-align: center;
   text-shadow:3px 1px purple;
 
   
 }
 .statistics .box2 {
-  flex: 50%;
   position: relative;
-  width: 600px;
-  height: 470px;
+  width: 500px;
+  height: 370px;
   float: left;
   margin: 20px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 10px black;
-  overflow: hidden;
+
   border-radius: 10px;
 
   background-image: url(/images/stat2022.jpg);
-  background-size: 600px 470px;
-  font-size: 40px;
+  background-size: 500px 370px;
+  font-size: 35px;
   text-align: center;
   text-shadow:5px 1px rgb(35, 73, 93);
  
 }
-
 
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
@@ -896,17 +891,21 @@ body {
 /* ~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~ */
 footer {
   /*padding: 25px 30px;
-  /*background: #5b2e70;
+  background: #5b2e70;
   color: #ffa508;*/
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   text-align: center;
+  position: relative;
+  box-sizing: border-box;  
+  background: #6a6f9a;
+  /*background: #E38F61;*/
+  /*background: #E0A269;*/
+  box-shadow: 0px 0px 10px 5px #80849f;
+  border-radius: 10px;
+  
 }
 
+
 .bottom {
-  /*padding: 5px 10px;*/
-  background: #000000;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
