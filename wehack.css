@@ -73,7 +73,7 @@
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
-  background-color: rgba(69,19,114,1);
+  background-color: rgb(188, 168, 205);
   display: flex;
   position: absolute;
   z-index: 4;
@@ -110,6 +110,7 @@
 .topnav a::after{
   display: none;
 }
+
 .font-paragraph {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -1299,7 +1300,7 @@ a:active {
     text-align: left;
   }
   .topnav #myLinks.links.responsive a.icon{
-    position: aboslute;
+    position: absolute;
     width: auto;
   }
   .topnav #myLinks.links.responsive i{
