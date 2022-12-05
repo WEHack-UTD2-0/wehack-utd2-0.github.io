@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', serif;
-  
+  background-color: #c5c9e4;  
 }
 
 .font-title-1 {
@@ -656,7 +656,7 @@
 
 .statistics .box1 {
   position: relative;
-  width: 500px;
+  width: 496px;
   height: 370px;
   float: left;
   margin: 20px;
@@ -674,9 +674,9 @@
 }
 .statistics .box2 {
   position: relative;
-  width: 500px;
+  width: 496px;
   height: 370px;
-  float: left;
+  float: right;
   margin: 20px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 10px black;
@@ -900,13 +900,15 @@ footer {
   text-align: center;
   position: relative;
   box-sizing: border-box;  
-  background: #6a6f9a;
+  /*margin: 20px;
+  /*background: #6a6f9a;*/
   /*background: #E38F61;*/
   /*background: #E0A269;*/
-  box-shadow: 0px 0px 10px 5px #80849f;
+  box-shadow: 0px 0px 25px 0px #80849f;
   border-radius: 10px;
   
 }
+
 
 
 .bottom {
@@ -923,7 +925,7 @@ footer {
 footer .grid {
  /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 20px;
 }
 
 footer .text{
