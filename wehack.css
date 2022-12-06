@@ -691,6 +691,81 @@
  
 }
 
+
+/* ~~~~~~~~~~~TESTIMONIALS~~~~~~~~~~~~~*/
+
+.testimonials {
+  background-color: #c5c9e4;
+  color: #1e1920;
+  padding: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.test-container {
+  border: 1px solid #ccc;
+  background-color: rgba(255, 242, 206);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 60px 10px 60px;
+  size: 100px;
+}
+
+.test-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.test-container img {
+  float: left;
+  margin: 5px 25px 5px 5px;
+  border-radius: 50%;
+  width: 130px;  
+  background-color: #fff2ce;
+}
+
+.test-container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.test-header {
+  color: #1e1920;
+  background-color: #fff2ce;
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+  font-weight: bold;
+}
+
+.test-body {
+  color: #1e1920;
+  margin-right: 12px;
+  margin-top: 1px;
+  background-color: #fff2ce;
+}
+
+.test-desc {
+  color: #1e1920;
+  margin: 0;
+  padding: 10px;
+  background-color: #fff2ce;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .test-container {
+    text-align: center;
+  }
+
+  .test-container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
   color: #1e1920;
