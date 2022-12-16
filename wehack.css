@@ -1,5 +1,5 @@
 /* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
-html{
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -75,7 +75,7 @@ html{
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
-  background-color: #c5c9e4;
+  /*background-color: #c5c9e4;*/
   display: flex;
   position: absolute;
   z-index: 4;
@@ -706,7 +706,7 @@ html{
 /* ~~~~~~~~~~~TESTIMONIALS~~~~~~~~~~~~~*/
 
 .testimonials {
-  background-color: #c5c9e4;
+  /*background-color: #c5c9e4;*/
   color: #1e1920;
   padding: 25px;
   margin-top: 10px;
@@ -1164,6 +1164,9 @@ a:active {
 
 
 /*FAQ*/
+.faq {
+  background-color:#c5c9e4 ;
+}
 
 .column {
   display: flex;
@@ -1192,6 +1195,7 @@ a:active {
 }
 
 .faq div {
+  
   margin: auto;
   width: 80%;
   padding: 0px;
@@ -1455,7 +1459,7 @@ a:active {
   align-items: center;
   position: relative;
   text-align: center;
-  background: #c5c9e4;
+  /*background: #c5c9e4;*/
   color: #1e1920;
   padding: 30px;
 }
