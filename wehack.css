@@ -1,10 +1,12 @@
 /* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
-html,body{
+body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', serif; 
-   background-color: #c5c9e4; 
+  background-image: url(/images/background.jpg);
+  background-size: contain ;
+  background-repeat: repeat-y; 
 }
 
 .font-title-1 {
@@ -73,7 +75,7 @@ html,body{
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
 .topnav {
   overflow: hidden;
-  background-color: #c5c9e4;
+  /*background-color: #c5c9e4;*/
   display: flex;
   position: absolute;
   z-index: 4;
@@ -133,12 +135,13 @@ html,body{
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #c5c9e4;
+  
+
 }
 
 .jumbotron .container{
   width: 100%;
-  margin: 0 50px;
+  margin: 0 20px;
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -190,6 +193,14 @@ html,body{
   font-size: 70px;
   color: #333333;
   font-weight: bold;
+}
+
+.jumbotron .font-title-2{
+  font-size: 40px;
+  color: #a4560c;
+  text-shadow: 5px 5px 5px #e0a269;
+  font-style: italic;
+  font-weight:500;
 }
 
 .jumbotron button{
@@ -250,7 +261,7 @@ html,body{
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about {
-  background-color: #c5c9e4;
+  /*background-color: #c5c9e4;*/
   color: #1e1920;
 }
 
@@ -497,7 +508,7 @@ html,body{
   position: relative;
   width: 100%;
   display: flex;
-  background-color: #c5c9e4;
+  /*background-color: #c5c9e4;*/
 }
 
 .whyWEHack .contentBox {
@@ -695,7 +706,7 @@ html,body{
 /* ~~~~~~~~~~~TESTIMONIALS~~~~~~~~~~~~~*/
 
 .testimonials {
-  background-color: #c5c9e4;
+  /*background-color: #c5c9e4;*/
   color: #1e1920;
   padding: 25px;
   margin-top: 10px;
@@ -1153,6 +1164,9 @@ a:active {
 
 
 /*FAQ*/
+.faq {
+  background-color:#c5c9e4 ;
+}
 
 .column {
   display: flex;
@@ -1181,6 +1195,7 @@ a:active {
 }
 
 .faq div {
+  
   margin: auto;
   width: 80%;
   padding: 0px;
@@ -1444,7 +1459,7 @@ a:active {
   align-items: center;
   position: relative;
   text-align: center;
-  background: #c5c9e4;
+  /*background: #c5c9e4;*/
   color: #1e1920;
   padding: 30px;
 }
