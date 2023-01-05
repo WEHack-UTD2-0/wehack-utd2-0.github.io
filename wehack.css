@@ -1015,6 +1015,8 @@ footer {
   /*padding: 25px 30px;
   background: #5b2e70;
   color: #ffa508;*/
+  padding-top: 10px;
+  padding-bottom: 0%;
   text-align: center;
   position: relative;
   box-sizing: border-box;
