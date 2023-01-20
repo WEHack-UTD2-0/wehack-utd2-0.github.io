@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', serif;
+  background-color: #c5c9e4;
   background-image: url(/images/background.jpg);
   background-size: contain;
   background-repeat: repeat-y;
@@ -919,27 +920,34 @@ body {
 }
 
 .slide:nth-child(1) {
-  background-image: url(/images/sponsors/plat_sponsors.png);
+  background-image: url(/images/sponsors//toyota_sponsor.png);
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
 }
 
 .slide:nth-child(2) {
-  background-image: url(/images/sponsors/gold_sponsors.png);
+  background-image: url(/images/sponsors/plat_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
 }
 
 .slide:nth-child(3) {
-  background-image: url(/images/sponsors/silver_sponsors.png);
+  background-image: url(/images/sponsors/gold_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
 }
 
 .slide:nth-child(4) {
+  background-image: url(/images/sponsors/silver_sponsors.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0;
+}
+
+.slide:nth-child(5) {
   background-image: url(/images/sponsors/bronze_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -1991,6 +1999,19 @@ a:active {
     padding: 16px;
     width: 190px;
     font-size: 22px;
+  }
+}
+
+/* mobile background responsiveness */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+  html, body{
+    width: 100%;
+    overflow-x: hidden;
   }
 }
 
