@@ -150,7 +150,6 @@ html {
 
 .jumbotron .container {
   width: 100%;
-  margin: 0 20px;
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -196,12 +195,16 @@ html {
   color: #1e1920;
   text-shadow: 5px 5px 5px #e0a269;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .jumbotron .font-title-4 {
   font-size: 70px;
   color: #333333;
   font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .jumbotron .font-title-3 {
@@ -210,6 +213,8 @@ html {
   text-shadow: 5px 5px 5px #e0a269;
   font-style: italic;
   font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .jumbotron .font-title-2 {
@@ -218,6 +223,8 @@ html {
   text-shadow: 5px 5px 5px #e0a269;
   font-style: italic;
   font-weight: 500;
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .jumbotron button {
@@ -246,7 +253,7 @@ html {
   padding-bottom: 25px;
   font-size: 28px;
   font-weight: 800;
-  width: 100%;
+  width: 75%;
   background-color: #E0A269;
   color: #fff2ce;
 }
@@ -260,7 +267,7 @@ html {
   padding-bottom: 20px;
   font-size: 25px;
   font-weight: 800;
-  width: 50%;
+  width: 37%;
   background-color: #E0A269;
   color: #fff2ce;
 }
@@ -274,7 +281,7 @@ html {
   padding-bottom: 20px;
   font-size: 25px;
   font-weight: 800;
-  width: 450px;
+  width: 37%;
   background-color: #E0A269;
   color: #fff2ce;
 }
