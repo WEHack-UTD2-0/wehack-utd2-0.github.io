@@ -204,6 +204,14 @@ html {
   font-weight: bold;
 }
 
+.jumbotron .font-title-3 {
+  font-size: 25px;
+  color: #333333;
+  text-shadow: 5px 5px 5px #e0a269;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .jumbotron .font-title-2 {
   font-size: 40px;
   color: #a4560c;
