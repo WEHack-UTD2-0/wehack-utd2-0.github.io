@@ -206,6 +206,14 @@ html {
   font-weight: bold;
 }
 
+.jumbotron .font-title-3 {
+  font-size: 25px;
+  color: #333333;
+  text-shadow: 5px 5px 5px #e0a269;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .jumbotron .font-title-2 {
   font-size: 40px;
   color: #a4560c;
@@ -241,6 +249,34 @@ html {
   font-size: 28px;
   font-weight: 800;
   width: 100%;
+  background-color: #E0A269;
+  color: #fff2ce;
+}
+
+.jumbotron .volunteer {
+  display: inline-block;
+  border: none;
+  flex: 1;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  width: 50%;
+  background-color: #E0A269;
+  color: #fff2ce;
+}
+
+.jumbotron .mentor {
+  display: inline-block;
+  border: none;
+  flex: 1;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  width: 450px;
   background-color: #E0A269;
   color: #fff2ce;
 }
