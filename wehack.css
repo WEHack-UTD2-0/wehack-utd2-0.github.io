@@ -243,6 +243,34 @@ html {
   color: #fff2ce;
 }
 
+.jumbotron .volunteer {
+  display: inline-block;
+  border: none;
+  flex: 1;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  width: 50%;
+  background-color: #E0A269;
+  color: #fff2ce;
+}
+
+.jumbotron .mentor {
+  display: inline-block;
+  border: none;
+  flex: 1;
+  margin-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  width: 450px;
+  background-color: #E0A269;
+  color: #fff2ce;
+}
+
 .jumbotron .flex-grid {
   display: flex;
 }
