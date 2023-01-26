@@ -1,18 +1,18 @@
 /* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', serif;
+html {
   background-color: #c5c9e4;
   background-image: url(/images/background.jpg);
-  background-size: auto;
+  background-size: contain;
   background-repeat: repeat-y;
+  scroll-behavior: smooth;
 
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', serif;
+
 }
 
 .font-title-1 {
@@ -79,9 +79,37 @@ html {
 }
 
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~ */
+nav {
+  color: #fff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a {
+  color: #d24a32;
+  text-shadow: 2px 2px 2px #fff2ce;
+  text-align: center;
+  padding: auto;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d24a32;
+  background: #fff2ce;
+  text-decoration: none;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+/*
 .topnav {
   overflow: hidden;
-  /*background-color: #c5c9e4;*/
+  /*background-color: #c5c9e4;
   display: flex;
   position: absolute;
   z-index: 4;
@@ -122,7 +150,7 @@ html {
 
 .topnav a::after {
   display: none;
-}
+}*/
 
 .font-paragraph {
   font-family: 'Montserrat', sans-serif;
@@ -138,6 +166,7 @@ html {
   line-height: 16px;
 }
 
+
 /* ~~~~~~~~~~~~JUMBOTRON STYLING~~~~~~~~~~ */
 .jumbotron {
   height: 100vh;
@@ -146,7 +175,6 @@ html {
   justify-content: center;
   align-items: center;
   position: relative;
-
 
 }
 
@@ -163,6 +191,7 @@ html {
   .jumbotron .container {
     flex-direction: column;
   }
+
 }
 
 .jumbotron .placeholder {
@@ -193,7 +222,7 @@ html {
 }
 
 .jumbotron .font-title-1 {
-  font-size: 90px;
+  font-size: 80px;
   color: #1e1920;
   text-shadow: 5px 5px 5px #e0a269;
   font-weight: bold;
@@ -202,7 +231,7 @@ html {
 }
 
 .jumbotron .font-title-4 {
-  font-size: 70px;
+  font-size: 60px;
   color: #333333;
   font-weight: bold;
   margin-top: 0px;
@@ -765,7 +794,7 @@ p {
   position: relative;
   width: 550px;
   height: 400px;
-  float: left;
+  float: right;
   margin: 12px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 10px black;
@@ -1655,11 +1684,12 @@ a:active {
 }
 
 .group-photo img {
-  width: 1110px;
+  width: 100%;
   height: 650px;
   box-shadow: 10px 10px #c5c9e4, 12px 12px 0px 1px #fff2ce;
   margin-top: 10px;
   margin-bottom: 100px;
+  object-fit: contain;
 }
 
 .group-photo .hover-img {
