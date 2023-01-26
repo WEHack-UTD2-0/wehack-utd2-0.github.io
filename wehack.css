@@ -1,18 +1,18 @@
 /* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', serif;
+html {
   background-color: #c5c9e4;
   background-image: url(/images/background.jpg);
-  background-size: auto;
+  background-size: contain;
   background-repeat: repeat-y;
+  scroll-behavior: smooth;
 
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', serif;
+
 }
 
 .font-title-1 {
