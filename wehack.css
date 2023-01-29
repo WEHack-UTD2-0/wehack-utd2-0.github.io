@@ -101,7 +101,6 @@ nav a {
   font-weight: bold;
   float: center;
   display: block;
-
 }
 
 
@@ -179,7 +178,7 @@ nav li {
 
 /* ~~~~~~~~~~~~JUMBOTRON STYLING~~~~~~~~~~ */
 .jumbotron {
-  height: 100vh;
+  height: 110vh;
   width: 100%;
   display: flex;
   justify-content: center;
