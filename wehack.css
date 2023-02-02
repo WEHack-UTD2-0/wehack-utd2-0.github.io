@@ -78,7 +78,21 @@ body {
   margin-left: 160px;
 }
 
-/*nav*/
+
+/* MLH Badge */
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  right: 10px;
+  top: 0;
+  width: 10%;
+  z-index: 10000
+}
+
+
+/* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~*/
 
 .navmenu {
   display: flex;
@@ -132,17 +146,6 @@ input[type=checkbox] {
   font-size: 35px;
   user-select: none;
   color: black;
-}
-
-#mlh-trust-badge {
-  display: block;
-  max-width: 100px;
-  min-width: 60px;
-  position: fixed;
-  right: 10px;
-  top: 60px;
-  width: 10%;
-  z-index: 1000
 }
 
 @media (max-width: 970px) {
@@ -341,7 +344,7 @@ nav li {
 
   .jumbotron {
     padding-top: 10vh;
-    padding-bottom: 50vh;
+    padding-bottom: 60vh;
   }
 
   .jumbotron .container {
@@ -440,11 +443,6 @@ nav li {
   color: #fff2ce;
 }
 
-@media (max-width:860px) {
-  .jumbotron .volunteer {
-    width: fit-content;
-  }
-}
 
 .jumbotron .mentor {
   display: inline-block;
