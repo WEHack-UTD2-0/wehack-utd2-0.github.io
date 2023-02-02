@@ -299,7 +299,7 @@ nav li {
 
 /* ~~~~~~~~~~~~JUMBOTRON STYLING~~~~~~~~~~ */
 .jumbotron {
-  height: 100vh;
+  height: 120vh;
   width: fit-content;
   display: flex;
   justify-content: center;
@@ -309,7 +309,6 @@ nav li {
 }
 
 .jumbotron .container {
-  margin-top: 20px;
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -333,6 +332,7 @@ nav li {
   top: 50%;
   left: 67%;
   transform: translate(-50%, -50%);*/
+  width: fit-content;
   justify-content: right;
   vertical-align: middle;
   text-align: center;
