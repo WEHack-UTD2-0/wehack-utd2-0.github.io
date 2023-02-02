@@ -299,7 +299,7 @@ nav li {
 
 .jumbotron .placeholder {
   margin: 0px 50px;
-  width: 40%;
+  width: fit-content;
   /*background-color: white;
   opacity: 0.2;
   height: 70vh;*/
