@@ -440,6 +440,12 @@ nav li {
   color: #fff2ce;
 }
 
+@media (max-width:860px) {
+  .jumbotron .volunteer {
+    width: fit-content;
+  }
+}
+
 .jumbotron .mentor {
   display: inline-block;
   border: none;
