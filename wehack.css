@@ -1068,14 +1068,8 @@ body {
   margin: 0;
 }
 
-.slide:nth-child(4) {
-  background-image: url(/images/sponsors/silver_sponsors.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0;
-}
 
-.slide:nth-child(5) {
+.slide:nth-child(4) {
   background-image: url(/images/sponsors/bronze_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100%;
