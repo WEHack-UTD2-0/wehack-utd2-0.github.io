@@ -259,11 +259,6 @@ input[type=checkbox] {
 }
 
 @media only screen and (max-width: 860px) {
-  .jumbotron .placeholder {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-  }
-
   .jumbotron .container {
     flex-direction: column;
   }
