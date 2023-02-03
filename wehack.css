@@ -1,4 +1,5 @@
 /* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
+
 html {
   background-color: #c5c9e4;
   background-image: url(/images/background.jpg);
@@ -215,9 +216,12 @@ input[type=checkbox] {
 }
 
 /* ~~~~~~~~~~~~JUMBOTRON STYLING~~~~~~~~~~ */
+
 .jumbotron {
-  height: 120vh;
-  width: fit-content;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  height: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -226,7 +230,7 @@ input[type=checkbox] {
 }
 
 .jumbotron .container {
-  width: fit-content;
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-content: space-around;
@@ -249,34 +253,21 @@ input[type=checkbox] {
   top: 50%;
   left: 67%;
   transform: translate(-50%, -50%);*/
-  width: fit-content;
   justify-content: right;
   vertical-align: middle;
   text-align: center;
 }
 
-@media (max-width: 860px) {
+@media only screen and (max-width: 860px) {
   .jumbotron .placeholder {
-    margin: 20px 0px;
-    padding-top: 30vh;
-  }
-
-  .jumbotron {
     padding-top: 10vh;
-    padding-bottom: 60vh;
+    padding-bottom: 10vh;
   }
 
   .jumbotron .container {
     flex-direction: column;
   }
 
-}
-
-.jumbotron h1 {
-  width: min-intrinsic;
-  display: -ms-grid;
-  -ms-grid-columns: min-content;
-  margin-bottom: 20px;
 }
 
 .jumbotron .font-title-1 {
