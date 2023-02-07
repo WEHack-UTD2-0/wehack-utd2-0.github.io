@@ -218,8 +218,8 @@ input[type=checkbox] {
 /* ~~~~~~~~~~~~JUMBOTRON STYLING~~~~~~~~~~ */
 
 .jumbotron {
-  padding-top: 22vh;
-  padding-bottom: 22vh;
+  padding-top: 19vh;
+  padding-bottom: 19vh;
   height: auto;
   width: 100%;
   display: flex;
