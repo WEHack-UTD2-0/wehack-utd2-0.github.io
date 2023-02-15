@@ -12,12 +12,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', san-serif;
 
 }
 
 .font-title-1 {
-  font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 72px;
   line-height: 80px;
 }
@@ -282,11 +282,10 @@ input[type=checkbox] {
 }
 
 .jumbotron .font-title-3 {
-  font-size: 25px;
+  font-size: 23px;
   color: #333333;
-  text-shadow: 5px 5px 5px #e0a269;
-  font-style: italic;
-  font-weight: 500;
+  text-shadow: 3px 2px 3px #e0a269;
+  font-weight: 800;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -326,7 +325,7 @@ input[type=checkbox] {
   margin-bottom: 8px;
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 800;
   width: 75%;
   background-color: #E0A269;
@@ -340,7 +339,7 @@ input[type=checkbox] {
   margin-bottom: 8px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 800;
   width: 37%;
   background-color: #E0A269;
@@ -355,7 +354,7 @@ input[type=checkbox] {
   margin-bottom: 8px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 800;
   width: 37%;
   background-color: #E0A269;
@@ -392,6 +391,7 @@ input[type=checkbox] {
 .about {
   /*background-color: #c5c9e4;*/
   color: #1e1920;
+  padding-top: 70px;
 }
 
 /*@media (max-width: 1024px) {
@@ -407,6 +407,7 @@ input[type=checkbox] {
 
 .about-heading {
   font-size: 1.8em;
+  text-shadow: 2px 3px 3px #e0a269;
   margin: 2%;
 }
 
@@ -857,9 +858,13 @@ p {
 .testimonials {
   /*background-color: #c5c9e4;*/
   color: #1e1920;
-  padding: 25px;
+  padding-top: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.testimonials h1{
+  text-shadow: 2px 3px 5px #e0a269;
 }
 
 .test-container {
@@ -975,8 +980,13 @@ body {
 
 .slider-wrapper {
   margin: 5rem;
+  padding-top: 70px;
   position: relative;
   overflow: hidden;
+}
+
+.slider-wrapper h1 {
+  text-shadow: 2px 3px 4px #e0a269;
 }
 
 .slides-container {
@@ -1147,7 +1157,6 @@ footer {
 
 }
 
-
 .bottom {
   color: #FFFFFF;
   display: flex;
@@ -1166,17 +1175,21 @@ footer .grid {
 }
 
 footer .text {
-  color: #FFFFFF;
+  color: #fff2ce;
   font-size: 13px;
 }
 
 footer .text:hover {
-  color: #C0F4B7;
+  color: #fff2ce;
 }
 
 footer .Conduct {
   text-align: center;
-  color: white;
+  color: #fff2ce;
+}
+
+.copyright p {
+  color:#fff2ce;
 }
 
 
@@ -1328,6 +1341,7 @@ a:active {
 /*FAQ*/
 .faq {
   background-color: #c5c9e4;
+  padding-top: 50px;
 }
 
 .column {
@@ -1356,6 +1370,10 @@ a:active {
   }
 }
 
+.faq .accrdion {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .faq div {
 
   margin: auto;
@@ -1372,10 +1390,12 @@ a:active {
 
 .faq h1 {
   padding-top: 30px;
+  text-shadow: 2px 3px 4px #e0a269;
 }
 
 .faq p {
   color: #1e1920;
+  font-family: 'Montserrat', sans-serif;
   padding: 5;
   margin: 10;
 }
@@ -1637,13 +1657,17 @@ a:active {
   text-align: center;
   /*background: #c5c9e4;*/
   color: #1e1920;
-  padding: 30px;
+  padding-top: 90px;
 }
 
 .team .row {
   justify-content: space-around;
   align-items: center;
   margin: 0 10px;
+}
+
+.team h1 {
+  text-shadow: 2px 3px 4px #e0a269;
 }
 
 .team-member {
