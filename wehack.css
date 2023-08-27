@@ -922,6 +922,22 @@ p {
 @media (max-width: 500px) {
   .test-container {
     text-align: center;
+    padding: 30px 40px 30px 40px;
+    margin: 40px 60px 40px 60px;
+  }
+
+  .test-container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .test-container {
+    text-align: center;
+    padding: 30px 40px 30px 40px;
+    margin: 40px 60px 40px 60px;
   }
 
   .test-container img {
