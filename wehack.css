@@ -987,18 +987,21 @@ body {
 
 .slider-wrapper h1 {
   text-shadow: 2px 3px 4px #e0a269;
+  overflow: hidden;
+
 }
 
 .slides-container {
   height: 70%;
   width: 100%;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   scroll-behavior: smooth;
   list-style: none;
   margin: 0;
   padding: 0;
   overflow-y: hidden;
+  transition: .5s;
   /* Hide scrollbars */
 }
 
