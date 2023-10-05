@@ -1141,20 +1141,15 @@ body {
 
 /* ~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~ */
 footer {
-  /*
-  background: #5b2e70;
-  color: #ffa508;*/
   padding-top: 10px;
   padding-bottom: 0%;
-  text-align: center;
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   box-sizing: border-box;
   background: #6a6f9a;
-  /*background: #E38F61;*/
-  /*background: #E0A269;*/
-  /*box-shadow: 0px 0px 10px 5px #80849f;*/
-  border-radius: 30px;
-
+  box-shadow: 0px 0px 10px 5px #80849f;
+  width: 100%;
 }
 
 .bottom {
@@ -1183,13 +1178,8 @@ footer .text:hover {
   color: #fff2ce;
 }
 
-footer .Conduct {
-  text-align: center;
+footer .copyright p {
   color: #fff2ce;
-}
-
-.copyright p {
-  color:#fff2ce;
 }
 
 
