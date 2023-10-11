@@ -1244,6 +1244,10 @@ footer .grid {
 footer .text {
   color: #fff2ce;
   font-size: 13px;
+  position: relative;
+  top: 0px;
+  width: auto;
+  text-align: justify;
 }
 
 footer .text:hover {
