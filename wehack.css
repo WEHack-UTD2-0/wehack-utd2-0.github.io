@@ -857,7 +857,7 @@ p {
 }
 
 /* Caption text */
-.text {
+.stattext {
   color: #f2f2f2;
   font-size: 30px;
   padding: 8px 12px;
@@ -1244,10 +1244,6 @@ footer .grid {
 footer .text {
   color: #fff2ce;
   font-size: 13px;
-  position: relative;
-  top: 0px;
-  width: auto;
-  text-align: justify;
 }
 
 footer .text:hover {
