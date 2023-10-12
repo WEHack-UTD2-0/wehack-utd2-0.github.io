@@ -6,6 +6,7 @@ html {
   background-size: contain;
   background-repeat: repeat-y;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 
 }
 
