@@ -32,7 +32,7 @@
     
     
     <!-- JUMBOTRON -->
-    <div class="jumbotron">
+    <section class="jumbotron">
         <div class="container">
             <div class="placeholder"><img src="/images/logos/transparent_wehack_logo.png" alt="WEHack logo" style="border-radius: 17px"> <!--border: 2px solid #e0a269-->
             </div>
@@ -56,7 +56,7 @@
              </div>
         </div>
         <div class="font-paragraph message">"Computing is too important to be left to men." - Karen Spärck Jones, a British Computer Scientist (1935 - 2007)</div>
-    </div>
+      </section>
     <br />
 <!-------- ABOUT Section of the webpage------->
 
@@ -79,7 +79,10 @@
           More information coming soon!
         </p>
         <br /> <br />
+      </div>
+    </section>
 
+    <section class="statistics">
      <!-----Statistics slideshow of the Webpage  --->
         <div class="slideshow-container">
           <div class="mySlides fade">
@@ -111,7 +114,6 @@
             <span class="dot" onclick="currentSlide(3)"></span> 
           </div>
           <script src="stat.js"></script>
-      </div>
     </section>
 
     <!-----Past Testimonials Secition-------->
@@ -185,7 +187,7 @@
     </script>
 
     <!-- FAQ -->
-    <div class="faq" id="faq">
+    <section class="faq" id="faq">
       <center>
         <h1 class="heading">Frequently Asked Questions</h1> 
       </center>
@@ -267,25 +269,8 @@
       
       </div>
       </center>
-      
-      <script>
-        var acc = document.getElementsByClassName("accrdion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-        </script>
-        
-    </div>
+      <script src="faq.js"></script>+
+    </section>
 
      <!-- Meet The Team -->
      <section class="team" id="meettheteam">

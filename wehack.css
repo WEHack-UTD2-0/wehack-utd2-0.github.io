@@ -820,6 +820,17 @@ p {
 
 /* ~~~~~~~~~~~Past Statistics~~~~~~~~~~~~~~ */
 
+.statistics {
+  margin: auto;
+  width: 80%;
+  padding: 40px;
+  /*text-align: center;*/
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
