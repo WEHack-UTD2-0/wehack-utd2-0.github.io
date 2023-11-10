@@ -196,7 +196,8 @@ input[type=checkbox] {
 
   .menu li:hover {
     display: inline-block;
-    background-color: fff2ce;
+    /* background-color: fff2ce; */
+    background-color: #FFFFFF;
     transition: 0.3s ease;
   }
 
