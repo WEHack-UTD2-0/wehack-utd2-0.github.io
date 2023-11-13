@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>WEHack</title>
@@ -14,7 +15,6 @@
 
   <body>
      <!-- Top nav bar --->
-
     <nav class="navmenu">
       <ul class="ul-nav">      
         <input type="checkbox" id="checkbox_toggle" />
@@ -25,13 +25,14 @@
           <li><a href="#sponsors">Sponsors</a></li>
           <li><a href="#faq">FAQ</a></li>
           <li><a href="#meettheteam">Team</a></li>
-          <li><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a></li>
+          <li><a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"></a></li>
         </div>
       </ul>
     </nav>
     
+    
     <!-- JUMBOTRON -->
-    <div class="jumbotron">
+    <section class="jumbotron">
         <div class="container">
             <div class="placeholder"><img src="/images/logos/transparent_wehack_logo.png" alt="WEHack logo" style="border-radius: 17px"> <!--border: 2px solid #e0a269-->
             </div>
@@ -55,38 +56,6 @@
              </div>
         </div>
         <div class="font-paragraph message">"Computing is too important to be left to men." - Karen Spärck Jones, a British Computer Scientist (1935 - 2007)</div>
-    </div>
-    <br />
-   <section class="about">
-    <div class="contentBx" id="wehack">
-      <h1 class="about-heading"><center>Dallas’ largest inclusive hackathon</center></h1>
-      <p>
-        UTD's women-driven tech organizations are excited to join forces and
-        present our 24-hour hackathon uniting women and non-binary students.
-        Our goal is to create an inclusive environment that highlights and
-        empowers women, femme, and non-binary students through technology.
-        We aim to encourage more underrepresented individuals to harness their
-        skills by creating software or hardware projects of their own. Whether
-        it's networking with sponsors and hackers, gaining development and workshop
-        experience, or competing against other teams for challenges and prizes,
-        WEHack offers participants an opportunity to end the weekend with unique takeaways.
-      </p>
-      <h1 class="about-heading"><center> Get ready for WEHack 2024!</center></h1>
-      <p>
-        More information coming soon!
-      </p>
-      <br /> <br />
-      <section id="past_info">
-        <div class="statistics">
-          <div class="box1"> First Virtual Hackathon</div>
-          
-          <div class="box2">First In-Person Hackathon</div>
-            <!--Countdown-->
-            <!--
-            <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-            <a href="https://logwork.com/countdown-swx8" class="countdown-timer" data-width="500" data-timezone="America/Chicago" data-textcolor="#ffffff" data-date="2022-04-02 00:00" data-unitscolor="#ffffff">WEHack Countdown</a> 
-            -->          
-        </div>
       </section>
      </div>
     <!-- commenting out orgs
@@ -240,161 +209,137 @@
 <!-- end -->
      
     </section>
+    <br />
+<!-------- ABOUT Section of the webpage------->
 
-<!-- old "Challenges" section
-    <section class="challenge" id="theme">
-      <div class="intro">
-        <h2 class="text-muted">CHALLENGE</h1>
-        <p>Components of Robotics are utilized in almost every aspect in the tech world. Because of this we decided to get inspiration from the robotics field for our hackathon. Since there are a myriad of fields that play a role in creating a robot, our team thought that it is a generalized theme and will provide hackers a creative mindset to form an innovative project based on the following challenge statement below.</p>
+    <section class="about">
+      <div class="contentBx" id="wehack">
+        <h1 class="about-heading"><center>Dallas’ largest inclusive hackathon</center></h1>
+        <p>
+          UTD's women-driven tech organizations are excited to join forces and
+          present our 24-hour hackathon uniting women and non-binary students.
+          Our goal is to create an inclusive environment that highlights and
+          empowers women, femme, and non-binary students through technology.
+          We aim to encourage more underrepresented individuals to harness their
+          skills by creating software or hardware projects of their own. Whether
+          it's networking with sponsors and hackers, gaining development and workshop
+          experience, or competing against other teams for challenges and prizes,
+          WEHack offers participants an opportunity to end the weekend with unique takeaways.
+        </p>
+        <h1 class="about-heading"><center> Get ready for WEHack 2024!</center></h1>
+        <p>
+          More information coming soon!
+        </p>
+        <br /> <br />
+      </div>
+    </section>
+
+    <section class="statistics">
+     <!-----Statistics slideshow of the Webpage  --->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/images/stat2020.jpg" style="width:700px; box-shadow: 0px 0px 20px 10px purple;">
+            <div class="stattext">First Virtual Hackathon</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/images/stat2022.jpg" style="width:700px; box-shadow: 0px 0px 20px 10px black;" >
+            <div class="stattext">First In-Person Hackathon</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/images/Stat2023.jpg" style="width:700px; box-shadow: 0px 0px 20px 10px rgb(128, 117, 166);" >
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          <script src="stat.js"></script>
+    </section>
+
+    <!-----Past Testimonials Secition-------->
+
+    <section class="testimonials" id="testimonials">
+      <center><h1 class="heading">Testimonials</h1></center>
+      <div class="test-container">
+        <img src="images/testimonials/Jane_Luo.png">
+        <p class="test-desc"><span class="test-header">Jane Luo</span> Junior CS Major</p>
+        <p class="test-body">"I’ve been to both iterations of WEHack, and they have been an absolute blast! I love working in an inclusive environment that pushes me to be 
+          creative when experimenting with new technologies and build my interpersonal skills. I fondly look back on running around to different workshops, enjoying the food 
+          and swag, and meeting new people. I’m looking forward to the next iteration of WEHack!"
+        </p>
+      </div>
+      
+      <div class="test-container">
+        <img src="images/testimonials/Jazsmine_DeFranco.png">
+        <p class="test-desc"><span class="test-header">Jazsmine DeFranco</span> Sophomore CS Major</p>
+        <p class="test-body">"As a freshman in college, this was my first hackathon that I’m so glad I participated in! From this experience, not only did my team and I essentially 
+          learn web development overnight while  developing a professional project in under 24 hours but we also ended up winning and placing in our category! I can confidently 
+          say that this event definitely motivated and inspired me to continue working hard through all of my CS endeavors."</p>
       </div>
 
-      <div class="content">
-        <h6 class="text-muted">THEME</h2>
-        <h1 class="heading">Robotics</h1>
-        <p>Create a project that addresses one of the issues that the robotics industry is currently facing.</p>
-          <img
-            src="images/robot.png"
-            style="width: 100%; max-width:git  150px; height: auto; padding-top: 15px;"
-          />
-    </section>
-  -->
-
-    <!-- Resources section (new) [Commenting out for now]
-    <section class="resources" id="resources">
+      <div class="test-container">
+        <img src="images/testimonials/Kaylee Scanlin.png">
+        <p class="test-desc"><span class="test-header">Kaylee Scanlin</span> Sophomore CS Major</p>
+        <p class="test-body">"WEHack was my first hackathon, and I couldn’t have asked for a better first-time experience! As a woman in engineering, the fear of being underrepresented in my 
+          field has always been at the back of my mind, but seeing so many women and non-binary hackers in one building showed me that this industry truly is for everyone." </p>
+      </div>
+    </section>   
+    
+    <!------ SPONSORS section ------ -->
+    <section class="slider-wrapper" id="sponsors">
       <center class="intro">
-        <h1 class="heading">Resources</h1>
+        <h1 class="heading">Sponsors</h1>
       </center>
-
-      <div class="flex-container">
-        <a class="resource-link" href="https://medium.com/garyyauchan/ultimate-8-step-guide-to-winning-hackathons-84c9dacbe8e" target="_blank"><img class="img-tile1" src="/images/hackathon_article.jpeg"></a>
-        <div class="resource-content">
-          <h1 class="heading-2"><a class="resource-link" href="https://medium.com/garyyauchan/ultimate-8-step-guide-to-winning-hackathons-84c9dacbe8e" target="_blank">Ultimate 8 Step Guide to Winning Hackathons</a></h1>
-          <p class="resource-line-1">What Gary-Yau Chan learned after 55 Hackathons, and what we think can help you succeed!</p>
-          <h1 class="resource-heading-3"><a class="resource-link" href="https://medium.com/garyyauchan/ultimate-8-step-guide-to-winning-hackathons-84c9dacbe8e" target="_blank">Learn more </a></h1>
-        </div>
-      </div>
-
-      <div class="flex-container2">
-        <div class="flex-container">
-          <a class="resource-link" href="https://sweutd.com/" target="_blank"><img class="img-tile2" src="/images/logos/sweLogo.png"></a>
-          <div class="resource-content">
-          <h1 class="heading-4"><a class="resource-link" href="https://sweutd.com/" target="_blank">SWE Website</a></h1>
-          <p class="resource-line-2">Check out sweutd.com for some ideas!</p>
-          <h1 class="heading-5"><a class="resource-link" href="https://sweutd.com/" target="_blank">Learn more </a></h1>
-          </div>
-        </div>
-        <div class="flex-container">
-          <a class="resource-link" href="https://wehack-2020.devpost.com/project-gallery" target="_blank"><img class="img-tile2" src="/images/logos/wehack_logo.png"></a>
-          <div class="resource-content">
-          <h1 class="heading-4"><a class="resource-link" href="https://wehack-2020.devpost.com/project-gallery" target="_blank">WEHack 2020 Projects</a></h1>
-          <p class="resource-line-2">View projects from the last iteration of WEHack to get inspired! </p>
-          <h1 class="heading-5"><a class="resource-link" href="https://wehack-2020.devpost.com/project-gallery" target="_blank">Learn more </a></h1>
-          </div>
-        </div>
-      </div>
-
-      <-- extras
-      <div class="flex-container2">
-        <div class="flex-container">
-          <img class="img-tile2">
-          <div class="resource-content">
-            <h1 class="heading-4">Hacking the Hackathon4</h1>
-            <p class="resource-line-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna. Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. </p>
-            <h1 class="heading-5"><a>Learn more D</a></h1>
-          </div>
-        </div>
-        <div class="flex-container">
-          <img class="img-tile2">
-          <div class="resource-content">
-            <h1 class="heading-4">Hacking the Hackathon5</h1>
-            <p class="resource-line-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In aliquam pharetra leo vitae scelerisque. Vestibulum sem urna, fermentum vitae rutrum id, maximus eget magna. Nulla vel est sapien. Pellentesque et sodales urna, et tempus velit. </p>
-            <h1 class="heading-5"><a>Learn more D</a></h1>
-          </div>
-        </div>
-      </div>
-    -->
-
-
-
-
-<!-- SPONSORS -->
-
-
-</section>
-<section class="slider-wrapper" id="sponsors">
-  <center class="intro">
-    <h1 class="heading">Sponsors</h1>
-  </center>
-  <button class="slide-arrow" id="slide-arrow-prev">
-    &#8249;
-  </button>
-  <button class="slide-arrow" id="slide-arrow-next">
-    &#8250;
-  </button>
-  <ul class="slides-container" id="slides-container">
-    <li class="slide">
-    </li>
-    <li class="slide">
-    </li>
-    <li class="slide">
-    </li>
-    <li class="slide">
-    </li>
-  </ul>
-</section>
-
-<script>
-  const slidesContainer = document.getElementById("slides-container");
-  const slide = document.querySelector(".slide");
-  const prevButton = document.getElementById("slide-arrow-prev");
-  const nextButton = document.getElementById("slide-arrow-next");
-
-  nextButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft += slideWidth;
-  });
-
-  prevButton.addEventListener("click", () => {
-    const slideWidth = slide.clientWidth;
-    slidesContainer.scrollLeft -= slideWidth;
-  });
-</script>
-
-<!-- commenting out partners section
-  <section class="partners" id="partners">
-        <center>
-           <h1 class="heading">Partners</h1>
-        </center>
-        <br />
-        <div class ="partners">
-          <center>
-            <a href="https://www.dfwatw.org/">
-                <img src="images\partners\atw.png"/>
-            </a>
-            <a href="https://www.emergingladiesacademy.org/">
-              <img src="images\partners\EmergingLadiesAcademy.png"/>
-            </a> 
-            <a href="http://www.yggomaha.com/">
-              <img class="smaller" src="images\partners\YouGoGirlOmaha_Logo_2C.png"/>
-            </a>         
-          </center>
-        </div>
-        <div class ="partners">
-          <center>
-            <a href="https://mysterycodesociety.com/">
-              <img src="images\partners\mystery_code_society_logo.png"/>
-            </a> 
-            <a href="https://www.igniteworldwide.org/">
-              <img class="shrink" src="images\partners\IgniteWorldwide.png"/>
-            </a>            
-          </center>
-        </div>
-        <br />
+      <button class="slide-arrow" id="slide-arrow-prev">
+        &#8249;
+      </button>
+      <button class="slide-arrow" id="slide-arrow-next">
+        &#8250;
+      </button>
+      <ul class="slides-container" id="slides-container">
+        <li class="slide">
+        </li>
+        <li class="slide">
+        </li>
+        <li class="slide">
+        </li>
+        <li class="slide">
+        </li>
+      </ul>
     </section>
-  -->
+    
+    <!----Java script part for the sponosr slideshow-->
+    <script>
+      const slidesContainer = document.getElementById("slides-container");
+      const slide = document.querySelector(".slide");
+      const prevButton = document.getElementById("slide-arrow-prev");
+      const nextButton = document.getElementById("slide-arrow-next");
+
+      nextButton.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft += slideWidth;
+      });
+
+      prevButton.addEventListener("click", () => {
+        const slideWidth = slide.clientWidth;
+        slidesContainer.scrollLeft -= slideWidth;
+      });
+    </script>
 
     <!-- FAQ -->
-    <div class="faq" id="faq">
+    <section class="faq" id="faq">
       <center>
         <h1 class="heading">Frequently Asked Questions</h1> 
       </center>
@@ -403,12 +348,12 @@
         <div class="column">
         <button class="accrdion">Who can attend?</button>
         <div class="panel">
-          <p>Anyone can sign up to participate as a hacker at WEHack. However, keep in mind that a lot of the hackathon content will revolve around women and non-binary experiences to reflect our mission of uniting and empowering women and non-binary individuals in STEM. If you do not identify as female or non-binary but consider yourself an ally of our cause, we would love to have you as a mentor or volunteer!</a></p>
+          <p>Anyone can sign up to participate as a hacker at WEHack. However, keep in mind that a lot of the hackathon content will revolve around women and non-binary experiences to reflect our mission of uniting and empowering women and non-binary individuals in STEM. If you do not identify as female or non-binary but consider yourself an ally of our cause, we would love to have you as a mentor or volunteer!</p>
         </div>
         
         <button class="accrdion">When and where is WEHack?</button>
         <div class="panel">
-          <p>WEHack 2023 is from Saturday, February 11th, to Sunday, February 12th. It is going to be held in person in the Engineering and Computer Science West (ECSW) building at the University of Texas at Dallas.</p>
+          <p>WEHack 2024 will be held in March 2024, in person in the Engineering and Computer Science West (ECSW) building at the University of Texas at Dallas.</p>
         </div>
         
         <button class="accrdion">Do I need to have coding experience?</button>
@@ -418,7 +363,8 @@
 
         <button class="accrdion">How do I apply?</button>
         <div class="panel">
-          <p>Hacker, mentor, and volunteer applications are open! Please refer to the links at the top of the page to apply.</p>
+          <p>Hacker, mentor, and volunteer applications will open soon!</p>
+          <!-- <p>Hacker, mentor, and volunteer applications are open! Please refer to the links at the top of the page to apply.</p>-->
         </div>
 
         <button class="accrdion">Can I participate if I am in high school?</button>
@@ -441,7 +387,7 @@
         
         <button class="accrdion">Does it cost money to participate?</button>
         <div class="panel">
-          <p>WEHack 2023 is completely free! This includes food and swag, which will be handed out to attendees during the hackathon.</p>
+          <p>WEHack 2024 is completely free! This includes food and swag, which will be handed out to attendees during the hackathon.</p>
         </div>
         
         <button class="accrdion">How do teams work at WEHack?</button>
@@ -451,7 +397,8 @@
         
         <button class="accrdion">When does registration close?</button>
         <div class="panel">
-          <p>Registration closes on February 4th.</p> 
+          <p>Registration deadlines will be announced soon.</p>
+          <!-- <p>Registration closes on February 4th.</p> -->
           <!-- Applications for WEHack 2020 are due on ______. You will hear back from us on ______. -->
         </div>
         
@@ -465,7 +412,7 @@
           <p>We will provide food for meat, vegetarian, gluten-free, and halal diets.</p>
         </div>
         
-        <button class="accrdion">Can I sleep at WEHack 2023?</button>
+        <button class="accrdion">Can I sleep at WEHack?</button>
         <div class="panel">
           <p>You are welcome to sleep at WEHack! Make sure to bring pillows, blankets, chargers, and other necessities if you are planning to stay the night.</p>
         </div>
@@ -474,100 +421,8 @@
       
       </div>
       </center>
-      
-      <script>
-        var acc = document.getElementsByClassName("accrdion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-        </script>
-        
-    </div>
-
-    <!-- WEHACK EMPOWER SERIES 
-
-    <section class="empower">
-      <div class="contentBox" id="empower">
-        <h1 class="heading">WEHack Empower Series</h1>
-        <p>
-          Join us in an empowering speaker series.
-        </p>
-        <h1 class="heading"> </h1>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <center>
-          <div class="row2">
-            <button class="accrdion2">September 9, 7:30 PM CST - <a href="http://meet.google.com/cvn-bype-ruv">The Business World In Tech</a> with Sang Le</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Business woman Sang Le discusses the business within the technology world.</p>
-            </div>
-            
-            <button class="accrdion2">September 11, 3:00 PM CST - <a href="http://meet.google.com/tmy-fyjg-ybx">Intermediate Python Workshop</a> with Victoria Catlett</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Following the beginner Python Workshop, this workshop prepares for more complex projects. <br>Come learn from Victoria Catlett! Join early to download the software.</p>
-            </div>
-            
-            <button class="accrdion2">September 14, 12:00 PM CST - <a href="http://meet.google.com/hvq-zgfq-ivi">The Confident Professional: Building Essential Skills for Life & Work</a> with Erin Rector</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Accomplished Communications & Strategy Consultant Erin Rector walks through the skills needed to succeed at work and at life.</p>
-            </div>
-    
-            <button class="accrdion2">September 16, 5:00 PM CST - <a href="http://meet.google.com/qhc-ewrm-ztr">#IamRemarkable</a> with Shreya Prasad</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Austin Women in Technology representative Shreya Prasad brings you a self-branding workshop that may help you find yourself.</p>
-            </div>
-    
-            <button class="accrdion2">September 21, 5:00 PM CST - <a href="http://meet.google.com/xmr-xavf-vys">Tech Together: How to Make the Most of Your First Hackathon</a> with Margarita Zias and Shannon Heh</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> Tech Together, an organization which has brought you many, many hackathons, shares how to make the most of your first hackathon.</p>
-            </div>
-    
-            <button class="accrdion2">September 23, 4:00 PM CST - <a href="http://meet.google.com/nzs-bagq-itk">WEHack, WE Meet</a> with the WEHack Organizers</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Find your WEHack team here!</p>
-            </div>
-    
-            <button class="accrdion2">October 1, 5:00 PM CST - <a href="http://meet.google.com/mfi-jpce-ibu">AI vs Machine Learning vs Data Science: What is it and what's the hype?</a> with Mimi Park</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Executive Director at JPMorgan Chase, Mimi Park, wants to share with you the differences between 3 of the fastest growing sectors in computer science: Artificial Intelligence, Machine Learning, and Data Science.</p>
-            </div>
-            
-            <button class="accrdion2">October 9, 5:00 PM CST - <a href="http://meet.google.com/nia-xeup-oku">Sponsor API + Meet The Organizers</a> with the WEHack's Sponsors and Organizers</button>
-            <div class="panel2">
-              <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Learn how to use sponsor APIs and meet our lovely WEHack organizers after.</p>
-            </div>
-                 
-          </div>
-        </center>
-          
-          <script>
-            var acc2 = document.getElementsByClassName("accrdion2");
-            var j;
-            
-            for (j = 0; j < acc2.length; j++) {
-              acc2[j].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel2 = this.nextElementSibling;
-                if (panel2.style.maxHeight) {
-                  panel2.style.maxHeight = null;
-                } else {
-                  panel2.style.maxHeight = panel2.scrollHeight + "px";
-                } 
-              });
-            }
-            </script>
-      </div>
+      <script src="faq.js"></script>+
     </section>
-  -->
 
      <!-- Meet The Team -->
      <section class="team" id="meettheteam">
@@ -627,22 +482,14 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div>
-        <!--Countdown-->
-        <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-        <a href="https://logwork.com/countdown-xfb7" class="countdown-timer" data-width="600" data-timezone="America/Chicago" data-textcolor="#d24a32" data-date="2023-02-11 09:30" data-background="#fff2ce" data-digitscolor="#e0a269" data-unitscolor="#d24a32">Time Remaining:</a>
-        <br><br><br><br><br>
-      </div>
-  </section>
-   <br />
+      </div>    
+    </section>
+    <br />
      
-   <!--<section class="contact" id="contact">-->
+   <!-- Footer -->
     <footer id="footer">
 
-      <div class="grid">
-        <div></div>
+      <!-- <div class="grid"> -->
        <!--<div>
           Countdown
           <script src="https://cdn.logwork.com/widget/countdown.js"></script>
@@ -658,44 +505,40 @@
           </a>      
         </div>
         <div></div> -->
-        <div class = "Conduct">
-          <a 
-          class="text"
+        
+        <a class="text"
           href="https://coda.io/@wehack-utd/wehack-2023-registration/wehack-2023-terms-conditions-2" 
           target="_blank"> 
           <h3> <span style="color:#fff2ce"> WEHack Terms & Conditions </span></h3> 
         </a> 
-         <a 
-          class="text" 
+        <a class="text" 
           href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" 
-          target="_blank"
-          > <h3> <span style="color:#fff2ce"> MLH Code of Conduct </span></h3>
+          target="_blank"> 
+          <h3> <span style="color:#fff2ce"> MLH Code of Conduct </span></h3>
         </a> 
         <div>
           <!--Social Media-->
           <a style="text-decoration: none;"  href="mailto:wehackutd@gmail.com">
-            <img src="/images/gmail.png" alt="gmail" width="40" height="40">
+            <img src="/images/gmail.png" alt="gmail" width="25" height="25">
           </a>&nbsp;
           <a style="text-decoration: none;"  href="https://www.instagram.com/wehackutd/">
-            <img src="/images/instagram.png" alt="instagram" width="40" height="40">
-          </a>&nbsp;
-          <a style="text-decoration: none;"  href="https://twitter.com/wehackutd">
-            <img src="/images/twitter-icon.png" alt="twitter" width="40" height="40"> 
-          </a>&nbsp;
-          <a style="text-decoration: none;"  href="https://www.facebook.com/WEHackUTD/">
-            <img src="/images/facebook.png" alt="facebook" width="40" height="40">
+            <img src="/images/instagram.png" alt="instagram" width="25" height="25">
           </a>&nbsp;
           <a style="text-decoration: none;"  href="https://www.linkedin.com/company/wehackutd-2020/">
-            <img src="/images/LINKEDIN.png" alt="linkedin" width="40" height="40">
+            <img src="/images/LINKEDIN.png" alt="linkedin" width="25" height="25"> 
+          </a>&nbsp;
+          <a style="text-decoration: none;"  href="https://www.facebook.com/WEHackUTD/">
+            <img src="/images/facebook.png" alt="facebook" width="25" height="25">
+          </a>&nbsp;
+          <a style="text-decoration: none;"  href="https://twitter.com/wehackutd">
+            <img src="/images/twitter-icon.png" alt="twitter" width="25" height="25">
           </a>
         </div>
-        <div class = "copyright">
-          <p>Designed by <strong>WEHack</strong><br> Copyright &copy 2022-2023 </p>
+        <div class="copyright">
+          <p>Designed by <strong>WEHack</strong> &nbsp; Copyright &copy 2022-2024 </p>
         </div>
-      </div>
+
     </footer>
-    
-  </div>
     
   <!--</section>-
     <a id="mlh-trust-badge" 
@@ -709,8 +552,6 @@
       href="https://mlh.io/na?utm_source=na-hackathon&utm_medium  =TrustBadge&utm_campaign=2023-season&utm_content=white" 
       target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg" 
       alt="Major League Hacking 2023 Hackathon Season" style="width:100%"></a>
-  -->
-    
-
+  --> 
   </body>
 </html>
