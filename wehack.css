@@ -12,31 +12,33 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', san-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
 
 }
 
 .font-title-1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inknut Antiqua', sans-serif;
   font-size: 72px;
   line-height: 80px;
 }
 
 .font-title-2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inknut Antiqua', sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
 }
 
 .font-title-3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inknut Antiqua', sans-serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
 }
 
 .heading {
+  font-family: 'Inknut Antiqua', serif;
   font-size: 2.5em;
   font-weight: 500px;
   margin-bottom: 8px;
@@ -80,14 +82,14 @@ body {
 }
 
 .font-paragraph {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inknut Antiqua', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .font-caption {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inknut Antiqua', sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
@@ -117,6 +119,7 @@ body {
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~*/
 
 .navmenu {
+  font-family: 'Nunito', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -320,6 +323,7 @@ input[type=checkbox] {
 }
 
 .jumbotron .apply-now {
+  font-family: 'Nunito', sans-serif;
   border: none;
   flex: 1;
   margin-bottom: 8px;
@@ -333,6 +337,7 @@ input[type=checkbox] {
 }
 
 .jumbotron .volunteer {
+  font-family: 'Nunito', sans-serif;
   display: inline-block;
   border: none;
   flex: 1;
@@ -348,6 +353,7 @@ input[type=checkbox] {
 
 
 .jumbotron .mentor {
+  font-family: 'Nunito', sans-serif;
   display: inline-block;
   border: none;
   flex: 1;
@@ -406,6 +412,7 @@ input[type=checkbox] {
 }
 
 .about-heading {
+  font-family: 'Inknut Antiqua', sans-serif;
   font-size: 1.8em;
   text-shadow: 2px 3px 3px #909634;
   margin: 2%;
@@ -896,6 +903,7 @@ p {
 }
 
 .test-header {
+  font-family: 'Nunito', sans-serif;
   color: #4A3628;
   background-color: #D1AF71;
   margin: 10px 0px 0px 0px;
@@ -904,6 +912,7 @@ p {
 }
 
 .test-body {
+  font-family: 'Nunito', sans-serif;
   color: #4A3628;
   margin-right: 12px;
   margin-top: 1px;
@@ -911,6 +920,7 @@ p {
 }
 
 .test-desc {
+  font-family: 'Nunito', sans-serif;
   color: #4A3628;
   margin: 0;
   padding: 10px;
@@ -940,6 +950,7 @@ p {
 
 
 .sponsors-heading {
+  font-family: 'Inknut Antiqua', serif;
   color:#FFE9D7;
   text-shadow: 2px 3px 3px #1A441B;
   font-size: 2.5em;
@@ -949,6 +960,7 @@ p {
 }
 
 .sponsors p {
+  font-family: 'Nunito', sans-serif;
   color: #1A441B;
 }
 
@@ -1180,6 +1192,7 @@ footer .grid {
 }
 
 footer .text {
+  font-family: 'Inknut Antiqua', serif;
   color: #4A3628;
   font-size: 13px;
 }
@@ -1189,6 +1202,8 @@ footer .text:hover {
 }
 
 footer .copyright p {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 14px;
   color: #4A3628;
 }
 
@@ -1291,6 +1306,7 @@ a:active {
 }
 
 .accrdion {
+  font-family: 'Nunito', sans-serif;
   background-color: #FFE9D7;
   align-items: center;
   color: #202335;
@@ -1325,6 +1341,7 @@ a:active {
 }
 
 .panel {
+  font-family: 'Nunito', sans-serif;
   padding: 18px;
   background-color: #FFE9D7;
   color: #1e1920;
@@ -1376,7 +1393,7 @@ a:active {
 }
 
 .faq .accrdion {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inknut Antiqua', sans-serif;
 }
 
 .faq div {
@@ -1399,7 +1416,8 @@ a:active {
 
 .faq p {
   color: #1e1920;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 17px;
   padding: 5;
   margin: 10;
 }
