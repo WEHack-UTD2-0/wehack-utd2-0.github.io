@@ -1,8 +1,8 @@
 /* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
 
 html {
-  background-color: #c5c9e4;
-  background-image: url(/images/background.jpg);
+  background-image: linear-gradient(180deg, #1A441B, #909634);
+  /* background-image: url(/images/background.jpg); */
   background-size: contain;
   background-repeat: repeat-y;
   scroll-behavior: smooth;
@@ -137,7 +137,7 @@ body {
 
 
 .menu li:hover {
-  background-color: #fff2ce;
+  background-color: #909634;
   border-radius: 5px;
   transition: 0.3s ease;
 }
@@ -147,8 +147,8 @@ body {
 }
 
 .menu li a {
-  color: #d24a32;
-  text-shadow: 2px 2px 2px #fff2ce;
+  color: #FFE9D7;
+  text-shadow: 2px 2px 2px #4A3628;
   text-align: left;
   padding: 0.5vh 5vw;
   text-decoration: none;
@@ -173,7 +173,7 @@ input[type=checkbox] {
 
 @media (max-width: 970px) {
   .navmenu {
-    background-color: #e0a269;
+    background-color: #909634;
     border-radius: 30px 0 30px 0;
     left: 10px;
     top: 5px;
@@ -182,7 +182,7 @@ input[type=checkbox] {
 
   .menu {
     display: none;
-    background-color: #e0a269;
+    background-color: #909634;
     right: 0;
     left: 0;
     text-align: center;
@@ -196,7 +196,7 @@ input[type=checkbox] {
 
   .menu li:hover {
     display: inline-block;
-    background-color: fff2ce;
+    background-color: #4A3628;
     transition: 0.3s ease;
   }
 
@@ -266,8 +266,8 @@ input[type=checkbox] {
 
 .jumbotron .font-title-1 {
   font-size: 80px;
-  color: #1e1920;
-  text-shadow: 5px 5px 5px #e0a269;
+  color: #FFE9D7;
+  text-shadow: 5px 5px 5px #909634;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -275,7 +275,7 @@ input[type=checkbox] {
 
 .jumbotron .font-title-4 {
   font-size: 60px;
-  color: #333333;
+  color: #FFE9D7;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -283,8 +283,8 @@ input[type=checkbox] {
 
 .jumbotron .font-title-3 {
   font-size: 23px;
-  color: #333333;
-  text-shadow: 3px 2px 3px #e0a269;
+  color: #FFE9D7;
+  text-shadow: 3px 2px 3px #909634;
   font-weight: 800;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -292,8 +292,8 @@ input[type=checkbox] {
 
 .jumbotron .font-title-2 {
   font-size: 30px;
-  color: #a4560c;
-  text-shadow: 5px 5px 5px #e0a269;
+  color: #FFE9D7;
+  text-shadow: 5px 5px 5px #909634;
   font-style: italic;
   font-weight: 500;
   margin-top: 0px;
@@ -316,7 +316,7 @@ input[type=checkbox] {
 
 .jumbotron .font-paragraph {
   font-size: 20px;
-  color: #d24a32
+  color: #4A3628
 }
 
 .jumbotron .apply-now {
@@ -328,8 +328,8 @@ input[type=checkbox] {
   font-size: 23px;
   font-weight: 800;
   width: 75%;
-  background-color: #E0A269;
-  color: #fff2ce;
+  background-color: #909634;
+  color: #FFE9D7;
 }
 
 .jumbotron .volunteer {
@@ -342,8 +342,8 @@ input[type=checkbox] {
   font-size: 23px;
   font-weight: 800;
   width: 37%;
-  background-color: #E0A269;
-  color: #fff2ce;
+  background-color: #909634;
+  color: #FFE9D7;
 }
 
 
@@ -357,8 +357,8 @@ input[type=checkbox] {
   font-size: 23px;
   font-weight: 800;
   width: 37%;
-  background-color: #E0A269;
-  color: #fff2ce;
+  background-color: #909634;
+  color: #FFE9D7;
 }
 
 .jumbotron .flex-grid {
@@ -384,13 +384,13 @@ input[type=checkbox] {
   padding: 6px 12px;
   font-style: italic;
   font-weight: 700;
-  background-color: #fff2ce;
+  background-color: #D1AF71;
 }
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about {
   /*background-color: #c5c9e4;*/
-  color: #1e1920;
+  color: #FFE9D7;
   padding-top: 70px;
 }
 
@@ -402,12 +402,12 @@ input[type=checkbox] {
 
 .about p {
   padding-bottom: 20px;
-  color: #1e1920;
+  color: #FFE9D7;
 }
 
 .about-heading {
   font-size: 1.8em;
-  text-shadow: 2px 3px 3px #e0a269;
+  text-shadow: 2px 3px 3px #909634;
   margin: 2%;
 }
 
@@ -857,19 +857,19 @@ p {
 
 .testimonials {
   /*background-color: #c5c9e4;*/
-  color: #1e1920;
+  color: #FFE9D7;
   padding-top: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 .testimonials h1{
-  text-shadow: 2px 3px 5px #e0a269;
+  text-shadow: 2px 3px 5px #909634;
 }
 
 .test-container {
-  border: 1px solid #ccc;
-  background-color: rgba(255, 242, 206);
+  border: 1px solid #D1AF71;
+  background-color: #D1AF71;
   border-radius: 5px;
   padding: 10px;
   margin: 10px 60px 10px 60px;
@@ -887,7 +887,7 @@ p {
   margin: 5px 25px 5px 5px;
   border-radius: 50%;
   width: 130px;
-  background-color: #fff2ce;
+  background-color: #D1AF71;
 }
 
 .test-container span {
@@ -896,25 +896,25 @@ p {
 }
 
 .test-header {
-  color: #1e1920;
-  background-color: #fff2ce;
+  color: #4A3628;
+  background-color: #D1AF71;
   margin: 10px 0px 0px 0px;
   padding: 0;
   font-weight: bold;
 }
 
 .test-body {
-  color: #1e1920;
+  color: #4A3628;
   margin-right: 12px;
   margin-top: 1px;
-  background-color: #fff2ce;
+  background-color: #D1AF71;
 }
 
 .test-desc {
-  color: #1e1920;
+  color: #4A3628;
   margin: 0;
   padding: 10px;
-  background-color: #fff2ce;
+  background-color: #D1AF71;
 }
 
 /* Add media queries for responsiveness. This will center both the text and the image inside the container */
@@ -933,22 +933,27 @@ p {
 
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
-  color: #1e1920;
-  background: #c5c9e4;
+  color: #FFE9D7;
+  background: #FFE9D7;
   padding: 40px;
 }
 
-.sponsors .heading {
-  color: #1e1920;
-  padding-bottom: 0;
+
+.sponsors-heading {
+  color:#FFE9D7;
+  text-shadow: 2px 3px 3px #1A441B;
+  font-size: 2.5em;
+  font-weight: 500px  ;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .sponsors p {
-  color: #1e1920;
+  color: #1A441B;
 }
 
 .sponsor {
-  color: #c5c9e4;
+  color: #1A441B;
   display: block;
   margin: auto;
   margin-bottom: 2%;
@@ -986,7 +991,7 @@ body {
 }
 
 .slider-wrapper h1 {
-  text-shadow: 2px 3px 4px #e0a269;
+  text-shadow: 2px 3px 4px #1A441B;
   overflow: hidden;
   transition: 0.6s ease;
 
@@ -1152,8 +1157,8 @@ footer {
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
-  background: #6a6f9a;
-  box-shadow: 0px 0px 10px 5px #80849f;
+  background: #FFE9D7;
+  box-shadow: 0px 0px 10px 5px #FFE9D7;
   width: 100%;
 }
 
@@ -1175,16 +1180,16 @@ footer .grid {
 }
 
 footer .text {
-  color: #fff2ce;
+  color: #4A3628;
   font-size: 13px;
 }
 
 footer .text:hover {
-  color: #fff2ce;
+  color: #4A3628  ;
 }
 
 footer .copyright p {
-  color: #fff2ce;
+  color: #4A3628;
 }
 
 
@@ -1285,13 +1290,10 @@ a:active {
   width: 20%;
 }
 
-
-
-
 .accrdion {
-  background-color: #c5c9e4;
+  background-color: #FFE9D7;
   align-items: center;
-  color: #1e1920;
+  color: #202335;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -1323,10 +1325,9 @@ a:active {
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: #c5c9e4;
+  padding: 18px;
+  background-color: #FFE9D7;
   color: #1e1920;
-  width: 77.5%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -1335,8 +1336,17 @@ a:active {
 
 /*FAQ*/
 .faq {
-  background-color: #c5c9e4;
-  padding-top: 50px;
+  background-color: #FFE9D7;
+  padding-top: 42px;
+  padding-bottom: 75px;
+}
+
+.faq .heading {
+  color: #4A3628;
+  font-size: 2.5em;
+  font-weight: 500px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .column {
@@ -1370,7 +1380,6 @@ a:active {
 }
 
 .faq div {
-
   margin: auto;
   width: 80%;
   padding: 0px;
@@ -1651,7 +1660,7 @@ a:active {
   position: relative;
   text-align: center;
   /*background: #c5c9e4;*/
-  color: #1e1920;
+  color: #FFE9D7;
   padding-top: 90px;
 }
 
@@ -1662,7 +1671,7 @@ a:active {
 }
 
 .team h1 {
-  text-shadow: 2px 3px 4px #e0a269;
+  text-shadow: 2px 3px 4px #1A441B;
 }
 
 .team-member {
@@ -1674,7 +1683,7 @@ a:active {
 .our-team-main {
   width: 100%;
   height: 97%;
-  border-bottom: 5px #6b6bad solid;
+  border-bottom: 5px #C8736F solid;
   background: #fff;
   /*background: black;*/
   text-align: center;
@@ -1744,7 +1753,7 @@ a:active {
 .group-photo img {
   width: 100%;
   height: 650px;
-  box-shadow: 10px 10px #c5c9e4, 12px 12px 0px 1px #fff2ce;
+  box-shadow: 10px 10px #1A441B, 12px 12px 0px 1px #FFE9D7;
   margin-top: 10px;
   margin-bottom: 100px;
   object-fit: contain;
@@ -1788,7 +1797,7 @@ a:active {
   border-radius: 0.5px;
   box-shadow: 10px 10px
     /*var(--wehack-darkBlue)*/
-    #c5c9e4, 12px 12px 0px 1px #fff2ce;
+    #1A441B, 12px 12px 0px 1px #FFE9D7;
 }
 
 .tiles .tile:before {
