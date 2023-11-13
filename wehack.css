@@ -245,7 +245,8 @@ input[type=checkbox] {
 
 .jumbotron .placeholder {
   margin: 0px 50px;
-  width: fit-content;
+  width: 50%;
+  height: 50%
   /*background-color: white;
   opacity: 0.2;
   height: 70vh;*/
