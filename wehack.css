@@ -1,8 +1,8 @@
 /* ~~~~~~~~~~~~~GENERAL~~~~~~~~~~~~~ */
 
 html {
-  background-color: #1A441B;
-  /* background-image: url(/images/2024/BG-darkColors.png); */
+  /* background-color: #1A441B;*/
+  background-image: url(/images/2024/BG-darkColors.png);
   background-size: 400px;
   background-repeat: repeat;
   scroll-behavior: smooth;
