@@ -2,9 +2,9 @@
 
 html {
   background-color: #1A441B;
-  /* background-image: url(/images/background.jpg); */
-  background-size: contain;
-  background-repeat: repeat-y;
+  /* background-image: url(/images/2024/BG-darkColors.png); */
+  background-size: 400px;
+  background-repeat: repeat;
   scroll-behavior: smooth;
   overflow-x: hidden;
 
@@ -1435,7 +1435,7 @@ a:active {
 
 .tiles .tile:before {
   content: "";
-  background: #fff2ce;
+  background: #FFE9D7;
   width: 100%;
   height: 50%;
   position: absolute;
@@ -1459,7 +1459,7 @@ a:active {
   padding: 25px 13px;
   color: var(--wehack-black);
   background: rgba(255, 255, 255, 0);
-  color: #d24a32;
+  color: #4A3628;
   position: absolute;
   bottom: 0;
   left: 0;
