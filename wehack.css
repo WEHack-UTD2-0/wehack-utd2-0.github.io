@@ -18,20 +18,20 @@ body {
 }
 
 .font-title-1 {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 72px;
   line-height: 80px;
 }
 
 .font-title-2 {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
 }
 
 .font-title-3 {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -85,14 +85,14 @@ body {
 }
 
 .font-paragraph {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .font-caption {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
@@ -301,8 +301,8 @@ input[type=checkbox] {
 
 .jumbotron .font-title-2 {
   font-size: 30px;
-  color: #a4560c;
-  text-shadow: 5px 5px 5px #e0a269;
+  color: #b5bb61;
+  text-shadow: 5px 5px 5px #291e1e;
   font-style: italic;
   font-weight: 500;
   margin-top: 0px;
@@ -397,13 +397,13 @@ input[type=checkbox] {
   font-style: italic;
   font-weight: 700;
   background-color: #fff2ce;
+  box-shadow: 0px 0px 10px 7px #909634;
 }
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about {
   /*background-color: #c5c9e4;*/
   color: #1e1920;
-  padding-top: 70px;
 }
 
 /*@media (max-width: 1024px) {
@@ -412,17 +412,34 @@ input[type=checkbox] {
   }
 }*/
 
-.about p {
-  padding-bottom: 20px;
-  color: #FFE9D7;
+.about-container {
+  font-family: 'Nunito', sans-serif;
+  border: 3px solid #909634;
+  background-color: #FFE9D7;
+  border-radius: 20px;
+  padding: 25px 25px 10px 30px;
+  margin: 30px 40px 0px 40px;
+  size: 100px;
+  filter: drop-shadow(5px 5px #909634);
+}
+
+.about-body {
+  font-family: 'Nunito', sans-serif;
+  color: #1e1920;
+  font-weight: bold;
+  text-align: justify;
+  margin-right: 12px;
+  margin-top: 0;
+  background-color: #FFE9D7;
 }
 
 .about-heading {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
   font-size: 1.8em;
-  text-shadow: 2px 3px 3px #909634  ;
-  margin: 2%;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
+  margin: 0;
 }
 
 .about .contentBx {
@@ -498,7 +515,7 @@ input[type=checkbox] {
 .statistics {
   margin: auto;
   width: 80%;
-  padding: 40px;
+  padding-top: 0px;
   /*text-align: center;*/
   font-size: 1em;
   display: flex;
@@ -524,12 +541,13 @@ input[type=checkbox] {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #000000;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  text-decoration: none;
 }
 
 /* Position the "next button" to the right */
@@ -541,7 +559,9 @@ input[type=checkbox] {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
+  color: #ffe9d7;
   background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 }
 
 /* Caption text */
@@ -570,15 +590,15 @@ input[type=checkbox] {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ffe9d7;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  box-shadow: 0px 0px 3px 3px #909634;
 }
 
-.active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #ffe9d7;
 }
 
 /* Fading animation */
@@ -614,7 +634,7 @@ input[type=checkbox] {
   font-family: 'Nunito', sans-serif;
   /*background-color: #c5c9e4;*/
   color: #FFE9D7;
-  padding-top: 100px;
+  padding-top: 80px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -622,6 +642,8 @@ input[type=checkbox] {
 .testimonials h1 {
   font-family: 'Inknut Antiqua', serif;
   text-shadow: 2px 3px 5px #909634;
+  padding-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .test-container {
@@ -666,6 +688,7 @@ input[type=checkbox] {
 .test-body {
   font-family: 'Nunito', sans-serif;
   color: #1e1920;
+  text-align: justify;
   margin-right: 12px;
   margin-top: 1px;
   background-color: #FFE9D7;
