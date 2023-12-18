@@ -403,7 +403,7 @@ input[type=checkbox] {
 
 .sparkle img {
   width: 100px;
-  animation: sparkle 4s linear infinite;
+  animation: sparkle 7s linear infinite;
 }
 
 .sparkle {
