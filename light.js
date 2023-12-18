@@ -9,14 +9,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         lightContainer.appendChild(light);
 
-        // Set initial position
+
         light.style.top = `${Math.random() * window.innerHeight}px`;
         light.style.left = `${Math.random() * window.innerWidth}px`;
 
 
-        light.style.opacity = 0.6
+        light.style.opacity = 0.65
 
-        // Animate position
+        const fadeOutDuration = Math.random() * 2000 + 3000;
+        const fadeInDuration = Math.random() * 2000 + 3000;
+        const positionChangeInterval = Math.random() * 3000 + 4000;
+
+
+        setTimeout(() => {
+            sparkle.style.opacity = 0;
+        }, fadeOutDuration);
+
+
         setInterval(() => {
             light.style.top = `${Math.random() * window.innerHeight}px`;
             light.style.left = `${Math.random() * window.innerWidth}px`;
@@ -26,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }, Math.random() * 3000 + 4000);
     }
 
-    // Create multiple lights
+    // Create multiple sparkles
     for (let i = 0; i < 15; i++) {
         createlight();
     }
