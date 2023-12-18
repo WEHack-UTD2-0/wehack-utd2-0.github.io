@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //Create multiple static sparkles
-    for (let i = 0; i < 3; i++) {
-        createSparkle(staticSparkleContainer);
-    }
+    //for (let i = 0; i < 3; i++) {
+    //  createSparkle(staticSparkleContainer);
+    //}
 });
 
 
