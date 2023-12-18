@@ -8,11 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function createSparkle(container) {
         const spark = document.createElement('img');
-        spark.src = 'images/sparkle.png';
+        spark.src = 'images/glow.png';
 
         // Set random size, opacity, and delay
         const randomSize = createRandomNumber(5, 200);
-        const randomOpacity = createRandomNumber(0.1, 0.7);
+        const randomOpacity = createRandomNumber(0.1, .9);
         const randomDelay = createRandomNumber(0, 10);
         const randomTop = createRandomNumber(0, window.innerHeight);
         const randomLeft = createRandomNumber(0, window.innerWidth);
@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         container.appendChild(spark);
 
-
     }
 
     // Create multiple falling sparkles
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     //Create multiple static sparkles
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 3; i++) {
         createSparkle(staticSparkleContainer);
     }
 });
