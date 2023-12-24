@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function createSparkle(container) {
         const spark = document.createElement('img');
-        spark.src = 'images/glow.png';
+        spark.src = '/images/Glow.png';
 
         // Set random size, opacity, and delay
         const randomSize = createRandomNumber(5, 200);
