@@ -399,6 +399,65 @@ input[type=checkbox] {
   box-shadow: 0px 0px 10px 7px #909634;
 }
 
+/*-----------Sparkles-------------------- */
+
+.sparkle img {
+  width: 100px;
+  animation: sparkle 7s linear infinite;
+}
+
+.sparkle {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: -60vh;
+  z-index: 999;
+}
+
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-90vh);
+    opacity: 0;
+  }
+}
+
+.static-sparkle {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+}
+
+.static-sparkle img {
+  width: 100px;
+  position: absolute;
+  pointer-events: none;
+}
+
+
+
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about {
   /*background-color: #c5c9e4;*/
@@ -457,31 +516,6 @@ input[type=checkbox] {
 .whyWEHack {
   position: relative;
   width: 100%;
-  display: flex;
-  /*background-color: #c5c9e4;*/
-}
-
-.whyWEHack .contentBox {
-  text-align: left;
-  padding: 100px;
-  padding-top: 150px;
-  padding-right: 50px;
-  padding-left: 150px;
-  width: 50%;
-  color: #1e1920;
-}
-
-.whyWEHack .img-placeholder {
-  margin: 0px 50px;
-  width: 40%;
-  /*background-color: white;
-  opacity: 0.2;
-  height: 70vh;*/
-  /*border: 10px solid #333333;*/
-
-}
-
-.whyWEHack .imgBox {
   text-align: center;
   width: 30%;
 }
@@ -808,6 +842,8 @@ body {
   padding: 0;
   overflow-y: hidden;
   transition: .5s ease;
+  justify-content: left;
+  align-items: center;
 }
 
 .slide-arrow {
@@ -940,7 +976,8 @@ body {
 footer {
   padding-top: 7px;
   padding-bottom: 0%;
-  margin-top: 100px; /* change this if meet the team section is there */
+  margin-top: 100px;
+  /* change this if meet the team section is there */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1077,13 +1114,13 @@ footer .copyright p {
   margin: 150px auto 60px auto;
 }
 
-.wrapper > p,
-.wrapper > h1 {
+.wrapper>p,
+.wrapper>h1 {
   margin: 1.0rem 0;
   text-align: center;
 }
 
-.wrapper > h1 {
+.wrapper>h1 {
   letter-spacing: 3px;
 }
 
@@ -1105,7 +1142,7 @@ footer .copyright p {
   width: 100%;
 }
 
-.accordion i{
+.accordion i {
   font-size: 14;
   content: '\2212';
 }
@@ -1142,7 +1179,7 @@ footer .copyright p {
   background-color: #FFE9D7;
   overflow: hidden;
   background-color: #E5D1C1;
-  display: none;  
+  display: none;
   transition: 0.4s ease;
 }
 
@@ -1162,18 +1199,21 @@ footer .copyright p {
 .columns {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* Add this line */
+  align-items: stretch;
+  /* Add this line */
 }
 
 .column {
-  width: 48%; /* Adjust as needed */
+  width: 48%;
+  /* Adjust as needed */
   flex: 49%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 10px 10px 10px 0px;
   padding: 0px 11.0rem 0px 0px;
   border: 50px;
-  box-sizing: border-box; /* Add this line */
+  box-sizing: border-box;
+  /* Add this line */
 }
 
 
@@ -1699,41 +1739,6 @@ a:active {
     padding: 20px;
     width: 190px;
     font-size: 22px;
-  }
-
-  .whyWEHack {
-    text-emphasis: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .whyWEHack .contentBox,
-  .whyWEHack .imgBox {
-    width: 100%;
-    padding: 25px;
-    text-align: center;
-    vertical-align: center;
-  }
-
-  .whyWEHack .img-placeholder {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    vertical-align: center;
-  }
-
-  .whyWEHack .contentBox {
-    padding-bottom: 0px;
-  }
-
-  .whyWEHack .imgBox {
-    margin-top: 0px;
-  }
-
-  .whyWEHack img {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
   }
 
   .sponsors .intro {
