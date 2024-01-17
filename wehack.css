@@ -512,7 +512,7 @@ input[type=checkbox] {
   background-color: #FFE9D7;
   border-radius: 20px;
   padding: 25px 25px 10px 30px;
-  margin: 30px 40px 0px 40px;
+  margin: 50px 40px 40px 40px;
   size: 100px;
   filter: drop-shadow(5px 5px #909634);
 }
@@ -527,24 +527,26 @@ input[type=checkbox] {
   background-color: #FFE9D7;
 }
 
-.about-heading {
+.about-text {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
-  font-size: 1.8em;
+  font-weight:1000;
+  font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top:15px;
 }
-.about-text {
+/* .about-text {
   font-size:1.2em;
-}
+} */
 
 .about .contentBx {
   margin: auto;
   width: 80%;
   padding: 40px;
   /*text-align: center;*/
-  font-size: 1em;
+  font-size: 1.1em;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
@@ -714,8 +716,14 @@ input[type=checkbox] {
 .testimonials h1 {
   font-family: 'Inknut Antiqua', serif;
   text-shadow: 2px 3px 5px #909634;
-  padding-bottom: 0px;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
   margin-bottom: 0;
+  margin-top:15px;
 }
 
 .test-container {
@@ -749,7 +757,8 @@ input[type=checkbox] {
 }
 
 .test-header {
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Inknut Antiqua', serif;
   color: #1e1920;
   background-color: #FFE9D7;
   margin: 10px 0px 0px 0px;
@@ -762,7 +771,7 @@ input[type=checkbox] {
   color: #1e1920;
   text-align: justify;
   margin-right: 12px;
-  margin-top: 1px;
+  margin-top: 0.4px;
   background-color: #FFE9D7;
 }
 
@@ -813,12 +822,23 @@ input[type=checkbox] {
 }
 
 .sponsors .heading {
-  text-shadow: 2px 3px 5px #909634;
+  /* text-shadow: 2px 3px 5px #909634;
   font-family: 'Inknut Antiqua', serif;
   color: #1e1920;
   padding-bottom: 0;
   font-size: 2.5em;
-  font-weight: 500px;
+  font-weight: 500px; */
+
+  font-family: 'Inknut Antiqua', serif;
+  text-shadow: 2px 3px 5px #909634;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
+  margin-bottom: 0;
+  margin-top:15px;
 }
 
 .sponsors p {
@@ -1160,7 +1180,17 @@ footer .copyright p {
 }
 
 .wrapper>h1 {
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
+    font-family: 'Inknut Antiqua', serif;
+  text-shadow: 2px 3px 5px #909634;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
+  margin-bottom: 0;
+  margin-top:15px;
 }
 
 .accordion {
@@ -1399,7 +1429,16 @@ a:active {
 }
 
 .team h1 {
-  text-shadow: 2px 3px 4px #e0a269;
+  /* text-shadow: 2px 3px 4px #e0a269; */
+  font-family: 'Inknut Antiqua', serif;
+  text-shadow: 2px 3px 5px #e0a269;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  padding-top: 100px;
+  margin-bottom: 0;
+  margin-top:15px;
 }
 
 .team-member {
