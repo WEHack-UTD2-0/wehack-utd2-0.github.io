@@ -88,7 +88,6 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  padding:10px;
 }
 
 .font-caption {
@@ -387,17 +386,40 @@ input[type=checkbox] {
   margin-left: 6px;
 }
 
-.jumbotron .message {
+/* .jumbotron .message {
   position: absolute;
   bottom: 0;
   width: 100%;
   justify-content: center;
   text-align: center;
-  padding: 6px 12px;
+  padding: 20px 12px;
+  border-radius: 20px;
   font-style: italic;
   font-weight: 700;
   background-color: #fff2ce;
   box-shadow: 0px 0px 10px 7px #909634;
+} */
+
+.box-message {
+  /* position: absolute; */
+  display: flex;
+  /* flex-direction:row; */
+  justify-content: center;
+  align-items:center;
+  bottom: 0;
+  width: auto;
+  padding: 20px 2px;
+  margin: 30px 60px 0px 60px;
+  border-radius: 20px;
+  background-color: #fff2ce;
+  box-shadow: 0px 0px 10px 7px #909634;
+}
+
+.message {
+  font-size:large;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
 }
 
 /*-----------Sparkles-------------------- */
