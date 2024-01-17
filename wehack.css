@@ -14,24 +14,23 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Nunito', sans-serif;
-
 }
 
 .font-title-1 {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 72px;
   line-height: 80px;
 }
 
 .font-title-2 {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
 }
 
 .font-title-3 {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
@@ -85,14 +84,14 @@ body {
 }
 
 .font-paragraph {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
 
 .font-caption {
-  font-family: 'Inknut Antiqua', sans-serif;
+  font-family: 'Inknut Antiqua', serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 16px;
@@ -301,8 +300,8 @@ input[type=checkbox] {
 
 .jumbotron .font-title-2 {
   font-size: 30px;
-  color: #a4560c;
-  text-shadow: 5px 5px 5px #e0a269;
+  color: #b5bb61;
+  text-shadow: 5px 5px 5px #291e1e;
   font-style: italic;
   font-weight: 500;
   margin-top: 0px;
@@ -397,13 +396,72 @@ input[type=checkbox] {
   font-style: italic;
   font-weight: 700;
   background-color: #fff2ce;
+  box-shadow: 0px 0px 10px 7px #909634;
 }
+
+/*-----------Sparkles-------------------- */
+
+.sparkle img {
+  width: 100px;
+  animation: sparkle 7s linear infinite;
+}
+
+.sparkle {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: -60vh;
+  z-index: 999;
+}
+
+
+@keyframes sparkle {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-90vh);
+    opacity: 0;
+  }
+}
+
+.static-sparkle {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  pointer-events: none;
+}
+
+.static-sparkle img {
+  width: 100px;
+  position: absolute;
+  pointer-events: none;
+}
+
+
 
 /* ~~~~~~~~~~~~~~~ABOUT~~~~~~~~~~~~~~~~~ */
 .about {
   /*background-color: #c5c9e4;*/
   color: #1e1920;
-  padding-top: 70px;
 }
 
 /*@media (max-width: 1024px) {
@@ -412,17 +470,46 @@ input[type=checkbox] {
   }
 }*/
 
+<<<<<<< HEAD
 .about p {
   padding-bottom: 100px;
   color: #FFE9D7;
+=======
+.about-container {
+  font-family: 'Nunito', sans-serif;
+  border: 3px solid #909634;
+  background-color: #FFE9D7;
+  border-radius: 20px;
+  padding: 25px 25px 10px 30px;
+  margin: 30px 40px 0px 40px;
+  size: 100px;
+  filter: drop-shadow(5px 5px #909634);
+}
+
+.about-body {
+  font-family: 'Nunito', sans-serif;
+  color: #1e1920;
+  font-weight: bold;
+  text-align: justify;
+  margin-right: 12px;
+  margin-top: 0;
+  background-color: #FFE9D7;
+>>>>>>> a6dd33e9231c366beb7c4991df7f7853bc5bfaef
 }
 
 .about-heading {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
+<<<<<<< HEAD
   font-size: 3.0em;
   text-shadow: 2px 3px 3px #909634  ;
   margin: 2%;
+=======
+  font-size: 1.8em;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
+  margin: 0;
+>>>>>>> a6dd33e9231c366beb7c4991df7f7853bc5bfaef
 }
 .about-text {
   font-size:1.2em;
@@ -444,31 +531,6 @@ input[type=checkbox] {
 .whyWEHack {
   position: relative;
   width: 100%;
-  display: flex;
-  /*background-color: #c5c9e4;*/
-}
-
-.whyWEHack .contentBox {
-  text-align: left;
-  padding: 100px;
-  padding-top: 150px;
-  padding-right: 50px;
-  padding-left: 150px;
-  width: 50%;
-  color: #1e1920;
-}
-
-.whyWEHack .img-placeholder {
-  margin: 0px 50px;
-  width: 40%;
-  /*background-color: white;
-  opacity: 0.2;
-  height: 70vh;*/
-  /*border: 10px solid #333333;*/
-
-}
-
-.whyWEHack .imgBox {
   text-align: center;
   width: 30%;
 }
@@ -501,7 +563,7 @@ input[type=checkbox] {
 .statistics {
   margin: auto;
   width: 80%;
-  padding: 40px;
+  padding-top: 0px;
   /*text-align: center;*/
   font-size: 1em;
   display: flex;
@@ -527,12 +589,13 @@ input[type=checkbox] {
   width: auto;
   padding: 16px;
   margin-top: -22px;
-  color: white;
+  color: #000000;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  text-decoration: none;
 }
 
 /* Position the "next button" to the right */
@@ -544,7 +607,9 @@ input[type=checkbox] {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
+  color: #ffe9d7;
   background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
 }
 
 /* Caption text */
@@ -573,15 +638,15 @@ input[type=checkbox] {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ffe9d7;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  box-shadow: 0px 0px 3px 3px #909634;
 }
 
-.active,
 .dot:hover {
-  background-color: #717171;
+  background-color: #ffe9d7;
 }
 
 /* Fading animation */
@@ -617,7 +682,7 @@ input[type=checkbox] {
   font-family: 'Nunito', sans-serif;
   /*background-color: #c5c9e4;*/
   color: #FFE9D7;
-  padding-top: 100px;
+  padding-top: 80px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -625,6 +690,8 @@ input[type=checkbox] {
 .testimonials h1 {
   font-family: 'Inknut Antiqua', serif;
   text-shadow: 2px 3px 5px #909634;
+  padding-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .test-container {
@@ -632,7 +699,7 @@ input[type=checkbox] {
   border: 3px solid #909634;
   background-color: #FFE9D7;
   border-radius: 20px;
-  padding: 40px 60px 40px 60px;
+  padding: 25px 40px 25px 40px;
   margin: 40px 170px 40px 170px;
   size: 100px;
   filter: drop-shadow(5px 5px #909634);
@@ -669,6 +736,7 @@ input[type=checkbox] {
 .test-body {
   font-family: 'Nunito', sans-serif;
   color: #1e1920;
+  text-align: justify;
   margin-right: 12px;
   margin-top: 1px;
   background-color: #FFE9D7;
@@ -789,6 +857,8 @@ body {
   padding: 0;
   overflow-y: hidden;
   transition: .5s ease;
+  justify-content: left;
+  align-items: center;
 }
 
 .slide-arrow {
@@ -919,8 +989,10 @@ body {
 
 /* ~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~ */
 footer {
-  padding-top: 10px;
+  padding-top: 7px;
   padding-bottom: 0%;
+  margin-top: 100px;
+  /* change this if meet the team section is there */
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1025,7 +1097,7 @@ footer .copyright p {
   text-align: left;
   outline: none;
   font-size: 16px;
-  transition: 0.4s;
+  transition: max-height 0.4s ease;
 }
 
 /*.active, .accrdion:hover {
@@ -1048,126 +1120,122 @@ footer .copyright p {
   color: #1e1920;
 }
 
-.panel {
-  font-family: 'Nunito', sans-serif;
-  padding: 0 18px;
-  background-color: #909634;
-  color: #1e1920;
-  width: 77.5%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
 
 
 /*FAQ*/
-.faq {
-  background-color: #909634;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+.wrapper {
+  max-width: 75%;
+  margin: 150px auto 60px auto;
+}
+
+.wrapper>p,
+.wrapper>h1 {
+  margin: 1.0rem 0;
+  text-align: center;
+}
+
+.wrapper>h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: #FFE9D7;
+  font-family: 'Inknut Antiqua', sans-serif;
+  border-radius: 10px 10px 10px 10px;
+  color: #4A3628;
+  cursor: pointer;
+  font-size: 1.0rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  transition: 0.4s ease;
+  width: 100%;
+}
+
+.accordion i {
+  font-size: 14;
+  content: '\2212';
+}
+
+.active {
+  background-color: #E5D1C1;
+  border-radius: 10px 10px 0 0;
+}
+
+.accordion:hover {
+  background-color: #E5D1C1;
+  border-radius: 10px 10px 0 0;
+  content: '\002B';
+}
+
+.accordion:after {
+  content: '\002B';
+  /* Unicode character for "plus" sign (+) */
+  color: #1e1920;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2212';
+  /* Unicode character for "minus" sign (-) */
+  color: #1e1920;
+}
+
+.panel {
+  font-family: 'Nunito', sans-serif;
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  border-radius: 0 0 10px 10px;
+  background-color: #FFE9D7;
+  overflow: hidden;
+  background-color: #E5D1C1;
+  display: none;
+  transition: 0.4s ease;
+}
+
+.panel p {
+  color: #4A3628
+}
+
+.freq {
+  margin: 10px 0;
+  width: 150%;
+}
+
+.freq.active {
+  border: none;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  /* Add this line */
 }
 
 .column {
-  display: flex;
+  width: 48%;
+  /* Adjust as needed */
   flex: 49%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 50px 50px;
-  padding: 10px;
+  margin: 10px 10px 10px 0px;
+  padding: 0px 11.0rem 0px 0px;
   border: 50px;
+  box-sizing: border-box;
+  /* Add this line */
 }
 
-.smallColumn {
-  display: flex;
-  flex: 2%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 50px 50px;
-  padding: 10px;
-  border: 50px;
-}
 
 @media screen and (max-width: 1000px) {
   .column {
     flex: 100%;
   }
-}
-
-.faq .accrdion {
-  font-family: 'Inknut Antiqua', sans-serif;
-}
-.faq div {
-  margin: auto;
-  width: 80%;
-  padding: 0px;
-  text-align: left;
-  line-height: 1.6;
-  /*margin-bottom:0px;*/
-  margin-top: 0px;
-  font-size: 14;
-  bottom: 0;
-}
-
-.faq h1 {
-  padding-top: 30px;
-  text-shadow: 2px 3px 4px #909634;
-}
-
-.faq p {
-  font-family: 'Nunito', sans-serif;
-  color: #1e1920;
-  font-family: 'Inknut Antiqua', sans-serif;
-  padding: 5;
-  margin: 10;
-}
-
-.faq .card {
-  font-family: 'Nunito', sans-serif;
-  border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
-
-.faq hr {
-  margin: 1.5rem 0;
-}
-
-.faq .card-title {
-  font-family: 'Nunito', sans-serif;
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-}
-
-.faq .card-price {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.faq .card-price .period {
-  font-size: 0.8rem;
-}
-
-.faq ul li {
-  margin-bottom: 0;
-  padding: 0;
-}
-
-.faq .text-muted {
-  opacity: 0.7;
-}
-
-.faq .btn {
-  font-size: 80%;
-  border-radius: 0;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
 }
 
 
@@ -1686,41 +1754,6 @@ a:active {
     padding: 20px;
     width: 190px;
     font-size: 22px;
-  }
-
-  .whyWEHack {
-    text-emphasis: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .whyWEHack .contentBox,
-  .whyWEHack .imgBox {
-    width: 100%;
-    padding: 25px;
-    text-align: center;
-    vertical-align: center;
-  }
-
-  .whyWEHack .img-placeholder {
-    width: 100%;
-    padding: 30px;
-    text-align: center;
-    vertical-align: center;
-  }
-
-  .whyWEHack .contentBox {
-    padding-bottom: 0px;
-  }
-
-  .whyWEHack .imgBox {
-    margin-top: 0px;
-  }
-
-  .whyWEHack img {
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
   }
 
   .sponsors .intro {
