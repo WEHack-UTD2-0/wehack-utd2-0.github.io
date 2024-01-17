@@ -413,16 +413,19 @@ input[type=checkbox] {
 }*/
 
 .about p {
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   color: #FFE9D7;
 }
 
 .about-heading {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
-  font-size: 1.8em;
+  font-size: 3.0em;
   text-shadow: 2px 3px 3px #909634  ;
   margin: 2%;
+}
+.about-text {
+  font-size:1.2em;
 }
 
 .about .contentBx {
