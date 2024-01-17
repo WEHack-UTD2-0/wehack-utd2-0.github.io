@@ -470,11 +470,6 @@ input[type=checkbox] {
   }
 }*/
 
-<<<<<<< HEAD
-.about p {
-  padding-bottom: 100px;
-  color: #FFE9D7;
-=======
 .about-container {
   font-family: 'Nunito', sans-serif;
   border: 3px solid #909634;
@@ -494,22 +489,15 @@ input[type=checkbox] {
   margin-right: 12px;
   margin-top: 0;
   background-color: #FFE9D7;
->>>>>>> a6dd33e9231c366beb7c4991df7f7853bc5bfaef
 }
 
 .about-heading {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
-<<<<<<< HEAD
-  font-size: 3.0em;
-  text-shadow: 2px 3px 3px #909634  ;
-  margin: 2%;
-=======
   font-size: 1.8em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin: 0;
->>>>>>> a6dd33e9231c366beb7c4991df7f7853bc5bfaef
 }
 .about-text {
   font-size:1.2em;
