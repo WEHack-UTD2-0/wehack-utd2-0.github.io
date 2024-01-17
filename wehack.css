@@ -384,6 +384,11 @@ input[type=checkbox] {
   display: flex;
 }
 
+.jumbotron .apply-now:hover {
+  background-color:darkolivegreen;
+  transition: 0.3s ease;
+}
+
 #left-button {
   margin-right: 6px;
   margin-top: 6px;
