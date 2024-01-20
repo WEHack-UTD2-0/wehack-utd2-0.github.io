@@ -5,7 +5,7 @@ const slidesContainer = document.getElementById("slides-container");
 
       nextButton.addEventListener("click", () => {
         const slideWidth = slide.clientWidth;
-        const maxScroll = slidesContainer.scrollWidth - slidesContainer.clientWidth;
+        const maxScroll = slidesContainer.scrollWidth - slidesContainer.clientWidth + 1;
     
         // Check if next slide is beyond the last slide
         if (slidesContainer.scrollLeft + slideWidth >= maxScroll) {
