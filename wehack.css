@@ -2,7 +2,7 @@
 
 html {
   /* background-color: #1A441B;*/
-  background-image: url(/images/2024/BG-darkColors.png);
+  background-image: url(./images/2024/BG-darkColors.png);
   background-size: 400px;
   background-repeat: repeat;
   scroll-behavior: smooth;
@@ -123,7 +123,7 @@ body {
 .navmenu {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: transparent;
   color: #FFE9D7;
   z-index: 1000;
@@ -132,7 +132,6 @@ body {
   left: 0;
 }
 
-
 .menu {
   display: flex;
   gap: 1em;
@@ -140,14 +139,23 @@ body {
 }
 
 
-.menu li:hover {
+/* .menu li:hover {
   background-color: #909634;
+  height:40px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+} */
+.menu li a:hover {
+  background-color: #909634;
+  height:30px;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .menu li {
   list-style: none;
+  margin-right:-30px;
+  white-space:nowrap;
 }
 
 .menu li a {
@@ -376,6 +384,11 @@ input[type=checkbox] {
   display: flex;
 }
 
+.jumbotron .apply-now:hover {
+  background-color:darkolivegreen;
+  transition: 0.3s ease;
+}
+
 #left-button {
   margin-right: 6px;
   margin-top: 6px;
@@ -386,17 +399,40 @@ input[type=checkbox] {
   margin-left: 6px;
 }
 
-.jumbotron .message {
+/* .jumbotron .message {
   position: absolute;
   bottom: 0;
   width: 100%;
   justify-content: center;
   text-align: center;
-  padding: 6px 12px;
+  padding: 20px 12px;
+  border-radius: 20px;
   font-style: italic;
   font-weight: 700;
   background-color: #fff2ce;
   box-shadow: 0px 0px 10px 7px #909634;
+} */
+
+.box-message {
+  /* position: absolute; */
+  display: flex;
+  /* flex-direction:row; */
+  justify-content: center;
+  align-items:center;
+  bottom: 0;
+  width: auto;
+  padding: 20px 2px;
+  margin: 30px 60px 0px 60px;
+  border-radius: 20px;
+  background-color: #fff2ce;
+  box-shadow: 0px 0px 10px 7px #909634;
+}
+
+.message {
+  font-size:large;
+  text-align: center;
+  font-style: italic;
+  font-weight: 700;
 }
 
 /*-----------Sparkles-------------------- */
@@ -476,7 +512,7 @@ input[type=checkbox] {
   background-color: #FFE9D7;
   border-radius: 20px;
   padding: 25px 25px 10px 30px;
-  margin: 30px 40px 0px 40px;
+  margin: 50px 40px 40px 40px;
   size: 100px;
   filter: drop-shadow(5px 5px #909634);
 }
@@ -491,21 +527,26 @@ input[type=checkbox] {
   background-color: #FFE9D7;
 }
 
-.about-heading {
+.about-text {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
-  font-size: 1.8em;
+  font-weight:1000;
+  font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
-  margin: 0;
+  margin-bottom: 0;
+  margin-top:15px;
 }
+/* .about-text {
+  font-size:1.2em;
+} */
 
 .about .contentBx {
   margin: auto;
   width: 80%;
   padding: 40px;
   /*text-align: center;*/
-  font-size: 1em;
+  font-size: 1.1em;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
@@ -675,8 +716,14 @@ input[type=checkbox] {
 .testimonials h1 {
   font-family: 'Inknut Antiqua', serif;
   text-shadow: 2px 3px 5px #909634;
-  padding-bottom: 0px;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
   margin-bottom: 0;
+  margin-top:15px;
 }
 
 .test-container {
@@ -710,7 +757,8 @@ input[type=checkbox] {
 }
 
 .test-header {
-  font-family: 'Nunito', sans-serif;
+  /* font-family: 'Nunito', sans-serif; */
+  font-family: 'Inknut Antiqua', serif;
   color: #1e1920;
   background-color: #FFE9D7;
   margin: 10px 0px 0px 0px;
@@ -723,7 +771,7 @@ input[type=checkbox] {
   color: #1e1920;
   text-align: justify;
   margin-right: 12px;
-  margin-top: 1px;
+  margin-top: 0.4px;
   background-color: #FFE9D7;
 }
 
@@ -774,12 +822,23 @@ input[type=checkbox] {
 }
 
 .sponsors .heading {
-  text-shadow: 2px 3px 5px #909634;
+  /* text-shadow: 2px 3px 5px #909634;
   font-family: 'Inknut Antiqua', serif;
   color: #1e1920;
   padding-bottom: 0;
   font-size: 2.5em;
-  font-weight: 500px;
+  font-weight: 500px; */
+
+  font-family: 'Inknut Antiqua', serif;
+  text-shadow: 2px 3px 5px #909634;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
+  margin-bottom: 0;
+  margin-top:15px;
 }
 
 .sponsors p {
@@ -885,10 +944,11 @@ body {
   width: 1280px;
   height: 500px;
   flex: 1 0 100%;
+  transition: 1s ease-in-out;
 }
 
 .slide:nth-child(1) {
-  background-image: url(/images/sponsors//toyota_sponsor.png);
+  background-image: url(./images/sponsors//toyota_sponsor.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -896,7 +956,7 @@ body {
 }
 
 .slide:nth-child(2) {
-  background-image: url(/images/sponsors/plat_sponsors.png);
+  background-image: url(./images/sponsors/plat_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -904,7 +964,7 @@ body {
 }
 
 .slide:nth-child(3) {
-  background-image: url(/images/sponsors/gold_sponsors.png);
+  background-image: url(./images/sponsors/gold_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -913,7 +973,7 @@ body {
 
 
 .slide:nth-child(4) {
-  background-image: url(/images/sponsors/bronze_sponsors.png);
+  background-image: url(./images/sponsors/bronze_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -1121,7 +1181,17 @@ footer .copyright p {
 }
 
 .wrapper>h1 {
-  letter-spacing: 3px;
+  /* letter-spacing: 3px; */
+    font-family: 'Inknut Antiqua', serif;
+  text-shadow: 2px 3px 5px #909634;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  text-shadow: 2px 3px 3px #909634;
+  padding-top: 100px;
+  margin-bottom: 0;
+  margin-top:15px;
 }
 
 .accordion {
@@ -1360,7 +1430,16 @@ a:active {
 }
 
 .team h1 {
-  text-shadow: 2px 3px 4px #e0a269;
+  /* text-shadow: 2px 3px 4px #e0a269; */
+  font-family: 'Inknut Antiqua', serif;
+  text-shadow: 2px 3px 5px #e0a269;
+  /* padding-bottom: 0px;
+  margin-bottom: 0; */
+  font-weight:1000;
+  font-size: 2.5em;
+  padding-top: 100px;
+  margin-bottom: 0;
+  margin-top:15px;
 }
 
 .team-member {
