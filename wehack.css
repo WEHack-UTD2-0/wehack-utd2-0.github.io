@@ -147,15 +147,15 @@ body {
 } */
 .menu li a:hover {
   background-color: #909634;
-  height:30px;
+  height: 30px;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .menu li {
   list-style: none;
-  margin-right:-30px;
-  white-space:nowrap;
+  margin-right: -30px;
+  white-space: nowrap;
 }
 
 .menu li a {
@@ -385,7 +385,7 @@ input[type=checkbox] {
 }
 
 .jumbotron .apply-now:hover {
-  background-color:darkolivegreen;
+  background-color: darkolivegreen;
   transition: 0.3s ease;
 }
 
@@ -418,7 +418,7 @@ input[type=checkbox] {
   display: flex;
   /* flex-direction:row; */
   justify-content: center;
-  align-items:center;
+  align-items: center;
   bottom: 0;
   width: auto;
   padding: 20px 2px;
@@ -429,7 +429,7 @@ input[type=checkbox] {
 }
 
 .message {
-  font-size:large;
+  font-size: large;
   text-align: center;
   font-style: italic;
   font-weight: 700;
@@ -440,6 +440,8 @@ input[type=checkbox] {
 .sparkle img {
   width: 100px;
   animation: sparkle 7s linear infinite;
+  pointer-events: none;
+  user-select: none;
 }
 
 .sparkle {
@@ -530,13 +532,14 @@ input[type=checkbox] {
 .about-text {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
+
 /* .about-text {
   font-size:1.2em;
 } */
@@ -718,12 +721,12 @@ input[type=checkbox] {
   text-shadow: 2px 3px 5px #909634;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .test-container {
@@ -833,12 +836,12 @@ input[type=checkbox] {
   text-shadow: 2px 3px 5px #909634;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .sponsors p {
@@ -1181,16 +1184,16 @@ footer .copyright p {
 
 .wrapper>h1 {
   /* letter-spacing: 3px; */
-    font-family: 'Inknut Antiqua', serif;
+  font-family: 'Inknut Antiqua', serif;
   text-shadow: 2px 3px 5px #909634;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .accordion {
@@ -1434,11 +1437,11 @@ a:active {
   text-shadow: 2px 3px 5px #e0a269;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .team-member {
