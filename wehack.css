@@ -1293,34 +1293,6 @@ footer .copyright p {
 
 
 @media screen and (max-width: 640px) {
-  .topnav {
-    width: 100%;
-    justify-content: flex-end;
-    z-index: 1000;
-  }
-
-  .topnav #homeLink {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-
-  .topnav #myLinks.links {
-    justify-content: flex-end;
-    padding-right: 8px;
-    padding-top: 8px;
-  }
-
-  .topnav .links a {
-    display: none;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .topnav .links a.icon {
-    display: flex;
-    justify-self: flex-end;
-  }
 
   .banner .logo1 {
     margin-top: 50px;
@@ -1328,30 +1300,6 @@ footer .copyright p {
 
   .banner .Heading2 {
     margin-top: 50px;
-  }
-
-  .topnav #myLinks.links.responsive {
-    display: block;
-    float: none;
-    justify-content: start;
-    width: 100%;
-    z-index: 10000;
-  }
-
-  .topnav #myLinks.links.responsive a {
-    display: block;
-    padding: 8px;
-    width: 100%;
-    text-align: left;
-  }
-
-  .topnav #myLinks.links.responsive a.icon {
-    position: absolute;
-    width: auto;
-  }
-
-  .topnav #myLinks.links.responsive i {
-    padding-left: 0px;
   }
 }
 
