@@ -125,7 +125,7 @@ body {
   align-items: center;
   justify-content: space-around;
   background: #909634;
-  box-shadow: 0px 0px 10px 5px #FFE9D7;
+  box-shadow: 0px 0px 10px 5px #909634;
   color: #FFE9D7;
   z-index: 1000;
   position: fixed;
