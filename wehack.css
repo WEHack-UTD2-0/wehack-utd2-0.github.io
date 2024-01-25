@@ -2,7 +2,7 @@
 
 html {
   /* background-color: #1A441B;*/
-  background-image: url(/images/2024/BG-darkColors.png);
+  background-image: url(./images/2024/BG-darkColors.png);
   background-size: 400px;
   background-repeat: repeat;
   scroll-behavior: smooth;
@@ -450,7 +450,22 @@ input[type=checkbox] {
   justify-content: space-around;
   position: fixed;
   bottom: -60vh;
-  z-index: 999;
+  z-index: 998;
+}
+
+.static-sparkle {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.static-sparkle img {
+  width: 100px;
+  position: absolute;
+  pointer-events: none;
 }
 
 
@@ -474,22 +489,6 @@ input[type=checkbox] {
     transform: translateY(-90vh);
     opacity: 0;
   }
-}
-
-.static-sparkle {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  pointer-events: none;
-}
-
-.static-sparkle img {
-  width: 100px;
-  position: absolute;
-  pointer-events: none;
 }
 
 
@@ -941,10 +940,11 @@ input[type=checkbox] {
   width: 1280px;
   height: 500px;
   flex: 1 0 100%;
+  transition: 1s ease-in-out;
 }
 
 .slide:nth-child(1) {
-  background-image: url(/images/sponsors//toyota_sponsor.png);
+  background-image: url(./images/sponsors//toyota_sponsor.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -952,7 +952,7 @@ input[type=checkbox] {
 }
 
 .slide:nth-child(2) {
-  background-image: url(/images/sponsors/plat_sponsors.png);
+  background-image: url(./images/sponsors/plat_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -960,7 +960,7 @@ input[type=checkbox] {
 }
 
 .slide:nth-child(3) {
-  background-image: url(/images/sponsors/gold_sponsors.png);
+  background-image: url(./images/sponsors/gold_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -969,7 +969,7 @@ input[type=checkbox] {
 
 
 .slide:nth-child(4) {
-  background-image: url(/images/sponsors/bronze_sponsors.png);
+  background-image: url(./images/sponsors/bronze_sponsors.png);
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center center;
@@ -1041,6 +1041,7 @@ footer {
   background: #909634;
   box-shadow: 0px 0px 10px 5px #909634;
   width: 100%;
+  z-index: 999;
 }
 
 .bottom {
@@ -1064,6 +1065,7 @@ footer .text {
   font-family: 'Inknut Antiqua', serif;
   color: #fff2ce;
   font-size: 13px;
+  z-index: 999;
 }
 
 footer .text:hover {
@@ -1073,7 +1075,9 @@ footer .text:hover {
 footer .copyright p {
   font-family: 'Inknut Antiqua', serif;
   color: #fff2ce;
+  z-index: 999;
 }
+
 
 @media screen and (max-width: 300px) {
   .heading-2 {
