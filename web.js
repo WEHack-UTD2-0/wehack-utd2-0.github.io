@@ -114,3 +114,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+//===============================================Scroll function mascot================================================
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    var footer = document.getElementById('footer');
+    var fixedImage = document.querySelector('.mascot1');
+
+    // Get the position of the footer
+    var footerPosition = footer.getBoundingClientRect();
+
+    // If the top of the footer is above or at the bottom of the viewport
+    if (footerPosition.top <= window.innerHeight) {
+        fixedImage.style.bottom = footerPosition.height + 'px';
+    } else {
+        fixedImage.style.bottom = '10px';
+    }
+}

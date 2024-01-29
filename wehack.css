@@ -118,6 +118,25 @@ body {
   }
 }
 
+.mascot2 {
+  display: block;
+  width: 20%;
+  position: fixed;
+  left: -9vw;
+  bottom: 30vh;
+  transform: rotate(30deg);
+  z-index: 1000;
+}
+
+.mascot1 {
+  display: block;
+  width: 10%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+
 /* ~~~~~~~~~~~~~~~NAV BAR~~~~~~~~~~~~~~~~~*/
 
 .navmenu {
@@ -228,7 +247,7 @@ input[type=checkbox] {
 /* ~~~~~~~~~~~~JUMBOTRON STYLING~~~~~~~~~~ */
 
 .jumbotron {
-  padding-top: 19vh;
+  padding-top: 25vh;
   padding-bottom: 19vh;
   height: auto;
   width: 100%;
@@ -258,8 +277,8 @@ input[type=checkbox] {
 }
 
 .jumbotron .img {
-  width: 90%;
-  height: 90%;
+  width: 85%;
+  height: 85%;
 }
 
 .jumbotron .right {
@@ -284,7 +303,7 @@ input[type=checkbox] {
   text-shadow: 5px 5px 5px #909634;
   font-weight: bold;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .jumbotron .font-title-4 {
