@@ -674,13 +674,12 @@ input[type=checkbox] {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 35%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 30px 15px 30px 15px;
   color: #000000;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 45px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -697,7 +696,6 @@ input[type=checkbox] {
 .prev:hover,
 .next:hover {
   color: #ffe9d7;
-  background-color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
 
@@ -754,14 +752,16 @@ input[type=checkbox] {
   }
 }
 
+
+
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1000px) {
 
   .prev,
   .next,
   .text {
-    font-size: 30px;
-    padding: 5px;
+    font-size: 40px;
+    padding: 10px;
   }
 }
 
