@@ -114,7 +114,7 @@ body {
   position: fixed;
   left: -9vw;
   bottom: 30vh;
-  transform: rotate(30deg);
+  transform: rotate(35deg);
   z-index: 10000;
 }
 
