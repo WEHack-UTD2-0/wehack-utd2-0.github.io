@@ -132,24 +132,6 @@ body {
     width: 15%;
   }
 
-  /*
-  .mascot2 {
-    width: 30%;
-    left: 0;
-    top: 20vh;
-    transform: rotate(0);
-    position: absolute;
-    z-index: 0;
-  }
-
-  .mascot1 {
-    width: 30%;
-    right: 0;
-    top: 20vh;
-    position: absolute;
-    z-index: 0;
-  }*/
-
   .mascot2 {
     width: 45%;
     top: 20vh;
