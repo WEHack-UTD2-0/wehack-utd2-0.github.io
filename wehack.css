@@ -101,20 +101,46 @@ body {
 /* MLH Badge */
 #mlh-trust-badge {
   display: block;
-  max-width: 100px;
-  min-width: 60px;
   position: fixed;
-  right: 10px;
+  right: 0;
   top: 0;
-  width: 10%;
+  width: 5%;
   z-index: 10000;
 }
 
-@media (min-width:970px) and (max-width:1200px) {
+.mascot2 {
+  display: block;
+  width: 20%;
+  position: fixed;
+  left: -9vw;
+  bottom: 30vh;
+  transform: rotate(35deg);
+  z-index: 10000;
+}
+
+.mascot1 {
+  display: block;
+  width: 10%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10000;
+}
+
+@media only screen and (max-width: 1000px) {
   #mlh-trust-badge {
-    right: 10px;
-    top: 50px;
-    z-index: 1000;
+    width: 15%;
+  }
+
+  .mascot2 {
+    width: 45%;
+    top: 20vh;
+    left: -20vw;
+    transform: rotate(35deg);
+  }
+
+  .mascot1 {
+    width: 15%;
   }
 }
 
@@ -124,7 +150,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: transparent;
+  background: #909634;
+  box-shadow: 0px 0px 10px 5px #909634;
   color: #FFE9D7;
   z-index: 1000;
   position: fixed;
@@ -146,16 +173,16 @@ body {
   transition: 0.3s ease;
 } */
 .menu li a:hover {
-  background-color: #909634;
-  height:30px;
+  background-color: darkolivegreen;
+  height: 30px;
   border-radius: 5px;
   transition: 0.3s ease;
 }
 
 .menu li {
   list-style: none;
-  margin-right:-30px;
-  white-space:nowrap;
+  margin-right: -30px;
+  white-space: nowrap;
 }
 
 .menu li a {
@@ -177,28 +204,27 @@ input[type=checkbox] {
 
 .hamburger {
   display: none;
-  font-size: 35px;
+  font-size: 4em;
   user-select: none;
-  color: black;
+  color: #FFE9D7;
   padding-right: 10px;
+
 }
 
-@media (max-width: 970px) {
+@media only screen and (max-width: 1000px) {
   .navmenu {
-    background-color: #FFE9D7;
-    border-radius: 30px 0 30px 0;
-    left: 10px;
-    top: 5px;
+    background-color: #909634;
+    border-radius: 0px 10px 30px 10px;
+    left: 0px;
+    top: 0px;
     padding-right: 20px;
+    z-index: 100000;
   }
 
   .menu {
     display: none;
-    background-color: #FFE9D7;
-    right: 0;
-    left: 0;
     text-align: center;
-    padding: 16px 0;
+    padding-right: 50px;
   }
 
   .menu li a {
@@ -260,8 +286,8 @@ input[type=checkbox] {
 }
 
 .jumbotron .img {
-  width: 90%;
-  height: 90%;
+  width: 85%;
+  height: 85%;
 }
 
 .jumbotron .right {
@@ -274,19 +300,13 @@ input[type=checkbox] {
   text-align: center;
 }
 
-@media only screen and (max-width: 860px) {
-  .jumbotron .container {
-    flex-direction: column;
-  }
-}
-
 .jumbotron .font-title-1 {
   font-size: 80px;
   color: #FFE9D7;
   text-shadow: 5px 5px 5px #909634;
   font-weight: bold;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .jumbotron .font-title-4 {
@@ -332,7 +352,7 @@ input[type=checkbox] {
 
 .jumbotron .font-paragraph {
   font-size: 20px;
-  color: #4A3628
+  color: #4A3628;
 }
 
 .jumbotron .apply-now {
@@ -385,7 +405,7 @@ input[type=checkbox] {
 }
 
 .jumbotron .apply-now:hover {
-  background-color:darkolivegreen;
+  background-color: darkolivegreen;
   transition: 0.3s ease;
 }
 
@@ -397,6 +417,50 @@ input[type=checkbox] {
 #right-button {
   margin-top: 6px;
   margin-left: 6px;
+}
+
+@media screen and (max-width: 1000px) {
+  .jumbotron {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+
+  .jumbotron .img {
+    width: 50vw;
+    height: auto;
+  }
+
+  .jumbotron .placeholder {
+    margin: 10px;
+  }
+
+  .jumbotron .font-title-1 {
+    padding-top: 8vh;
+    margin-bottom: 30px;
+    font-size: 6em;
+  }
+
+  .jumbotron .font-title-2 {
+    font-size: 3em;
+  }
+
+  .jumbotron .font-title-3 {
+    font-size: 2.5em;
+  }
+
+  .jumbotron .container {
+    flex-direction: column;
+  }
+
+  .jumbotron .apply-now {
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 50px;
+    width: 80vw;
+    height: 10vw;
+  }
+
 }
 
 /* .jumbotron .message {
@@ -418,7 +482,7 @@ input[type=checkbox] {
   display: flex;
   /* flex-direction:row; */
   justify-content: center;
-  align-items:center;
+  align-items: center;
   bottom: 0;
   width: auto;
   padding: 20px 2px;
@@ -429,7 +493,7 @@ input[type=checkbox] {
 }
 
 .message {
-  font-size:large;
+  font-size: large;
   text-align: center;
   font-style: italic;
   font-weight: 700;
@@ -440,6 +504,8 @@ input[type=checkbox] {
 .sparkle img {
   width: 100px;
   animation: sparkle 7s linear infinite;
+  pointer-events: none;
+  user-select: none;
 }
 
 .sparkle {
@@ -529,13 +595,14 @@ input[type=checkbox] {
 .about-text {
   color: #FFE9D7;
   font-family: 'Inknut Antiqua', serif;
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
+
 /* .about-text {
   font-size:1.2em;
 } */
@@ -601,22 +668,20 @@ input[type=checkbox] {
   max-width: 1000px;
   position: relative;
   margin: auto;
-
-
 }
+
 
 /* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 35%;
   width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  padding: 30px 15px 30px 15px;
   color: #000000;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 45px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -633,7 +698,6 @@ input[type=checkbox] {
 .prev:hover,
 .next:hover {
   color: #ffe9d7;
-  background-color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
 }
 
@@ -690,13 +754,16 @@ input[type=checkbox] {
   }
 }
 
+
+
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 1000px) {
 
   .prev,
   .next,
   .text {
-    font-size: 11px
+    font-size: 40px;
+    padding: 10px;
   }
 }
 
@@ -717,12 +784,12 @@ input[type=checkbox] {
   text-shadow: 2px 3px 5px #909634;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .test-container {
@@ -832,12 +899,12 @@ input[type=checkbox] {
   text-shadow: 2px 3px 5px #909634;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .sponsors p {
@@ -870,13 +937,9 @@ input[type=checkbox] {
   column-gap: 2em;
 }
 
-body {
-  max-width: 1440px;
-  margin: auto;
-}
 
 .slider-wrapper {
-  margin: 5rem;
+  margin: 10rem;
   padding-top: 70px;
   position: relative;
   overflow: hidden;
@@ -896,7 +959,7 @@ body {
   overflow: hidden;
   scroll-behavior: smooth;
   list-style: none;
-  margin: 0;
+  margin: 0px;
   padding: 0;
   overflow-y: hidden;
   transition: .5s ease;
@@ -1185,16 +1248,16 @@ footer .copyright p {
 
 .wrapper>h1 {
   /* letter-spacing: 3px; */
-    font-family: 'Inknut Antiqua', serif;
+  font-family: 'Inknut Antiqua', serif;
   text-shadow: 2px 3px 5px #909634;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   text-shadow: 2px 3px 3px #909634;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .accordion {
@@ -1221,12 +1284,12 @@ footer .copyright p {
 }
 
 .active {
-  background-color: #E5D1C1;
+  background-color: #FFE9D7;
   border-radius: 10px 10px 0 0;
 }
 
 .accordion:hover {
-  background-color: #E5D1C1;
+  background-color: #FFE9D7;
   border-radius: 10px 10px 0 0;
   content: '\002B';
 }
@@ -1251,7 +1314,6 @@ footer .copyright p {
   border-radius: 0 0 10px 10px;
   background-color: #FFE9D7;
   overflow: hidden;
-  background-color: #E5D1C1;
   display: none;
   transition: 0.4s ease;
 }
@@ -1261,8 +1323,9 @@ footer .copyright p {
 }
 
 .freq {
-  margin: 10px 0;
-  width: 150%;
+  margin: 20px 0;
+  pad: 10px;
+  width: 100%;
 }
 
 .freq.active {
@@ -1273,6 +1336,7 @@ footer .copyright p {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
   /* Add this line */
 }
 
@@ -1280,11 +1344,8 @@ footer .copyright p {
   width: 48%;
   /* Adjust as needed */
   flex: 49%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 10px 10px 10px 0px;
-  padding: 0px 11.0rem 0px 0px;
-  border: 50px;
+  margin: 10px 0;
+  padding: 0 10px;
   box-sizing: border-box;
   /* Add this line */
 }
@@ -1298,34 +1359,6 @@ footer .copyright p {
 
 
 @media screen and (max-width: 640px) {
-  .topnav {
-    width: 100%;
-    justify-content: flex-end;
-    z-index: 1000;
-  }
-
-  .topnav #homeLink {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-
-  .topnav #myLinks.links {
-    justify-content: flex-end;
-    padding-right: 8px;
-    padding-top: 8px;
-  }
-
-  .topnav .links a {
-    display: none;
-    width: 100%;
-    padding: 0px;
-  }
-
-  .topnav .links a.icon {
-    display: flex;
-    justify-self: flex-end;
-  }
 
   .banner .logo1 {
     margin-top: 50px;
@@ -1333,30 +1366,6 @@ footer .copyright p {
 
   .banner .Heading2 {
     margin-top: 50px;
-  }
-
-  .topnav #myLinks.links.responsive {
-    display: block;
-    float: none;
-    justify-content: start;
-    width: 100%;
-    z-index: 10000;
-  }
-
-  .topnav #myLinks.links.responsive a {
-    display: block;
-    padding: 8px;
-    width: 100%;
-    text-align: left;
-  }
-
-  .topnav #myLinks.links.responsive a.icon {
-    position: absolute;
-    width: auto;
-  }
-
-  .topnav #myLinks.links.responsive i {
-    padding-left: 0px;
   }
 }
 
@@ -1438,11 +1447,11 @@ a:active {
   text-shadow: 2px 3px 5px #e0a269;
   /* padding-bottom: 0px;
   margin-bottom: 0; */
-  font-weight:1000;
+  font-weight: 1000;
   font-size: 2.5em;
   padding-top: 100px;
   margin-bottom: 0;
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .team-member {
@@ -1522,11 +1531,10 @@ a:active {
 }
 
 .group-photo img {
-  width: 100%;
-  height: 650px;
+  width: 60%;
+  height: auto;
   box-shadow: 10px 10px #909634, 12px 12px 0px 1px #FFE9D7;
-  margin-top: 10px;
-  margin-bottom: 100px;
+  margin: 10px;
   object-fit: contain;
 }
 
