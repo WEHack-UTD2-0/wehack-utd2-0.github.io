@@ -516,7 +516,7 @@ input[type=checkbox] {
   justify-content: space-around;
   position: fixed;
   bottom: -60vh;
-  z-index: 998;
+  z-index: -1;
 }
 
 .static-sparkle {
