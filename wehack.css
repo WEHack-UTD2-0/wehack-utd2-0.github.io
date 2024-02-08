@@ -1130,7 +1130,7 @@ footer .grid {
 footer .text {
   font-family: 'Inknut Antiqua', serif;
   color: #fff2ce;
-  font-size: 13px;
+  font-size: 11px;
   z-index: 999;
 }
 
@@ -1139,6 +1139,7 @@ footer .text:hover {
 }
 
 footer .copyright p {
+  font-size: 13px;
   font-family: 'Inknut Antiqua', serif;
   color: #fff2ce;
   z-index: 999;
