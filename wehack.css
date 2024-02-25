@@ -882,6 +882,9 @@ input[type=checkbox] {
 /* ~~~~~~~~~~~~~~~SPONSORS~~~~~~~~~~~~~~~~~ */
 .sponsors {
   color: #1e1920;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .sponsors .heading {
@@ -910,8 +913,10 @@ input[type=checkbox] {
   max-width: 65vw;
   padding: 10px;
   display: grid;
-  grid-template-columns: (6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
 
 .hex {
@@ -933,6 +938,7 @@ input[type=checkbox] {
   grid-row: 1;
   grid-column: 2 / span 2;
   background-image: url('images/sponsors/plat_back.png');
+  background-size: cover;
   border-radius: 20px;
   border: 2px solid #b8b6b6;
 }
