@@ -954,6 +954,7 @@ input[type=checkbox] {
   grid-row: 2;
   grid-column: span 2;
   background-image: url('images/sponsors/gold_back.png');
+  background-size: 600px;
   border-radius: 20px;
   border: 2px solid #ffbc03e5;
 }
