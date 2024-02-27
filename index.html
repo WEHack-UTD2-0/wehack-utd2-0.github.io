@@ -31,6 +31,9 @@
       </ul>
     </nav>
 
+    <img class="mascot2" src="./images/2024/mascot_2.png">
+    <img class="mascot1" src="./images/2024/mascot_1.png"
+
     <!-- JUMBOTRON -->
     <section class="jumbotron">
         <div class="container">
@@ -39,17 +42,17 @@
             <div class="right">
                 <h1 class="font-title-1">WEHack 2024</h1>
                 <h2 class = "font-title-2">Enchanted to be Here</h2>
-                <p class="font-title-3">March 30 - 31</p>
+                <p class="font-title-3">March 23 - 24</p>
                     <button class="apply-now font-paragraph" onclick=" window.open('https://live.wehackutd.com/','_blank')" type="button" style="cursor:pointer; border-radius: 25px; filter: drop-shadow(2px 2px #ffe9d7);">WEHACK PORTAL</button>
                     <button class="apply-now font-paragraph" onclick=" window.open('https://coda.io/@wehack-utd/wehack-2024-registration-form','_blank')" type="button" style="cursor:pointer;  border-radius: 25px; filter: drop-shadow(2px 2px #ffe9d7);">REGISTRATION</button>  
                     <!--
                     <button class="volunteer font-paragraph" onclick=" window.open('http://bit.ly/we23-volunteer','_blank')" type="button" style="cursor:pointer; border-radius: 25px; filter: drop-shadow(0px 2px #ffe9d7);">VOLUNTEER FORM</button>
                     <button class="mentor font-paragraph" onclick=" window.open('http://bit.ly/we23-mentor','_blank')" type="button" style="cursor:pointer; border-radius: 25px; filter: drop-shadow(0px 2px #ffe9d7);">MENTOR FORM</button>
                     -->
-                    <!--Countdown-->
-                    <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-                    <a href="https://logwork.com/countdown-83os" class="countdown-timer" data-width="500" data-timezone="America/Chicago" data-textcolor="#d6c5b8" data-date="2024-03-30 09:00" data-background="#ffe9d7" data-digitscolor="#909634" data-unitscolor="#d6c5b8">Time Remaining:</a>
-                    
+                  <!--Countdown-->
+                  <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+                  <a href="https://logwork.com/countdown-83os" class="countdown-timer" data-width="500" data-timezone="America/Chicago" data-textcolor="#d6c5b8" data-date="2024-03-30 09:00" data-background="#ffe9d7" data-digitscolor="#909634" data-unitscolor="#d6c5b8">Time Remaining:</a>
+                  
                     <!--<div class="flex-grid">
                   <button class="font-paragraph" id="left-button" onclick=" window.open('http://coda.io/form/Volunteer-Sign-Ups_dFu8FXxDeex','_blank')" type="button" style="cursor:pointer;">VOLUNTEER</button>
                   <button class="font-paragraph" id="right-button" onclick=" window.open('http://coda.io/form/WEHack-2022-Mentor-Application_d18shEvpl87','_blank')" type="button" style="cursor:pointer;">MENTOR</button>
@@ -197,19 +200,19 @@
         <div class="slideshow-container">
           <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="./images/stat2020.jpg" style="width:700px; box-shadow: 0px 0px 20px 10px purple;">
+            <img src="/images/stat_2020.png" style="width:100%; box-shadow: 0px 0px 20px 10px purple;">
             <div class="stattext">First Virtual Hackathon</div>
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="./images/stat2022.jpg" style="width:700px; box-shadow: 0px 0px 20px 10px black;" >
+            <img src="/images/stat_2022.png" style="width:100%; box-shadow: 0px 0px 20px 10px black;" >
             <div class="stattext">First In-Person Hackathon</div>
           </div>
           
           <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="./images/Stat2023.jpg" style="width:700px; box-shadow: 0px 0px 20px 10px rgb(128, 117, 166);" >
+            <img src="/images/stat_2023.png" style="width:100%; box-shadow: 0px 0px 20px 10px rgb(128, 117, 166);" >
           </div>
           
           <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -223,7 +226,7 @@
             <span class="dot" onclick="currentSlide(2)"></span> 
             <span class="dot" onclick="currentSlide(3)"></span> 
           </div>
-          <script src="stat.js"></script>
+          
     </section>
 
     <!----- Testimonials Section-------->
@@ -256,32 +259,56 @@
     </section>   
     
     <!------ SPONSORS section ------ -->
-    <section class="slider-wrapper" id="sponsors">
+    <section class="sponsors">
       <center class="intro">
         <h1 class="heading">Sponsors</h1>
       </center>
-      <button class="slide-arrow" id="slide-arrow-prev">
-        &#8249;
-      </button>
-      <button class="slide-arrow" id="slide-arrow-next">
-        &#8250;
-      </button>
-      <ul class="slides-container" id="slides-container">
-        <li class="slide" style="transition: 1s;">
-        </li>
-        <li class="slide" style="transition: 1s;">
-        </li>
-        <li class="slide" style="transition: 1s;">
-        </li>
-        <li class="slide" style="transition: 1s;">
-        </li>
-      </ul>
+      <div class = "sponsor-container">
+        <!--platinum-->
+        <div class="hex plat">
+          <a href="https://careers.l3harris.com/search-jobs" target="_blank">
+            <img src="./images/sponsors/L3Harris_logo.png" alt="L3 Harris">
+          </a>
+        </div>
+
+        <!--Gold-->
+        <div class="hex gold">
+          <a href="https://www.statefarm.com/careers" target="_blank">
+            <img src="./images/sponsors/stateFarm.png" alt="StateFarm">
+          </a>
+        </div>
+        <div class="hex gold">
+          <a href="https://www.cbre.com/careers/students-and-graduates" target="_blank">
+            <img src="./images/sponsors/cbre_green.png" alt="CBRE">
+          </a>
+        </div>
+
+        <!--Bronze-->
+        <div class="hex bronze">
+          <a href="https://www.axxess.com/careers" target="_blank">
+            <img src="./images/sponsors/Axxess_logo.png" alt="Axxess">
+          </a>
+        </div>
+        <div class="hex bronze">
+          <a href="https://www.paycom.com/careers/benefits-and-culture/how-we-hire/" target="_blank">
+            <img src="./images/sponsors/Paycom_logo.png" alt="Paycom" >
+          </a>
+        </div>
+        <div class="hex bronze">
+          <a href="https://careers.jpmorgan.com/us/en/home" target="_blank">
+            <img src="./images/sponsors/JPMC_logo.png" alt="JPMC" >
+          </a>
+        </div>
+        <div class="hex bronze">
+          <a href=https://rewritingthecode.org/in-your-career/" target="_blank">
+            <img src="./images/sponsors/rtc_logo.png" alt="RTC">
+          </a>
+        </div>
+      </div>
     </section>
     
-    <!----Java script part for the sponsor slideshow-->
-    <script src="sponsor.js">
-    </script>
-
+    
+ 
 
     <!-- FAQ -->
       <div class="wrapper" id="faq">
@@ -402,8 +429,6 @@
         </div>
       </div>
 
-      <script src="faq.js">
-      </script>
 
      <!-- Meet The Team -->
      <section class="team" id="meettheteam">
@@ -467,14 +492,13 @@
 
     <div class="sparkle"></div>
    <div class = "static-sparkle"></div>
-    <script src="sparkle.js"></script>
+    
     
     
    <!-- Footer -->
     <footer id="footer">
-        
         <a class="text"
-          href="https://coda.io/@wehack-utd/wehack-2023-registration/wehack-2023-terms-conditions-2" 
+          href="https://coda.io/@wehack-utd/wehack-2024-registration-form/wehack-2024-terms-conditions-2" 
           target="_blank"> 
           <h3> <span style="color:#FFE9D7"> WEHack Terms and Conditions </span></h3> 
         </a> 
@@ -483,29 +507,28 @@
           target="_blank"> 
           <h3> <span style="color:#FFE9D7"> MLH Code of Conduct </span></h3>
         </a> 
-        <div>
+        <div style="z-index: 999">
           <!--Social Media-->
-          <a style="text-decoration: none;"  href="mailto:wehackutd@gmail.com">
-            <img src="./images/gmail.png" alt="gmail" width="25" height="25">
+          <a style="text-decoration: none;"  href="mailto:wehackutd@gmail.com" target="_blank">
+            <img src="./images/gmail-icon.png" alt="gmail" width="25" height="25">
           </a>&nbsp;
-          <a style="text-decoration: none;"  href="https://www.instagram.com/wehackutd/">
-            <img src="./images/instagram.png" alt="instagram" width="25" height="25">
+          <a style="text-decoration: none;"  href="https://www.instagram.com/wehackutd/" target="_blank">
+            <img src="./images/instagram-icon.png" alt="instagram" width="25" height="25">
           </a>&nbsp;
-          <a style="text-decoration: none;"  href="https://www.linkedin.com/company/wehackutd-2020/">
-            <img src="./images/LINKEDIN.png" alt="linkedin" width="25" height="25"> 
+          <a style="text-decoration: none;"  href="https://www.linkedin.com/company/wehackutd-2020/"target="_blank">
+            <img src="./images/linkedin-icon.png" alt="linkedin" width="25" height="25"> 
           </a>&nbsp;
-          <a style="text-decoration: none;"  href="https://www.facebook.com/WEHackUTD/">
-            <img src="./images/facebook.png" alt="facebook" width="25" height="25">
+          <a style="text-decoration: none;"  href="https://www.facebook.com/WEHackUTD/" target="_blank">
+            <img src="./images/facebook-icon.png" alt="facebook" width="25" height="25">
           </a>&nbsp;
-          <a style="text-decoration: none;"  href="https://twitter.com/wehackutd">
+          <a style="text-decoration: none;"  href="https://x.com/wehackutd" target="_blank">
             <img src="./images/twitter-icon.png" alt="twitter" width="25" height="25">
           </a>
         </div>
         <div class="copyright">
           <p>Made with <strong>&#9829</strong> by <strong>WEHack</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Copyright &copy 2022-2024 </p>
         </div>
-
     </footer>
-    
+    <script src="web.js"></script>
   </body>
 </html>
